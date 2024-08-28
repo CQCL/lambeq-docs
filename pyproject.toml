@@ -1,0 +1,21 @@
+[project]
+name = "lambeq-docs"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "lambeq>=0.4.2",
+    "nbformat~=5.7.3",
+    "nbsphinx~=0.8.12",
+    "numpydoc~=1.5.0",
+    "Sphinx~=6.1.3",
+    "sphinx-argparse~=0.4.0",
+    "sphinx_mdinclude~=0.5.3",
+    "furo~=2024.7.18",
+    "sphinxcontrib-jquery~=4.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
