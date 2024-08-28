@@ -1,0 +1,428 @@
+@startuml lambeq.backend
+!pragma useIntermediatePackages false
+
+class lambeq.backend.drawing.drawable.BoxNode {
+  obj: Box
+  x: float
+  y: float
+  dom_wires: list[int]
+  cod_wires: list[int]
+}
+class lambeq.backend.drawing.drawable.DrawableDiagram {
+  boxes: list[BoxNode]
+  wire_endpoints: list[WireEndpoint]
+  wires: list[tuple[int, int]]
+}
+class lambeq.backend.drawing.drawable.DrawablePregroup {
+  x_tracks: list[int]
+}
+class lambeq.backend.drawing.drawable.PregroupError {
+}
+class lambeq.backend.drawing.drawable.WireEndpoint {
+  kind: WireEndpointType
+  obj: Ty
+  x: float
+  y: float
+}
+enum lambeq.backend.drawing.drawable.WireEndpointType {
+  DOM: 0 {static}
+  COD: 1 {static}
+  INPUT: 2 {static}
+  OUTPUT: 3 {static}
+}
+class lambeq.backend.grammar.Diagram {
+  dom: Ty
+  cod: Ty
+  layers: list[Layer]
+  special_boxes: ClassVar[dict[str, Callable]]
+}
+abstract class lambeq.backend.drawing.drawing_backend.DrawingBackend {
+  max_width: float {static}
+}
+class lambeq.backend.drawing.mat_backend.MatBackend {
+  axis: None
+  linewidth: float
+  max_width: float
+}
+class lambeq.backend.drawing.tikz_backend.TikzBackend {
+  use_tikzstyles: bool
+  node_styles: list[str]
+  edge_styles: list[str]
+  nodes: dict[tuple[float, float], int]
+  nodelayer: list[str]
+  edgelayer: list[str]
+  max_width: float
+}
+class lambeq.backend.grammar.Spider {
+  type: Ty
+  n_legs_in: int
+  n_legs_out: int
+  name: str
+  dom: Ty
+  cod: Ty
+  z: int
+}
+class lambeq.backend.grammar.Box {
+  name: str
+  dom: Ty
+  cod: Ty
+  z: int
+}
+class lambeq.backend.grammar.Cap {
+  left: Ty
+  right: Ty
+  is_reversed: InitVar[bool]
+  name: str
+  dom: Ty
+  cod: Ty
+  z: int
+}
+class lambeq.backend.grammar.Category {
+  name: str
+  Ty: type[Ty]
+  Box: type[Box]
+  Layer: type[Layer]
+  Diagram: type[Diagram]
+}
+class lambeq.backend.grammar.Cup {
+  left: Ty
+  right: Ty
+  is_reversed: InitVar[bool]
+  name: str
+  dom: Ty
+  cod: Ty
+  z: int
+}
+class lambeq.backend.grammar.Daggered {
+  box: Box
+  name: str
+  dom: Ty
+  cod: Ty
+  z: int
+}
+class lambeq.backend.grammar.Diagrammable {
+}
+class lambeq.backend.grammar.Entity {
+  category: ClassVar[Category]
+}
+class lambeq.backend.grammar.Functor {
+  target_category: Category
+}
+class lambeq.backend.grammar.InterchangerError {
+}
+class lambeq.backend.grammar.Layer {
+  left: Ty
+  box: Box
+  right: Ty
+}
+class lambeq.backend.grammar.Swap {
+  left: Ty
+  right: Ty
+  name: str
+  dom: Ty
+  cod: Ty
+  z: int
+}
+class lambeq.backend.grammar.Ty {
+  name: str | None
+  objects: list[Self]
+  z: int
+  category: ClassVar[Category]
+}
+class lambeq.backend.grammar.Word {
+  name: str
+  cod: Ty
+  dom: Ty
+}
+class lambeq.backend.pennylane.PennyLaneCircuit {
+  _ops: None
+  _symbols: None
+  _params: None
+  _wires: None
+  _probabilities: None
+  _post_selection: None
+  _scale: None
+  _n_qubits: None
+  _backend_config: None
+  diff_method: None
+  _contains_sympy: None
+  _concrete_params: None
+  _concrete_params: None
+  _valid_states: None
+}
+class lambeq.backend.quantum.Scalar {
+  data: float | ndarray
+  name: str
+  dom: Ty
+  cod: Ty
+  is_mixed: bool
+  self_adjoint: bool
+  z: int
+  __hash__: Callable[[Box], int]
+}
+class lambeq.backend.quantum.AntiConjugate {
+}
+class lambeq.backend.quantum.Bit {
+}
+class lambeq.backend.quantum.Box {
+  name: str
+  dom: Ty
+  cod: Ty
+  data: float | ndarray | None
+  z: int
+  is_mixed: bool
+  self_adjoint: bool
+}
+class lambeq.backend.quantum.Bra {
+}
+class lambeq.backend.quantum.Controlled {
+}
+class lambeq.backend.quantum.Daggered {
+  box: Box
+  name: str
+  dom: Ty
+  cod: Ty
+  data: float | ndarray | None
+  is_mixed: bool
+  self_adjoint: bool
+  z: int
+  __hash__: Callable[[Box], int]
+  __repr__: Callable[[Box], str]
+}
+class lambeq.backend.quantum.Diagram {
+  dom: Ty
+  cod: Ty
+  layers: list[Layer]
+  __hash__: Callable[[], int]
+}
+class lambeq.backend.quantum.Discard {
+}
+class lambeq.backend.quantum.Encode {
+}
+class lambeq.backend.quantum.Ket {
+}
+class lambeq.backend.quantum.Layer {
+  left: Ty
+  box: Box
+  right: Ty
+}
+class lambeq.backend.quantum.Measure {
+}
+class lambeq.backend.quantum.MixedState {
+}
+class lambeq.backend.quantum.Parametrized {
+  name: str
+  dom: Ty
+  cod: Ty
+  data: float
+  is_mixed: bool
+  self_adjoint: bool
+}
+class lambeq.backend.quantum.Rotation {
+}
+class lambeq.backend.quantum.Rx {
+}
+class lambeq.backend.quantum.Ry {
+}
+class lambeq.backend.quantum.Rz {
+}
+class lambeq.backend.quantum.SelfConjugate {
+}
+class lambeq.backend.quantum.Sqrt {
+  data: float | ndarray
+  name: str
+  dom: Ty
+  cod: Ty
+  is_mixed: bool
+  self_adjoint: bool
+  z: int
+  __hash__: Callable[[], int]
+}
+class lambeq.backend.quantum.Swap {
+  type: Ty
+  n_legs_in: int
+  n_legs_out: int
+  name: str
+  dom: Ty
+  cod: Ty
+  z: int
+  __hash__: Callable[[], int]
+  __repr__: Callable[[], str]
+}
+class lambeq.backend.quantum.Ty {
+}
+class lambeq.backend.tensor.Box {
+  name: str
+  dom: Dim
+  cod: Dim
+  data: float | ndarray | None
+  z: int
+}
+class lambeq.backend.tensor.Cap {
+  left: Dim
+  right: Dim
+  dom: Dim
+  cod: Dim
+  z: int
+  is_reversed: bool
+}
+class lambeq.backend.tensor.Cup {
+  left: Dim
+  right: Dim
+  name: str
+  dom: Dim
+  cod: Dim
+  z: int
+  is_reversed: bool
+}
+class lambeq.backend.tensor.Daggered {
+  box: Box
+  name: str
+  dom: Dim
+  cod: Dim
+  data: float | ndarray | None
+  z: int
+}
+class lambeq.backend.tensor.Diagram {
+  dom: Dim
+  cod: Dim
+  layers: list[Layer]
+}
+class lambeq.backend.tensor.Dim {
+  objects: list[Self]
+}
+class lambeq.backend.tensor.Layer {
+  left: Dim
+  box: Box
+  right: Dim
+}
+class lambeq.backend.tensor.Spider {
+  type: Dim
+  n_legs_in: int
+  n_legs_out: int
+  name: str
+  dom: Dim
+  cod: Dim
+  z: int
+}
+class lambeq.backend.tensor.Swap {
+  left: Dim
+  right: Dim
+  name: str
+  dom: Dim
+  cod: Dim
+  z: int
+}
+class lambeq.backend.converters.tk.Circuit {
+  post_selection: None
+  scalar: None
+  post_processing: None
+}
+lambeq.backend.drawing.drawable.BoxNode *-- lambeq.backend.grammar.Box
+lambeq.backend.drawing.drawable.DrawableDiagram *-- lambeq.backend.drawing.drawable.BoxNode
+lambeq.backend.drawing.drawable.DrawableDiagram *-- lambeq.backend.drawing.drawable.WireEndpoint
+lambeq.backend.drawing.drawable.DrawableDiagram <|-- lambeq.backend.drawing.drawable.DrawablePregroup
+lambeq.backend.drawing.drawable.WireEndpoint *-- lambeq.backend.drawing.drawable.WireEndpointType
+lambeq.backend.drawing.drawable.WireEndpoint *-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Diagram *-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Diagram *-- lambeq.backend.grammar.Layer
+lambeq.backend.grammar.Entity <|-- lambeq.backend.grammar.Diagram
+lambeq.backend.drawing.drawing_backend.DrawingBackend <|-- lambeq.backend.drawing.mat_backend.MatBackend
+lambeq.backend.drawing.drawing_backend.DrawingBackend <|-- lambeq.backend.drawing.tikz_backend.TikzBackend
+lambeq.backend.grammar.Spider *-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Box <|-- lambeq.backend.grammar.Spider
+lambeq.backend.grammar.Box *-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Entity <|-- lambeq.backend.grammar.Box
+lambeq.backend.grammar.Cap *-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Box <|-- lambeq.backend.grammar.Cap
+lambeq.backend.grammar.Category *-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Category *-- lambeq.backend.grammar.Box
+lambeq.backend.grammar.Category *-- lambeq.backend.grammar.Layer
+lambeq.backend.grammar.Category *-- lambeq.backend.grammar.Diagram
+lambeq.backend.grammar.Cup *-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Box <|-- lambeq.backend.grammar.Cup
+lambeq.backend.grammar.Daggered *-- lambeq.backend.grammar.Box
+lambeq.backend.grammar.Daggered *-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Box <|-- lambeq.backend.grammar.Daggered
+lambeq.backend.grammar.Entity *-- lambeq.backend.grammar.Category
+lambeq.backend.grammar.Functor *-- lambeq.backend.grammar.Category
+lambeq.backend.grammar.Layer *-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Layer *-- lambeq.backend.grammar.Box
+lambeq.backend.grammar.Entity <|-- lambeq.backend.grammar.Layer
+lambeq.backend.grammar.Swap *-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Box <|-- lambeq.backend.grammar.Swap
+lambeq.backend.grammar.Ty *-- lambeq.backend.grammar.Category
+lambeq.backend.grammar.Entity <|-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Word *-- lambeq.backend.grammar.Ty
+lambeq.backend.grammar.Box <|-- lambeq.backend.grammar.Word
+lambeq.backend.quantum.Scalar *-- lambeq.backend.quantum.Ty
+lambeq.backend.quantum.Scalar *-- lambeq.backend.quantum.Box
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.Scalar
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.AntiConjugate
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.Bit
+lambeq.backend.quantum.Box *-- lambeq.backend.quantum.Ty
+lambeq.backend.tensor.Box <|-- lambeq.backend.quantum.Box
+lambeq.backend.quantum.SelfConjugate <|-- lambeq.backend.quantum.Bra
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.Bra
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.Controlled
+lambeq.backend.quantum.Daggered *-- lambeq.backend.quantum.Box
+lambeq.backend.quantum.Daggered *-- lambeq.backend.quantum.Ty
+lambeq.backend.tensor.Daggered <|-- lambeq.backend.quantum.Daggered
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.Daggered
+lambeq.backend.quantum.Diagram *-- lambeq.backend.quantum.Ty
+lambeq.backend.quantum.Diagram *-- lambeq.backend.quantum.Layer
+lambeq.backend.tensor.Diagram <|-- lambeq.backend.quantum.Diagram
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.Discard
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.Encode
+lambeq.backend.quantum.SelfConjugate <|-- lambeq.backend.quantum.Ket
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.Ket
+lambeq.backend.quantum.Layer *-- lambeq.backend.quantum.Ty
+lambeq.backend.quantum.Layer *-- lambeq.backend.quantum.Box
+lambeq.backend.tensor.Layer <|-- lambeq.backend.quantum.Layer
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.Measure
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.MixedState
+lambeq.backend.quantum.Parametrized *-- lambeq.backend.quantum.Ty
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.Parametrized
+lambeq.backend.quantum.Parametrized <|-- lambeq.backend.quantum.Rotation
+lambeq.backend.quantum.AntiConjugate <|-- lambeq.backend.quantum.Rx
+lambeq.backend.quantum.Rotation <|-- lambeq.backend.quantum.Rx
+lambeq.backend.quantum.SelfConjugate <|-- lambeq.backend.quantum.Ry
+lambeq.backend.quantum.Rotation <|-- lambeq.backend.quantum.Ry
+lambeq.backend.quantum.AntiConjugate <|-- lambeq.backend.quantum.Rz
+lambeq.backend.quantum.Rotation <|-- lambeq.backend.quantum.Rz
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.SelfConjugate
+lambeq.backend.quantum.Sqrt *-- lambeq.backend.quantum.Ty
+lambeq.backend.quantum.Scalar <|-- lambeq.backend.quantum.Sqrt
+lambeq.backend.quantum.Swap *-- lambeq.backend.quantum.Ty
+lambeq.backend.tensor.Swap <|-- lambeq.backend.quantum.Swap
+lambeq.backend.quantum.SelfConjugate <|-- lambeq.backend.quantum.Swap
+lambeq.backend.quantum.Box <|-- lambeq.backend.quantum.Swap
+lambeq.backend.tensor.Dim <|-- lambeq.backend.quantum.Ty
+lambeq.backend.tensor.Box *-- lambeq.backend.tensor.Dim
+lambeq.backend.grammar.Box <|-- lambeq.backend.tensor.Box
+lambeq.backend.tensor.Cap *-- lambeq.backend.tensor.Dim
+lambeq.backend.grammar.Cap <|-- lambeq.backend.tensor.Cap
+lambeq.backend.tensor.Box <|-- lambeq.backend.tensor.Cap
+lambeq.backend.tensor.Cup *-- lambeq.backend.tensor.Dim
+lambeq.backend.grammar.Cup <|-- lambeq.backend.tensor.Cup
+lambeq.backend.tensor.Box <|-- lambeq.backend.tensor.Cup
+lambeq.backend.tensor.Daggered *-- lambeq.backend.tensor.Box
+lambeq.backend.tensor.Daggered *-- lambeq.backend.tensor.Dim
+lambeq.backend.grammar.Daggered <|-- lambeq.backend.tensor.Daggered
+lambeq.backend.tensor.Box <|-- lambeq.backend.tensor.Daggered
+lambeq.backend.tensor.Diagram *-- lambeq.backend.tensor.Dim
+lambeq.backend.tensor.Diagram *-- lambeq.backend.tensor.Layer
+lambeq.backend.grammar.Diagram <|-- lambeq.backend.tensor.Diagram
+lambeq.backend.grammar.Ty <|-- lambeq.backend.tensor.Dim
+lambeq.backend.tensor.Layer *-- lambeq.backend.tensor.Dim
+lambeq.backend.tensor.Layer *-- lambeq.backend.tensor.Box
+lambeq.backend.grammar.Layer <|-- lambeq.backend.tensor.Layer
+lambeq.backend.tensor.Spider *-- lambeq.backend.tensor.Dim
+lambeq.backend.grammar.Spider <|-- lambeq.backend.tensor.Spider
+lambeq.backend.tensor.Box <|-- lambeq.backend.tensor.Spider
+lambeq.backend.tensor.Swap *-- lambeq.backend.tensor.Dim
+lambeq.backend.grammar.Swap <|-- lambeq.backend.tensor.Swap
+lambeq.backend.tensor.Box <|-- lambeq.backend.tensor.Swap
+footer Generated by //py2puml//
+@enduml
+
