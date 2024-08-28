@@ -33,18 +33,10 @@ lambeq.backend.numerical_backend
    :undoc-members:
    :show-inheritance:
 
-lambeq.backend.tk
+lambeq.backend.converters
 -----------------
 
-.. automodule:: lambeq.backend.tk
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-lambeq.backend.pennylane
-------------------------
-
-.. automodule:: lambeq.backend.pennylane
+.. automodule:: lambeq.backend.converters
    :members:
    :undoc-members:
    :show-inheritance:

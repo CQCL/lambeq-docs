@@ -260,6 +260,6 @@ Detailed options
 ----------------
 
 .. argparse::
-   :filename: ../lambeq/cli.py
+   :module: lambeq.cli
    :func: prepare_parser
    :prog: lambeq
