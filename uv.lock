@@ -5,6 +5,19 @@ resolution-markers = [
     "python_full_version >= '3.13'",
 ]
 
+[manifest]
+requirements = [
+    { name = "furo", specifier = "~=2024.7.18" },
+    { name = "lambeq", specifier = ">=0.4.2" },
+    { name = "nbformat", specifier = "~=5.7.3" },
+    { name = "nbsphinx", specifier = "~=0.8.12" },
+    { name = "numpydoc", specifier = "~=1.5.0" },
+    { name = "sphinx", specifier = "~=6.1.3" },
+    { name = "sphinx-argparse", specifier = "~=0.4.0" },
+    { name = "sphinx-mdinclude", specifier = "~=0.5.3" },
+    { name = "sphinxcontrib-jquery", specifier = "~=4.1" },
+]
+
 [[package]]
 name = "alabaster"
 version = "0.7.16"
@@ -517,35 +530,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/6a/6b/8dc1c7b22b5b7855a9c4bee3d09c91947df320d99b4ed14c8f44fd073eb2/lambeq-0.4.2.tar.gz", hash = "sha256:e9cdc2eb406bf26b770588b9c77c1f959bac2a2c460993df7e6b50dbf169e2a1", size = 3043832 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e0/bd/3691b1d00e4678da82425f9d216e5882be592d040a206cb70a2242af8d90/lambeq-0.4.2-py3-none-any.whl", hash = "sha256:401904d17928d0518830c4fd056f7e45d7bcd874b65e54e4b2a547dda5312d75", size = 210416 },
-]
-
-[[package]]
-name = "lambeq-docs"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "furo" },
-    { name = "lambeq" },
-    { name = "nbformat" },
-    { name = "nbsphinx" },
-    { name = "numpydoc" },
-    { name = "sphinx" },
-    { name = "sphinx-argparse" },
-    { name = "sphinx-mdinclude" },
-    { name = "sphinxcontrib-jquery" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "furo", specifier = "~=2024.7.18" },
-    { name = "lambeq", specifier = ">=0.4.2" },
-    { name = "nbformat", specifier = "~=5.7.3" },
-    { name = "nbsphinx", specifier = "~=0.8.12" },
-    { name = "numpydoc", specifier = "~=1.5.0" },
-    { name = "sphinx", specifier = "~=6.1.3" },
-    { name = "sphinx-argparse", specifier = "~=0.4.0" },
-    { name = "sphinx-mdinclude", specifier = "~=0.5.3" },
-    { name = "sphinxcontrib-jquery", specifier = "~=4.1" },
 ]
 
 [[package]]
