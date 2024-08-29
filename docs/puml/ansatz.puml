@@ -42,6 +42,11 @@ class Sim14Ansatz {}
 class Sim15Ansatz {}
 class Sim4Ansatz {}
 
+class Symbol {
+    size: int
+    sort_key(order)
+}
+class sympy.core.symbol.Symbol #back:wheat;line:tomato {}
 
 BaseAnsatz <|-- TensorAnsatz
 BaseAnsatz <|-- CircuitAnsatz
@@ -60,7 +65,8 @@ SpiderAnsatz::tensor_functor *-- backend.grammar.Functor
 MPSAnsatz::BOND_TYPE *--left backend.grammar.Ty
 CircuitAnsatz::functor *-- backend.grammar.Functor
 TensorAnsatz::functor *-- backend.grammar.Functor
+sympy.core.symbol.Symbol <|-- Symbol
 
-BaseAnsatz --> backend.symbol.Symbol : uses
+BaseAnsatz --> Symbol : uses
 
 @enduml

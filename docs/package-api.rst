@@ -23,6 +23,8 @@ Concrete implementations of classical and quantum :term:`ansätze <ansatz (plura
     lambeq.ansatz.Sim4Ansatz
     lambeq.ansatz.SpiderAnsatz
     lambeq.ansatz.StronglyEntanglingAnsatz
+    lambeq.ansatz.Symbol
+   :top-classes: lambeq.ansatz.base.Symbol
    :parts: 1
 
 |
@@ -60,7 +62,6 @@ lambeq.backend
     lambeq.backend.quantum.Swap
     lambeq.backend.grammar.Word
     lambeq.backend.grammar.Functor
-    lambeq.backend.symbol.Symbol
    :parts: 2
 
 |
@@ -174,7 +175,6 @@ Package containing the interfaces for the :term:`CCG <Combinatory Categorial Gra
     lambeq.text2diagram.DepCCGParser
     lambeq.text2diagram.LinearReader
     lambeq.text2diagram.Reader
-    lambeq.text2diagram.DependencyReader
     lambeq.text2diagram.TreeReader
     lambeq.text2diagram.TreeReaderMode
     lambeq.text2diagram.WebParser

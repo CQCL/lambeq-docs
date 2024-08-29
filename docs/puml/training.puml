@@ -12,7 +12,6 @@ skinparam class {
 package pytorch #DDDDDD {}
 package tket #DDDDDD {}
 package pennylane #DDDDDD {}
-package torchquantum #DDDDDD {}
 
 abstract class Model {
     symbols
@@ -63,7 +62,6 @@ class CheckPoint {
 
 class PytorchModel {}
 class PennyLaneModel {}
-class TorchQuantumModel {}
 class NumpyModel {
     use_jit
     lambdas
@@ -102,7 +100,6 @@ class MSELoss {
 
 Model <|-- PytorchModel
 Model <|-- PennyLaneModel
-Model <|-- TorchQuantumModel
 Model <|-- QuantumModel
 QuantumModel <|-- TketModel
 QuantumModel <|-- NumpyModel
@@ -115,7 +112,6 @@ Optimizer <|-- RotosolveOptimizer
 
 PennyLaneModel -- pennylane
 PennyLaneModel -- pytorch
-TorchQuantumModel -- torchquantum
 PytorchModel -- pytorch
 PytorchTrainer -- pytorch
 TketModel -- tket
@@ -131,7 +127,6 @@ LossFunction --* Optimizer::loss
 
 PennyLaneModel -- PytorchTrainer: usedWith
 PytorchModel -- PytorchTrainer: usedWith
-TorchQuantumModel -- PytorchTrainer: usedWith
 NumpyModel -- QuantumTrainer: usedWith
 TketModel -- QuantumTrainer: usedWith
 QuantumModel -- LossFunction: uses

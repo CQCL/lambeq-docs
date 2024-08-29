@@ -29,7 +29,7 @@ The above figure introduces a couple of concepts that might need further explana
    :widths: 40, 40, 10
 
    "Exact non-shot based simulation of quantum circuits on classical hardware", "| :py:class:`.NumpyModel` with :py:class:`.QuantumTrainer`
-   | :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer` :py:class:`.TorchQuantumModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc1>`"
+   | :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc1>`"
    "Noiseless shot-based simulation of quantum circuits on classical hardware", "| :py:class:`.TketModel` with :py:class:`.QuantumTrainer`,
    | :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc2>`"
    "Noisy shot-based simulation of quantum circuits on classical hardware", "| :py:class:`.TketModel` with :py:class:`.QuantumTrainer`
@@ -48,19 +48,17 @@ Exact (non :term:`shot-based <shots>`) simulation of quantum circuits on classic
 :Configuration:
    - :py:class:`.NumpyModel` with :py:class:`.QuantumTrainer`.
    - :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`.
-   - :py:class:`.TorchQuantumModel` with :py:class:`.PytorchTrainer`"
 :When to use:
    - As a first proof-of-concept for a quantum model configuration
    - As a simple baseline for comparing with quantum runs
    - When fast training speeds are required
 
-Computation with :term:`NISQ` devices is slow, noisy and limited, so it is still not practical to do extensive training and comparative analyses on them. For this reason, and especially at the early stages of modelling, proofs-of-concept are usually obtained by running simulations on classical hardware. The simplest possible way to simulate a quantum computation on a classical computer is by using linear algebra; since quantum gates correspond to complex-valued tensors, each circuit can be represented as a tensor network where computation takes the form of tensor contraction. The output of the tensor network gives the ideal probability distribution of the measurement outcomes on a noise-free quantum computer and is only a rough approximation of the sampled probability distribution obtained from a :term:`NISQ` device. An "exact simulation" of this form usually serves as a simple baseline or the first proof of concept for testing a quantum configuration, and in ``lambeq`` is implemented by the :py:class:`.NumpyModel` and :py:class:`.TorchQuantumModel` classes, and by the :py:class:`.PennyLaneModel` with the attribute ``backend_config={'backend'='default.qubit', 'shots'=None}``. In particular the :py:class:`.TorchQuantumModel` and :py:class:`.PennyLaneModel` allow optimisation using gradient-based :term:`PyTorch` optimisers, which can yield faster convergance than gradient-free techniques.
+Computation with :term:`NISQ` devices is slow, noisy and limited, so it is still not practical to do extensive training and comparative analyses on them. For this reason, and especially at the early stages of modelling, proofs-of-concept are usually obtained by running simulations on classical hardware. The simplest possible way to simulate a quantum computation on a classical computer is by using linear algebra; since quantum gates correspond to complex-valued tensors, each circuit can be represented as a tensor network where computation takes the form of tensor contraction. The output of the tensor network gives the ideal probability distribution of the measurement outcomes on a noise-free quantum computer and is only a rough approximation of the sampled probability distribution obtained from a :term:`NISQ` device. An "exact simulation" of this form usually serves as a simple baseline or the first proof of concept for testing a quantum configuration, and in ``lambeq`` is implemented by the :py:class:`.NumpyModel` class, and by the :py:class:`.PennyLaneModel` with the attribute ``backend_config={'backend'='default.qubit', 'shots'=None}``.
 
 .. rubric:: See also:
 
 - :ref:`sec-numpymodel`
 - :ref:`sec-pennylanemodel`
-- :ref:`sec-tqmodel`
 
 .. _uc2:
 
@@ -158,10 +156,11 @@ As soon as you are satisfied with the results of the simulations, it's time for 
 .. csv-table:: Quantum platforms.
    :header: "Platform", "Technology"
    :widths: 30, 60
+   :align: center
 
    "`Alpine Quantum Technologies <https://www.aqt.eu/qc-systems/>`_", "`Trapped ions <https://en.wikipedia.org/wiki/Trapped_ion_quantum_computer>`_"
    "`Amazon Braket <https://aws.amazon.com/braket/>`_", "`Annealing <https://en.wikipedia.org/wiki/Quantum_annealing>`_, trapped ions, `superconducting qubits <https://en.wikipedia.org/wiki/Superconducting_quantum_computing>`_, `photonics <https://pennylane.ai/qml/demos/tutorial_photonics.html>`_"
-   "`Atom Computing <https://atom-computing.com/>`_", "`Neutral atoms <https://pennylane.ai/qml/demos/tutorial_pasqal.html>`_ in an `optical lattice <https://en.wikipedia.org/wiki/Optical_lattice>`_"
+   "`Atom Computing <https://atom-computing.com/>`_", "`Neutral atoms <https://pennylane.ai/qml/demos/tutorial_pasqal.html>`_" in an "`optical lattice <https://en.wikipedia.org/wiki/Optical_lattice>`_"
    "`Google Quantum AI <https://quantumai.google/quantum-computing-service>`_", "Superconducting qubits"
    "`IBM Quantum <https://quantum-computing.ibm.com>`_", "Superconducting qubits"
    "`IonQ Cloud access <https://ionq.com/get-started/#cloud-access>`_", "Trapped ions"
@@ -171,7 +170,7 @@ As soon as you are satisfied with the results of the simulations, it's time for 
    "`Quandela <https://www.quandela.co/>`_", "Photonics"
    "`Quantinuum <https://www.honeywell.com/us/en/company/quantum>`_", "Trapped ions"
    "`Quantware <https://www.quantware.eu>`_", "Superconducting qubits"
-   "`QuEra <https://www.quera.com>`_", "Neutral atoms"
+   "`QuEra <https://www.quera.com>`_", Neutral atoms
    "`Rigetti Quantum Cloud Services <https://qcs.rigetti.com/sign-in>`_", "Superconducting qubits"
 
 .. rubric:: See also:

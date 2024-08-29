@@ -158,9 +158,6 @@ Glossary
     tket
         Stylised :math:`\textrm{t}|\textrm{ket}\rangle`. A quantum software development platform produced by Cambridge Quantum. The heart of ``tket`` is a language-agnostic optimising compiler designed to generate code for a variety of NISQ devices, which has several features designed to minimise the influence of device error.
 
-    torchquantum
-        An open-source python library to simulate quantum circuits as part of a :term:`PyTorch` module.
-
     trainer
         In ``lambeq``, a trainer is a class related to a given backend (for example PyTorch, NumPy, :term:`tket` and so on) that is used for supervised learning. A trainer is always paired with a matching :term:`model`, a structure that contains the trainable weights and other parameters of the model.
 

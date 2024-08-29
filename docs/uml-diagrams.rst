@@ -43,14 +43,6 @@ This is similar to the above diagram but with a focus on classes from :py:mod:`.
 
 .. _uml_bobcat:
 
-lambeq.backend.symbol
----------------------
-
-.. image:: ./puml/img/symbol.png
-    :scale: 80%
-
-.. _uml_symbol:
-
 lambeq.bobcat
 -------------
 
