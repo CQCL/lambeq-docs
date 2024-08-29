@@ -13,8 +13,11 @@ on:
       - released
 
 # We need the following permission to upload the documentation as a release asset.
+# and to be able to deploy to GH pages (https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages#deploying-github-pages-artifacts)
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 env:
   WORKFLOWS_DIR: .github/workflows
@@ -25,6 +28,9 @@ jobs:
   docs:
     name: Build and deploy documentation
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - uses: actions/checkout@v4
       with:
@@ -45,6 +51,18 @@ jobs:
         args: '-v -DPLANTUML_LIMIT_SIZE=8192 -tpng ${{ env.DOCS_DIR }}/puml/*.puml -o img'
     - name: Build documentation
       run: uv run ./build-docs.sh
+    - name: Setup Pages
+      id: pages
+      uses: actions/configure-pages@v3
+    - name: Upload Artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        # upload build output
+        path: ${{ env.DOCS_BUILD_DIR }}
+    - name: Deploy artifact
+      id: deployment
+      uses: actions/deploy-pages@v1
+    
     # - name: Deploy documentation
     #   if: ${{ github.event_name == 'push' && (github.ref_name == 'main' || github.ref_name == 'release') }}
     #   uses: s0/git-publish-subdir-action@develop
