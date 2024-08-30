@@ -68,10 +68,10 @@ jobs:
         args: '-v -DPLANTUML_LIMIT_SIZE=8192 -tpng ${{ env.DOCS_DIR }}/puml/*.puml -o img'
     - name: Build documentation
       run: uv run ./build-docs.sh
-    - name: Setup Pages
+    - name: Setup pages
       id: pages
       uses: actions/configure-pages@v3
-    - name: Upload Artifact
+    - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
         # upload build output
