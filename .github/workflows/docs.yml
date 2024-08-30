@@ -25,14 +25,12 @@ env:
   DOCS_BUILD_DIR: docs/_build/html
 
 jobs:
-  docs:
-    name: Build and deploy documentation
+  build:
+    name: Build documentation
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
       with:
         submodules: recursive
         fetch-depth: 0  # fetches tags, required for version info
@@ -59,10 +57,19 @@ jobs:
       with:
         # upload build output
         path: ${{ env.DOCS_BUILD_DIR }}
+  
+  deploy:
+    name: Deploy documentation
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    steps:
     - name: Deploy artifact
       id: deployment
-      uses: actions/deploy-pages@v1
-    
+      uses: actions/deploy-pages@v2
+
     # - name: Deploy documentation
     #   if: ${{ github.event_name == 'push' && (github.ref_name == 'main' || github.ref_name == 'release') }}
     #   uses: s0/git-publish-subdir-action@develop
