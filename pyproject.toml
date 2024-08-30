@@ -9,6 +9,7 @@ dev-dependencies = [
     "sphinx_mdinclude~=0.5.3",
     "furo~=2024.7.18",
     "sphinxcontrib-jquery~=4.1",
+    "nbmake>=1.5.4",
 ]
 
 [tool.uv.workspace]
