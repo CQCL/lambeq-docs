@@ -46,13 +46,13 @@ jobs:
     - name: Test example notebooks
       env:
         TEST_NOTEBOOKS: 1
-      run: |
+      run: >
         uv run pytest --nbmake ${{ env.DOCS_DIR }}/examples/
         --nbmake-timeout=60
     - name: Test tutorial notebooks
       env:
         TEST_NOTEBOOKS: 1
-      run: |
+      run: >
         uv run pytest --nbmake ${{ env.DOCS_DIR }}/tutorials/
         --nbmake-timeout=60
         --ignore ${{ env.DOCS_DIR }}/tutorials/code
