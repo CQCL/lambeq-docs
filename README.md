@@ -30,6 +30,7 @@ lambeq is a toolkit for quantum natural language processing (QNLP).
 ### Installation
 
 lambeq can be installed with the command:
+
 ```bash
 pip install lambeq
 ```
@@ -37,6 +38,7 @@ pip install lambeq
 The default installation of lambeq includes Bobcat parser, a state-of-the-art statistical parser (see [related paper](https://arxiv.org/abs/2109.10044)) fully integrated with the toolkit.
 
 To install lambeq with optional dependencies for extra features, run:
+
 ```bash
 pip install lambeq[extras]
 ```
@@ -61,7 +63,7 @@ directory contains notebooks demonstrating usage of the various tools in
 lambeq.
 
 Example - parsing a sentence into a diagram (see
-[docs/examples/ccg2discocat.ipynb](//github.com/CQCL/lambeq-docs/blob/main/docs/examples/parser.ipynb)):
+[docs/examples/parser.ipynb](//github.com/CQCL/lambeq-docs/blob/main/docs/examples/parser.ipynb)):
 
 ```python
 from lambeq import BobcatParser
@@ -71,14 +73,15 @@ diagram = parser.sentence2diagram('This is a test sentence')
 diagram.draw()
 ```
 
-## Testing
+## Testing lambeq
 
 Run all tests with the command:
+
 ```bash
 pytest
 ```
 
-Note: if you have installed in a virtual environment, remember to
+Note: if you have installed lambeq in a virtual environment, remember to
 install pytest in the same environment using pip.
 
 ## Building documentation
