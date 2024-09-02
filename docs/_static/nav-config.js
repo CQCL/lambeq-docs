@@ -3,11 +3,11 @@ const navConfig = {
 
         {
             "title": "Getting started",
-            "href": "installation.html",
+            "href": "intro.html",
         },
         {
-            "title": "NLP 101",
-            "href": "nlp-intro.html",
+            "title": "User guide",
+            "href": "pipeline.html",
         },
         {
             "title": "Tutorials",
