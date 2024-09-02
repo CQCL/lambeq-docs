@@ -92,12 +92,10 @@ To build the documentation, first clone locally this repository and install the 
 pip install -r docs/requirements.txt
 ```
 
-then run the commands:
+then run the command:
 
 ```bash
-cd docs
-make clean
-make html
+./build-docs.sh
 ```
 
 The docs will be under `docs/_build`.
