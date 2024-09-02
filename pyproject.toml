@@ -1,6 +1,6 @@
 [tool.uv]
 dev-dependencies = [
-    "lambeq[extras]>=0.4.2",
+    "lambeq[extras,test]>=0.4.2",
     "nbformat~=5.7.3",
     "nbsphinx~=0.8.12",
     "numpydoc~=1.5.0",
@@ -9,6 +9,11 @@ dev-dependencies = [
     "sphinx_mdinclude~=0.5.3",
     "furo~=2024.7.18",
     "sphinxcontrib-jquery~=4.1",
+    "nbmake>=1.5.4",
+    "pip>=24.2",
+    "qiskit<1",
+    "pytket-qiskit>=0.48.0",
+    "qiskit-ibm-runtime>=0.17.0",
 ]
 
 [tool.uv.workspace]
