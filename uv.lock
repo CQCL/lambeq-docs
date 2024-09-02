@@ -10,7 +10,7 @@ resolution-markers = [
 [manifest]
 requirements = [
     { name = "furo", specifier = "~=2024.7.18" },
-    { name = "lambeq", extras = ["extras", "test"], specifier = ">=0.4.2" },
+    { name = "lambeq", extras = ["extras", "test"], specifier = ">=0.4.3" },
     { name = "nbformat", specifier = "~=5.7.3" },
     { name = "nbmake", specifier = ">=1.5.4" },
     { name = "nbsphinx", specifier = "~=0.8.12" },
@@ -1097,7 +1097,7 @@ wheels = [
 
 [[package]]
 name = "lambeq"
-version = "0.4.2"
+version = "0.4.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "matplotlib" },
@@ -1110,9 +1110,9 @@ dependencies = [
     { name = "torch" },
     { name = "transformers" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6a/6b/8dc1c7b22b5b7855a9c4bee3d09c91947df320d99b4ed14c8f44fd073eb2/lambeq-0.4.2.tar.gz", hash = "sha256:e9cdc2eb406bf26b770588b9c77c1f959bac2a2c460993df7e6b50dbf169e2a1", size = 3043832 }
+sdist = { url = "https://files.pythonhosted.org/packages/d0/cb/ec8bf15ac0e5a91d462e2bfcd7afb0b044810d0977cf1c7baf77944e7a1b/lambeq-0.4.3.tar.gz", hash = "sha256:84ab792eb49797bd7594288ff546535078c39f44311259db1700e54a7fbdf070", size = 236376 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e0/bd/3691b1d00e4678da82425f9d216e5882be592d040a206cb70a2242af8d90/lambeq-0.4.2-py3-none-any.whl", hash = "sha256:401904d17928d0518830c4fd056f7e45d7bcd874b65e54e4b2a547dda5312d75", size = 210416 },
+    { url = "https://files.pythonhosted.org/packages/63/a7/562ce1a102ea3cb1dfaa50a86741fbf5d56a583c0fcbdc3da47fa504c5c4/lambeq-0.4.3-py3-none-any.whl", hash = "sha256:0070220f3feb4b64feb099d9cada7d83764446527d56232d7a82d37f88c21507", size = 210304 },
 ]
 
 [package.optional-dependencies]
