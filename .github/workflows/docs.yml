@@ -73,6 +73,15 @@ jobs:
       with:
         # upload build output
         path: ${{ env.DOCS_BUILD_DIR }}
+    - name: Zip up documentation to store as release asset
+      if: ${{ github.event_name == 'release' }}
+      run: |
+        tar -cavf lambeq-docs-${{ github.event.release.tag_name }}.tar.gz -C ${{ env.DOCS_BUILD_DIR }} .
+    - name: Add documentation artifact as release asset
+      if: ${{ github.event_name == 'release' }}
+      run: gh release upload ${{ github.event.release.tag_name }} lambeq-docs-${{ github.event.release.tag_name }}.tar.gz --clobber
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
   deploy:
     name: Deploy documentation
@@ -86,13 +95,3 @@ jobs:
     - name: Deploy artifact
       id: deployment
       uses: actions/deploy-pages@v2
-
-    # - name: Zip up documentation to store as release asset
-    #   if: ${{ github.event_name == 'release' }}
-    #   run: |
-    #     tar -cavf lambeq-docs-${{ github.event.release.tag_name }}.tar.gz -C ${{ env.DOCS_BUILD_DIR }} .
-    # - name: Add documentation artifact as release asset
-    #   if: ${{ github.event_name == 'release' }}
-    #   run: gh release upload ${{ github.event.release.tag_name }} lambeq-docs-${{ github.event.release.tag_name }}.tar.gz --clobber
-    #   env:
-    #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

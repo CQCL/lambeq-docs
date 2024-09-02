@@ -33,10 +33,18 @@ lambeq.backend.numerical_backend
    :undoc-members:
    :show-inheritance:
 
-lambeq.backend.tk
------------------
+lambeq.backend.converters.discopy
+---------------------------------
 
-.. automodule:: lambeq.backend.tk
+.. automodule:: lambeq.backend.converters.discopy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lambeq.backend.converters.tk
+---------------------------
+
+.. automodule:: lambeq.backend.converters.tk
    :members:
    :undoc-members:
    :show-inheritance:
@@ -53,6 +61,14 @@ lambeq.backend.drawing
 ----------------------
 
 .. automodule:: lambeq.backend.drawing
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lambeq.backend.snake_removal
+----------------------------
+
+.. automodule:: lambeq.backend.snake_removal
    :members:
    :undoc-members:
    :show-inheritance:

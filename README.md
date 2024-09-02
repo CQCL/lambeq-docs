@@ -2,7 +2,7 @@
 
 [![lambeq logo](https://cqcl.github.io/lambeq-docs/_static/lambeq_logo.png)](//cqcl.github.io/lambeq-docs)
 
-![Build status](https://github.com/CQCL/lambeq-docs/actions/workflows/build_test.yml/badge.svg)
+![Build status](https://github.com/CQCL/lambeq-docs/actions/workflows/docs.yml/badge.svg)
 [![License](https://img.shields.io/github/license/CQCL/lambeq-docs)](LICENSE)
 [![PyPI version](https://img.shields.io/pypi/v/lambeq)](//pypi.org/project/lambeq)
 [![PyPI downloads](https://img.shields.io/pypi/dm/lambeq)](//pypi.org/project/lambeq)
