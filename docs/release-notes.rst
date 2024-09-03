@@ -3,6 +3,21 @@
 Release notes
 =============
 
+.. _rel-0.4.3:
+
+`0.4.3 <https://github.com/CQCL/lambeq/releases/tag/0.4.3>`_
+------------------------------------------------------------
+
+Changed:
+
+- Documentation has now been moved to a [dedicated repository](https://github.com/CQCL/lambeq-docs) and got a new URL (https://cqcl.github.io/lambeq-docs/).
+- Changed the landing page and some visuals in the online documentation.
+- Updated README to reflect the new docs structure.
+
+Fixed:
+
+- Fixed minor issues on some documentation pages and the README file.
+
 .. _rel-0.4.2:
 
 `0.4.2 <https://github.com/CQCL/lambeq/releases/tag/0.4.2>`_
