@@ -57,14 +57,14 @@ jobs:
         TEST_NOTEBOOKS: 1
       run: >
         uv run pytest --nbmake ${{ env.DOCS_DIR }}/examples/
-          --nbmake-timeout=60
+        --nbmake-timeout=60
     - name: Test tutorial notebooks
       env:
         TEST_NOTEBOOKS: 1
       run: >
         uv run pytest --nbmake ${{ env.DOCS_DIR }}/tutorials/
-          --nbmake-timeout=60
-          --ignore ${{ env.DOCS_DIR }}/tutorials/code
+        --nbmake-timeout=60
+        --ignore ${{ env.DOCS_DIR }}/tutorials/code
     - name: Clean notebooks
       run: |
         uv run scripts/clean_notebooks.py -p ${{ env.DOCS_DIR }} -s
