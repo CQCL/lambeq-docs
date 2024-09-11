@@ -25,8 +25,7 @@ release = version
 
 
 project = 'lambeq'
-copyright = '2021-2024 Cambridge Quantum Computing Ltd.'
-author = 'Cambridge Quantum QNLP Dev Team'
+author = 'Quantinuum QNLP Dev Team'
 
 # -- General configuration ---------------------------------------------------
 
