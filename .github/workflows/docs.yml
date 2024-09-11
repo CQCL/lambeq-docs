@@ -44,16 +44,12 @@ jobs:
         sudo apt-get install graphviz pandoc
         uv sync --dev
     - name: Test example notebooks
-      env:
-        TEST_NOTEBOOKS: 1
       run: >
-        uv run pytest --nbmake ${{ env.DOCS_DIR }}/examples/
+        TEST_NOTEBOOKS=1 uv run pytest --nbmake ${{ env.DOCS_DIR }}/examples/
         --nbmake-timeout=60
     - name: Test tutorial notebooks
-      env:
-        TEST_NOTEBOOKS: 1
       run: >
-        uv run pytest --nbmake ${{ env.DOCS_DIR }}/tutorials/
+        TEST_NOTEBOOKS=1 uv run pytest --nbmake ${{ env.DOCS_DIR }}/tutorials/
         --nbmake-timeout=60
         --ignore ${{ env.DOCS_DIR }}/tutorials/code
     - name: Clean notebooks
