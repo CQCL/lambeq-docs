@@ -46,7 +46,7 @@ As mentioned above, any contribution that genuinely improves the state of the co
 Opening an issue
 ----------------
 
-If you have a question, proposal, or request related to ``lambeq``, please `open an issue <https://github.com/CQCL/lambeq/issues>`_ or send an email to lambeq-support@cambridgequantum.com. Keep an eye on the issues you have opened, and be sure to answer any questions from the developers to help them understand better the case. Issues that remain inactive for more than a week without an apparent reason will be marked as stale and eventually will be closed.
+If you have a question, proposal, or request related to ``lambeq``, please `open an issue <https://github.com/CQCL/lambeq/issues>`_ or send an email to lambeq-support@quantinuum.com. Keep an eye on the issues you have opened, and be sure to answer any questions from the developers to help them understand better the case. Issues that remain inactive for more than a week without an apparent reason will be marked as stale and eventually will be closed.
 
 Where to start
 --------------
