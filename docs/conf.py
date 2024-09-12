@@ -87,8 +87,11 @@ html_context = {
 }
 
 html_additional_pages = {
-  "index": "lambeq_landing_page.html"
+  "index": "index.html"
 }
+
+html_extra_path = ["extra"]
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
