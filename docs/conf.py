@@ -90,7 +90,7 @@ html_additional_pages = {
   "index": "index.html"
 }
 
-html_extra_path = ["extra"]
+html_extra_path = ["assets"]
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
