@@ -1,4 +1,5 @@
 import {DocsFooter, DocsNavBar, DocsTripleCard, DocsHeaderWrapper, DocsHeaderLeft, DocsHeaderRight, DocsHeaderSubtitle, Button, DocsPageLayout, CodeCopy } from '@cqcl/quantinuum-ui'
+import { FaGithub, FaDiscord } from 'react-icons/fa'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -129,9 +130,31 @@ export default function Home() {
           className="w-[24rem] md:w-[28rem] h-[3rem]"
         />
         <DocsHeaderSubtitle>Natural Language Processing on Quantum Computers</DocsHeaderSubtitle>
-        <div className="flex mt-4 max-w-[25rem] gap-3">
+        <div className="flex-grow mt-4 w-[25rem] gap-3">
           <div className="dark:text-foreground text-background w-full flex  items-center justify-center self-start whitespace-nowrap rounded bg-gradient-to-r from-zinc-600 to-slate-600  py-0.5 pl-4 text-center text-sm font-semibold  dark:from-zinc-600 dark:to-slate-600">
             <CodeCopy textToCopy='pip install lambeq' className='font-mono'/>
+          </div>
+          <div className="mt-4 flex items-center gap-3">
+            <Button 
+              variant="secondary"
+              className="-mt-px flex-grow py-[1.38rem] border-border border bg-background"
+              asChild
+            >
+              <Link href="https://github.com/CQCL/lambeq/">
+                <FaGithub className="mr-2 h-6 w-6"></FaGithub>
+                GitHub
+              </Link>
+            </Button>
+            <Button 
+              variant="secondary"
+              className="-mt-px flex-grow py-[1.38rem] border-border border bg-background"
+              asChild
+            >
+              <Link href="https://discord.gg/TA63zghMrC">
+                <FaDiscord className="mr-2 h-6 w-6"></FaDiscord>
+                Discord
+              </Link>
+            </Button>
           </div>
         </div>
       </DocsHeaderLeft>
