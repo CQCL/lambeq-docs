@@ -9,27 +9,22 @@ const navConfig = {
     {
       title: 'Getting Started',
       href: '/intro.html',
-      pathMatch: '/intro',
     },
     {
       title: 'User Guide',
       href: '/pipeline.html',
-      pathMatch: '/pipeline',
     },
     {
       title: 'Tutorials',
       href: '/tutorials/sentence-input.html',
-      pathMatch: '/tutorials/sentence-input',
     },
     {
       title: 'Code Examples',
       href: '/notebooks.html',
-      pathMatch: '/notebooks',
     },
     {
       title: 'API Reference',
       href: '/root-api.html',
-      pathMatch: '/root-api',
     },
   ],
   navProductName: '\u03BBambeq',
@@ -127,13 +122,13 @@ export default function Home() {
   return <>
   <DocsNavBar activePath="/"  {...navConfig}  />
   <DocsPageLayout>
-      <DocsHeaderWrapper>
-        <DocsHeaderLeft>
+    <DocsHeaderWrapper>
+      <DocsHeaderLeft>
         <InquantoLogo
-         width={169} height={17}
+          width={169} height={17}
           className="w-[24rem] md:w-[28rem] h-[3rem]"
         />
-        <DocsHeaderSubtitle>Quantum Chemistry on Quantum Computers</DocsHeaderSubtitle>
+        <DocsHeaderSubtitle>Natural Language Processing on Quantum Computers</DocsHeaderSubtitle>
         <div className="flex flex-col md:flex-row max-w-[32rem] gap-3">
 
         <Button
@@ -142,7 +137,7 @@ export default function Home() {
             asChild
         >
             <a href="https://www.quantinuum.com/computationalchemistry/inquanto">
-           Access Inquanto
+            Access Inquanto
             </a>
         </Button>
         <Button
@@ -151,28 +146,27 @@ export default function Home() {
             asChild
         >
             <Link href="manual/howto.html">
-     Getting Started
+              Getting Started
             </Link>
         </Button>
         </div>
-
-        </DocsHeaderLeft>
-        <DocsHeaderRight>
-          <div className='mt-8'>
-        <Image
-      className="rounded-xl overflow-hidden dark:hidden brightness-110 -m-8 scale-[130%]"
-      src="inquanto_molecule.avif"
-      height={370}
-      priority
-      width={400}
-      alt=""
-    />
-    </div>
-        </DocsHeaderRight>
-      </DocsHeaderWrapper>
-      <DocsTripleCard cards={cardConfig}  imageComponent={Image}/>
+      </DocsHeaderLeft>
+      <DocsHeaderRight>
+        <div className='mt-8'>
+          <Image
+          className="rounded-xl overflow-hidden dark:hidden brightness-110 -m-8 scale-[130%]"
+          src="inquanto_molecule.avif"
+          height={370}
+          priority
+          width={400}
+          alt=""
+          />
+        </div>
+      </DocsHeaderRight>
+    </DocsHeaderWrapper>
+    <DocsTripleCard cards={cardConfig}  imageComponent={Image}/>
     <DocsFooter {...footerConfig}/>
-    </DocsPageLayout>
+  </DocsPageLayout>
 </>
   
 }
