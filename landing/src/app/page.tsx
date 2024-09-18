@@ -7,32 +7,32 @@ import { InquantoLogo } from './InquantoLogo';
 const navConfig = {
   navTextLinks: [
     {
-      title: 'Introduction',
-      href: 'introduction/overview.html',
-      pathMatch: 'somewhere',
+      title: 'Getting Started',
+      href: '/intro.html',
+      pathMatch: '/intro',
     },
     {
       title: 'User Guide',
-      href: 'manual/howto.html',
-      pathMatch: 'somewhere',
+      href: '/pipeline.html',
+      pathMatch: '/pipeline',
     },
     {
       title: 'Tutorials',
-      href: 'tutorials/tutorial_overview.html',
-      pathMatch: 'somewhere',
+      href: '/tutorials/sentence-input.html',
+      pathMatch: '/tutorials/sentence-input',
     },
     {
-      title: 'Examples',
-      href: 'tutorials/examples_overview.html',
-      pathMatch: 'somewhere',
+      title: 'Code Examples',
+      href: '/notebooks.html',
+      pathMatch: '/notebooks',
     },
     {
-      title: 'API',
-      href: 'api/inquanto_api_intro.html',
-      pathMatch: 'somewhere',
+      title: 'API Reference',
+      href: '/root-api.html',
+      pathMatch: '/root-api',
     },
   ],
-  navProductName: 'InQuanto',
+  navProductName: '&lambda;ambeq',
   navIconLinks: [
   ],
 }
@@ -72,60 +72,51 @@ const footerConfig = {
 
 const cardConfig = [
   {
-    "title": "Chemical Specification",
-    "subtitle": "Model your chemical system, including tools for embedding.",
-    "image_link": "",
-    icon: "",
-    "image_description": "description",
+    "title": "Getting Started",
+    "subtitle": "Learn the basics of lambeq and compositional models of meaning.",
     "links": [
-      {
-        "title": "Tutorial: InQuanto-PySCF",
-        "description": "Model the mean-field of your molecular or periodic system, and perform convenient post-HF.",
-        "link": "extensions/inquanto-pyscf.html"
-      },
-      {
-        "title": "Tutorial: Embedding",
-        "description": "Efficiently model your system using tools, such as FMO and DMET.",
-        "link": "tutorials/tutorial_overview.html#fragmentation-tutorials"
-      }
+        {
+            "title": "lambeq pipeline",
+            "description": "Understand how a sentence is converted into a quantum circuit.",
+            "link": "/pipeline.html"
+        },
+        {
+            "title": "lambeq use cases",
+            "description": "Read about the various use cases on which lambeq can help you advance your research.",
+            "link": "/use-cases.html"
+        }
     ]
   },
   {
-    "title": "Program construction",
-    "subtitle": "Choose algorithms and representation of states to build circuits.",
-    icon: '',
-    "image_link": "",
-    "image_description": "description",
+    "title": "Tutorials",
+    "subtitle": "Jump into hands-on tutorials to learn how to put lambeq to work.",
     "links": [
-      {
-        "title": "Tutorial: Algorithms QPE + VQE",
-        "description": "Prebuilt algorithms or simply construct your own.",
-        "link": "tutorials/tutorial_overview.html#core-tutorials"
-      },
-      {
-        "title": "Manual: Protocols and Computables",
-        "description": "Easily build complex custom expressions representing fermionic systems.",
-        "link": "manual/computables/evaluating_w_protocols.html"
-      }
+        {
+            "title": "Convert sentences into circuits",
+            "description": "Get familiar with lambeq's stages such as diagram creation, rewriting and parameterisation.",
+            "link": "/tutorials/sentence-input.html"
+        },
+        {
+            "title": "Training models",
+            "description": "Learn how to use the provided state-of-the-art trainers to train your models for language processing tasks.",
+            "link": "/training.html"
+        }
     ]
   },
   {
-    "title": "Execution and analysis",
-    "icon": "",
-    "subtitle": "Run hybrid quantum-computational programs and generate chemical results.",
-    "image_link": "",
-    "image_description": "",
+    "title": "Advanced",
+    "subtitle": "Take a look at lambeq's internals and start mastering low-level aspects of the toolkit.",
     "links": [
-      {
-        "title": "Tutorial: Platform agnostic",
-        "description": "Seamlessly compile and run your chemistry protocols on many platforms, from SV and TN simulators to quantum hardware..",
-        "link": "tutorials/tutorial_overview.html#backend-tutorials"
-      },
-      {
-        "title": "Manual: Error reduction tools",
-        "description": "Greatly improve noisy results with a range of error mitigation and detection tools, including SPAM, PMSV and Qermit..",
-        "link": "manual/errmit.html"
-      }
+        {
+            "title": "Low-level lambeq",
+            "description": "Delve into the mathematics and see how string diagrams fit to monoidal categories theory.",
+            "link": "/advanced.html"
+        },
+        {
+            "title": "Extending lambeq",
+            "description": "Learn how to take advantage of the extensible nature of lambeq and how to add new features tailored to you work.",
+            "link": "/tutorials/extend-lambeq.html"
+        }
     ]
   }
 ]
