@@ -32,7 +32,7 @@ const navConfig = {
       pathMatch: '/root-api',
     },
   ],
-  navProductName: '&lambda;ambeq',
+  navProductName: '\u03BBambeq',
   navIconLinks: [
   ],
 }
@@ -45,7 +45,7 @@ const footerConfig = {
         { name: "Nexus", href: "https://docs.quantinuum.com/nexus" },
         { name: "TKET", href: "https://docs.quantinuum.com/tket" },
         { name: "InQuanto", href: "https://docs.quantinuum.com/inquanto" },
-        { name: "lambeq", href: "https://docs.quantinuum.com/lambeq" },
+        { name: "\u03BBambeq", href: "https://docs.quantinuum.com/lambeq" },
       ],
     },
     {
@@ -73,27 +73,27 @@ const footerConfig = {
 const cardConfig = [
   {
     "title": "Getting Started",
-    "subtitle": "Learn the basics of lambeq and compositional models of meaning.",
+    "subtitle": "Learn the basics of \u03BBambeq and compositional models of meaning.",
     "links": [
         {
-            "title": "lambeq pipeline",
+            "title": "\u03BBambeq pipeline",
             "description": "Understand how a sentence is converted into a quantum circuit.",
             "link": "/pipeline.html"
         },
         {
-            "title": "lambeq use cases",
-            "description": "Read about the various use cases on which lambeq can help you advance your research.",
+            "title": "\u03BBambeq use cases",
+            "description": "Read about the various use cases on which \u03BBambeq can help you advance your research.",
             "link": "/use-cases.html"
         }
     ]
   },
   {
     "title": "Tutorials",
-    "subtitle": "Jump into hands-on tutorials to learn how to put lambeq to work.",
+    "subtitle": "Jump into hands-on tutorials to learn how to put \u03BBambeq to work.",
     "links": [
         {
             "title": "Convert sentences into circuits",
-            "description": "Get familiar with lambeq's stages such as diagram creation, rewriting and parameterisation.",
+            "description": "Overview on \u03BBambeq's stages, e.g. diagram creation, rewriting and parameterisation.",
             "link": "/tutorials/sentence-input.html"
         },
         {
@@ -105,16 +105,16 @@ const cardConfig = [
   },
   {
     "title": "Advanced",
-    "subtitle": "Take a look at lambeq's internals and start mastering low-level aspects of the toolkit.",
+    "subtitle": "Specialist information for DIY \u03BBambeq users.",
     "links": [
         {
-            "title": "Low-level lambeq",
+            "title": "Low-level \u03BBambeq",
             "description": "Delve into the mathematics and see how string diagrams fit to monoidal categories theory.",
             "link": "/advanced.html"
         },
         {
-            "title": "Extending lambeq",
-            "description": "Learn how to take advantage of the extensible nature of lambeq and how to add new features tailored to you work.",
+            "title": "Extending \u03BBambeq",
+            "description": "Learn how to take advantage of the extensible nature of \u03BBambeq and how to add new features tailored to you work.",
             "link": "/tutorials/extend-lambeq.html"
         }
     ]

@@ -12,7 +12,7 @@ const jetBrains = Roboto_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'InQuanto',
+  title: '\u03BBambeq',
   description: 'Quantum Chemistry on Quantum Computers',
 }
 
