@@ -22,7 +22,7 @@ permissions:
 env:
   WORKFLOWS_DIR: .github/workflows
   DOCS_DIR: docs
-  DOCS_BUILD_DIR: docs/_build/html
+  DOCS_BUILD_DIR: build
 
 jobs:
   build:
@@ -73,7 +73,7 @@ jobs:
       with:
         args: '-v -DPLANTUML_LIMIT_SIZE=8192 -tpng ${{ env.DOCS_DIR }}/puml/*.puml -o img'
     - name: Build documentation
-      run: uv run ./build-docs.sh
+      run: BASE_PATH="lambeq" uv run ./build-docs.sh
     - name: Setup pages
       id: pages
       uses: actions/configure-pages@v3
