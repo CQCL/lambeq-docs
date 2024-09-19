@@ -73,7 +73,7 @@ jobs:
       with:
         args: '-v -DPLANTUML_LIMIT_SIZE=8192 -tpng ${{ env.DOCS_DIR }}/puml/*.puml -o img'
     - name: Build documentation
-      run: BASE_PATH="lambeq" uv run ./build-docs.sh
+      run: BASE_PATH="/lambeq" uv run ./build-docs.sh
     - name: Setup pages
       id: pages
       uses: actions/configure-pages@v3
