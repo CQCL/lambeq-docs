@@ -2,7 +2,7 @@ import { ComponentProps } from "react"
 
 
 export const LambeqLogo = (props: ComponentProps<'svg'>) => {
-    return <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="1 1 883 119" classname="w-[24rem] md:w-[28rem] h-[3rem] {...props}">
+    return <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="1 1 883 119" className="w-[24rem] md:w-[28rem] h-[3rem] {...props}">
     <path fill="#FEFEFE" opacity="1.000000" stroke="none" d="
     M660.000000,120.000000 
         C440.000000,120.000000 220.500000,120.000000 1.000000,120.000000 
