@@ -34,7 +34,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github.min.css"
         ></link>
-        <link rel="icon" type="image/svg+xml" href="quantinuum_ident.svg" />
+        <link rel="icon" type="image/svg+xml" href="quantinuum_favicon.svg" />
       </head>
       <body
         className={`${inter.variable} bg-background dark:bg-[#101010] overflow-x-hidden font-sans antialiased ${jetBrains.variable} `}
