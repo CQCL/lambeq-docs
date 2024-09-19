@@ -71,6 +71,9 @@ const cardConfig = [
   {
     "title": "Getting Started",
     "subtitle": "Learn the basics of \u03BBambeq and compositional models of meaning.",
+    icon: "",
+    "image_link": "",
+    "image_description": "",
     "links": [
         {
             "title": "\u03BBambeq pipeline",
@@ -87,6 +90,9 @@ const cardConfig = [
   {
     "title": "Tutorials",
     "subtitle": "Jump into hands-on tutorials to learn how to put \u03BBambeq to work.",
+    icon: "",
+    "image_link": "",
+    "image_description": "",
     "links": [
         {
             "title": "Convert sentences into circuits",
@@ -103,6 +109,9 @@ const cardConfig = [
   {
     "title": "Advanced",
     "subtitle": "Specialist information for DIY \u03BBambeq users.",
+    icon: "",
+    "image_link": "",
+    "image_description": "",
     "links": [
         {
             "title": "Low-level \u03BBambeq",
