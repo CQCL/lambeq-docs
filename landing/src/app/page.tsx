@@ -155,8 +155,8 @@ export default function Home() {
     <DocsHeaderWrapper>
       <DocsHeaderLeft>
         <LambeqLogo
-          width={169} height={17}
-          className="w-[24rem] md:w-[28rem] h-[3rem]"
+         
+          className="w-[16rem] md:w-[22rem] h-[3rem]"
         />
         <DocsHeaderSubtitle>Natural Language Processing on Quantum Computers</DocsHeaderSubtitle>
         <div className="flex-grow mt-4 w-[25rem] gap-3">
@@ -188,13 +188,13 @@ export default function Home() {
         </div>
       </DocsHeaderLeft>
       <DocsHeaderRight>
-        <div className='mt-8'>
+        <div className='mt-0'>
           <Image
-          className="rounded-xl overflow-hidden dark:hidden brightness-110 -m-8 scale-[90%]"
+          className="rounded-xl overflow-hidden dark:hidden brightness-110 ml-8"
           src="/lambeq_cover.png"
-          height={880}
+          height={880 * 1.1}
           priority
-          width={590}
+          width={590 * 1.1}
           alt=""
           />
         </div>
