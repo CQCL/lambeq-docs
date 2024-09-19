@@ -4,7 +4,7 @@ import { LifeBuoyIcon, BookIcon } from "lucide-react";
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { InquantoLogo } from './InquantoLogo';
+import { LambeqLogo } from './LambeqLogo';
 
 const navConfig = {
   navTextLinks: [
@@ -145,7 +145,7 @@ export default function Home() {
   <DocsPageLayout>
     <DocsHeaderWrapper>
       <DocsHeaderLeft>
-        <InquantoLogo
+        <LambeqLogo
           width={169} height={17}
           className="w-[24rem] md:w-[28rem] h-[3rem]"
         />
@@ -181,11 +181,11 @@ export default function Home() {
       <DocsHeaderRight>
         <div className='mt-8'>
           <Image
-          className="rounded-xl overflow-hidden dark:hidden brightness-110 -m-8 scale-[130%]"
-          src="inquanto_molecule.avif"
-          height={370}
+          className="rounded-xl overflow-hidden dark:hidden brightness-110 -m-8 scale-[90%]"
+          src="/lambeq_cover.png"
+          height={880}
           priority
-          width={400}
+          width={590}
           alt=""
           />
         </div>
@@ -195,7 +195,7 @@ export default function Home() {
     <div className="my-24 grid grid-cols-1 flex-grow gap-8 md:grid-cols-2">
       {helpSectionConfig.map((item) => {
         return (
-      <a href={item.link}             key={item.title}>
+      <a href={item.link} key={item.title}>
       <Card
       className="hover:bg-muted transition"
       >
@@ -204,10 +204,6 @@ export default function Home() {
         <CardTitle className="text-[1rem] font-semibold inline-block">       {item.title}</CardTitle>
         <CardDescription>{item.description}</CardDescription>
       </CardHeader>
-
-
-
-
       </Card>
       </a>
       );
