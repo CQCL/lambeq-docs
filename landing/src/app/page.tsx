@@ -191,7 +191,7 @@ export default function Home() {
         <div className='mt-0'>
           <Image
           className="rounded-xl overflow-hidden dark:hidden brightness-110 ml-8"
-          src="/lambeq_cover.png"
+          src="lambeq_cover.png"
           height={880 * 1.1}
           priority
           width={590 * 1.1}
