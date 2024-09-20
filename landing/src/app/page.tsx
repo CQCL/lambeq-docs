@@ -10,23 +10,23 @@ const navConfig = {
   navTextLinks: [
     {
       title: 'Getting Started',
-      href: '/intro.html',
+      href: 'intro.html',
     },
     {
       title: 'User Guide',
-      href: '/pipeline.html',
+      href: 'pipeline.html',
     },
     {
       title: 'Tutorials',
-      href: '/tutorials/sentence-input.html',
+      href: 'tutorials/sentence-input.html',
     },
     {
       title: 'Code Examples',
-      href: '/notebooks.html',
+      href: 'notebooks.html',
     },
     {
       title: 'API Reference',
-      href: '/root-api.html',
+      href: 'root-api.html',
     },
   ],
   navProductName: '\u03BBambeq',
@@ -78,12 +78,12 @@ const cardConfig = [
         {
             "title": "\u03BBambeq pipeline",
             "description": "Understand how a sentence is converted into a quantum circuit.",
-            "link": "/pipeline.html"
+            "link": "pipeline.html"
         },
         {
             "title": "\u03BBambeq use cases",
             "description": "Read about the various use cases on which \u03BBambeq can help you advance your research.",
-            "link": "/use-cases.html"
+            "link": "use-cases.html"
         }
     ]
   },
@@ -97,12 +97,12 @@ const cardConfig = [
         {
             "title": "Convert sentences into circuits",
             "description": "Overview on \u03BBambeq's stages, e.g. diagram creation, rewriting and parameterisation.",
-            "link": "/tutorials/sentence-input.html"
+            "link": "tutorials/sentence-input.html"
         },
         {
             "title": "Training models",
             "description": "Learn how to use the provided state-of-the-art trainers to train your models for language processing tasks.",
-            "link": "/training.html"
+            "link": "training.html"
         }
     ]
   },
@@ -116,12 +116,12 @@ const cardConfig = [
         {
             "title": "Low-level \u03BBambeq",
             "description": "Delve into the mathematics and see how string diagrams fit to monoidal categories theory.",
-            "link": "/advanced.html"
+            "link": "advanced.html"
         },
         {
             "title": "Extending \u03BBambeq",
             "description": "Learn how to take advantage of the extensible nature of \u03BBambeq and how to add new features tailored to you work.",
-            "link": "/tutorials/extend-lambeq.html"
+            "link": "tutorials/extend-lambeq.html"
         }
     ]
   }
