@@ -43,12 +43,8 @@ extensions = [
     'sphinxarg.ext',
     'sphinx_copybutton',
     'sphinxcontrib.jquery',
-<<<<<<< HEAD
-    "sphinxcontrib.bibtex",
+    'sphinxcontrib.bibtex',
     'myst_nb'
-=======
-    "myst_nb"
->>>>>>> a26c7fd (add myst_nb, myst configurations and sphinx-copybutton and remove nbsphinx)
 ]
 
 intersphinx_mapping = {
