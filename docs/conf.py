@@ -33,7 +33,6 @@ author = 'Quantinuum QNLP Dev Team'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'nbsphinx',
     'numpydoc',
     'sphinx_mdinclude',
     'sphinx.ext.autodoc',
@@ -42,7 +41,9 @@ extensions = [
     'sphinx.ext.inheritance_diagram',
     'sphinx.ext.intersphinx',
     'sphinxarg.ext',
-    'sphinxcontrib.jquery'
+    'sphinx_copybutton',
+    'sphinxcontrib.jquery',
+    "myst_nb"
 ]
 
 intersphinx_mapping = {
@@ -114,3 +115,9 @@ def setup(app):
 
 
 numfig = True
+
+
+autosectionlabel_prefix_document = True
+myst_enable_extensions = ["dollarmath", "html_image", "attrs_inline"]
+nb_execution_mode = "off"
+myst_heading_anchors = 4
