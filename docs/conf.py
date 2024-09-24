@@ -43,7 +43,7 @@ extensions = [
     'sphinxarg.ext',
     'sphinx_copybutton',
     'sphinxcontrib.jquery',
-    "myst_nb"
+    'myst_nb'
 ]
 
 intersphinx_mapping = {
