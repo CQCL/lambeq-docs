@@ -43,8 +43,12 @@ extensions = [
     'sphinxarg.ext',
     'sphinx_copybutton',
     'sphinxcontrib.jquery',
+<<<<<<< HEAD
     "sphinxcontrib.bibtex",
     'myst_nb'
+=======
+    "myst_nb"
+>>>>>>> a26c7fd (add myst_nb, myst configurations and sphinx-copybutton and remove nbsphinx)
 ]
 
 intersphinx_mapping = {
@@ -120,6 +124,5 @@ autosectionlabel_prefix_document = True
 myst_enable_extensions = ["dollarmath", "html_image", "attrs_inline"]
 nb_execution_mode = "off"
 myst_heading_anchors = 4
-
 
 bibtex_bibfiles = ['references.bib']
