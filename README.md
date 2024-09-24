@@ -89,7 +89,7 @@ install pytest in the same environment using pip.
 To build the documentation, first clone locally this repository and install the required dependencies:
 
 ```bash
-pip install -r docs/requirements.txt
+pip install -r requirements.txt
 ```
 
 then run the command:
