@@ -98,7 +98,14 @@ then run the command:
 ./build-docs.sh
 ```
 
-The docs will be under `docs/_build`.
+The docs will be under the `build` directory just under the repository root. To serve it locally:
+
+```bash
+cd build
+python -m http.server
+```
+
+and then go to `http://localhost:8000` to load the index page.
 
 ## License
 
