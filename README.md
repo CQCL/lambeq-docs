@@ -1,6 +1,6 @@
 # lambeq documentation
 
-[![lambeq logo](https://cqcl.github.io/lambeq-docs/_static/lambeq_logo.png)](//cqcl.github.io/lambeq-docs)
+[![lambeq logo](https://cqcl.github.io/lambeq-docs/_static/lambeq.svg)](//cqcl.github.io/lambeq-docs)
 
 ![Build status](https://github.com/CQCL/lambeq-docs/actions/workflows/docs.yml/badge.svg)
 [![License](https://img.shields.io/github/license/CQCL/lambeq-docs)](LICENSE)
