@@ -95,6 +95,22 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     steps:
+    - name: Set up uv
+      # Install a specific uv version using the installer
+      run: curl -LsSf https://astral.sh/uv/0.4.0/install.sh | sh
+    - name: Set up Python
+      run: uv python install 3.12
+    - name: Install documentation dependencies
+      run: |
+        sudo apt-get install graphviz pandoc
+        uv sync --dev
+        - name: Clean notebooks
+        run: |
+          uv run scripts/clean_notebooks.py -p ${{ env.DOCS_DIR }} -s
+    - name: Draw diagrams from PlantUML files
+      uses: Timmy/plantuml-action@v1
+      with:
+        args: '-v -DPLANTUML_LIMIT_SIZE=8192 -tpng ${{ env.DOCS_DIR }}/puml/*.puml -o img'
     - name: Build documentation
       env:
         BASE_PATH: '/lambeq-docs'
