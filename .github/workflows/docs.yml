@@ -109,9 +109,9 @@ jobs:
       run: |
         sudo apt-get install graphviz pandoc
         uv sync --dev
-        - name: Clean notebooks
-        run: |
-          uv run scripts/clean_notebooks.py -p ${{ env.DOCS_DIR }} -s
+    - name: Clean notebooks
+      run: |
+        uv run scripts/clean_notebooks.py -p ${{ env.DOCS_DIR }} -s
     - name: Draw diagrams from PlantUML files
       uses: Timmy/plantuml-action@v1
       with:
