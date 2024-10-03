@@ -15,7 +15,7 @@ Glossary
         A :term:`compositional model` of meaning which represents a sentence as a multiset of words; that is, it does not take into account the order of words or any other syntactic relationship between them.
 
     Bobcat
-        A state-of-the-art statistical :term:`CCG <Combinatory Categorial Grammar (CCG)>` parser based on [SC2021]_. Bobcat is ``lambeq``'s default parser.
+        A state-of-the-art statistical :term:`CCG <Combinatory Categorial Grammar (CCG)>` parser based on :cite:p:`clark_2021`. Bobcat is ``lambeq``'s default parser.
 
     cap
         A special morphism in a :term:`rigid category`, which, together with a :term:`cup` morphism, obey certain conditions called :term:`snake equations`. In diagrammatic form, a cap is depicted as a wire with downward concavity (:math:`\cap`). In the context of :term:`DisCoCat`, a cap is mostly used to "bridge" disconnected wires in order to alter the normal "flow" of information from one word to another, for example in cases such as *type-raising*.
@@ -24,10 +24,10 @@ Glossary
          In *category theory*, a category is a mathematical structure that consists of a collection of *objects* and a collection of *morphisms* between objects, forming a labelled directed graph. A category has two basic properties: the ability to compose the arrows associatively and the existence of an identity arrow for each object. ``lambeq`` structures are expressed in terms of a :term:`monoidal category`.
 
     categorical quantum mechanics (CQM)
-        The study of quantum foundations and quantum information using paradigms from mathematics and computer science, specifically :term:`monoidal categories <monoidal category>`. The primitive objects of study are physical processes and the different ways that these can be composed. The field was originated by Samson Abramsky and Bob Coecke in 2004 [AC2004]_.
+        The study of quantum foundations and quantum information using paradigms from mathematics and computer science, specifically :term:`monoidal categories <monoidal category>`. The primitive objects of study are physical processes and the different ways that these can be composed. The field was originated by Samson Abramsky and Bob Coecke in 2004 :cite:p:`abramsky_2004`.
 
     CCGBank
-        The :term:`CCG <Combinatory Categorial Grammar (CCG)>` version of *Penn Treebank*, a corpus of over 49,000 human-annotated syntactic trees created by Julia Hockenmaier and Mark Steedman [HS2007]_.
+        The :term:`CCG <Combinatory Categorial Grammar (CCG)>` version of *Penn Treebank*, a corpus of over 49,000 human-annotated syntactic trees created by Julia Hockenmaier and Mark Steedman :cite:p:`hockenmaier_2007`.
 
     Combinatory Categorial Grammar (CCG)
         A grammar formalism inspired by combinatory logic and developed by Mark Steedman [Ste2000]_. It defines a number of combinators (application, composition, and type-raising being the most common) that operate on syntactically-typed lexical items, by means of natural deduction style proofs. CCG is categorised as a *mildly context-sensitive* grammar, standing in between context-free and context-sensitive in Chomsky hierarchy and providing a nice trade-off between expressive power and computational complexity.
@@ -45,13 +45,13 @@ Glossary
         A statistical :term:`CCG <Combinatory Categorial Grammar (CCG)>` :term:`parser` for English and Japanese [YNM2017]_.
 
     DisCoCat
-        The DIStributional COmpositional CATegorical model of natural language meaning developed by Bob Coecke, Mehrnoosh Sadrzadeh and Steve Clark [CSC2010]_.  The model applies a :term:`functor` :math:`F: \textrm{Grammar} \to \textrm{Meaning}` whose left-hand side is a free pregroup over a partially ordered set of basic grammar types, and the right-hand side is the category whose morphisms describe a sequence of operations that can be evaluated on a classical or quantum computer.
+        The DIStributional COmpositional CATegorical model of natural language meaning developed by Bob Coecke, Mehrnoosh Sadrzadeh and Steve Clark :cite:p:`coecke_2021`.  The model applies a :term:`functor` :math:`F: \textrm{Grammar} \to \textrm{Meaning}` whose left-hand side is a free pregroup over a partially ordered set of basic grammar types, and the right-hand side is the category whose morphisms describe a sequence of operations that can be evaluated on a classical or quantum computer.
 
     DisCoPy
-        DIStributional COmpositional PYthon. A Python library for working with :term:`monoidal categories <monoidal category>` [FTC2020]_. It includes abstractions for creating all standard :term:`quantum gates <quantum gate>` and building :term:`quantum circuits <quantum circuit>`. Additionally, it is equipped with many language-related features, such as support for :term:`pregroup grammars <pregroup grammar>` and :term:`functors <functor>` for implementing :term:`compositional models <compositional model>`.
+        DIStributional COmpositional PYthon. A Python library for working with :term:`monoidal categories <monoidal category>` :cite:p:`de_felice_2021`. It includes abstractions for creating all standard :term:`quantum gates <quantum gate>` and building :term:`quantum circuits <quantum circuit>`. Additionally, it is equipped with many language-related features, such as support for :term:`pregroup grammars <pregroup grammar>` and :term:`functors <functor>` for implementing :term:`compositional models <compositional model>`.
 
     Frobenius algebra
-        In the context of a :term:`symmetric monoidal category`, a Frobenius algebra provides morphisms :math:`\Delta: A \to A\otimes A` and :math:`\mu: A\otimes A \to A` for any object :math:`A`, satisfying certain conditions (the so-called Frobenius equations) and implementing the notion of a :term:`spider`. In ``lambeq`` and :term:`DisCoCat`, spiders can be used to implement :term:`rewrite rules <rewrite rule>` [Kea2014]_ [Kar2016]_ [SCC2014a]_ [SCC2014b]_.
+        In the context of a :term:`symmetric monoidal category`, a Frobenius algebra provides morphisms :math:`\Delta: A \to A\otimes A` and :math:`\mu: A\otimes A \to A` for any object :math:`A`, satisfying certain conditions (the so-called Frobenius equations) and implementing the notion of a :term:`spider`. In ``lambeq`` and :term:`DisCoCat`, spiders can be used to implement :term:`rewrite rules <rewrite rule>` :cite:p:`kartsaklis_2016a,kartsaklis_2016b,sadrzadeh_2013,sadrzadeh_2014`.
 
     functor
         A structure-preserving transformation from one :term:`category` to another. ``lambeq``'s :ref:`pipeline <sec-pipeline>` is essentially a chain of functorial transformations from a grammar category to a category accommodating the meaning of a sentence.
@@ -90,7 +90,7 @@ Glossary
         The act of conditioning the probability space on a particular event. In practice, this involves disregarding measurement outcomes where a particular qubit does not match the post-selected value.
 
     pregroup grammar
-        A grammar formalism developed by Joachim Lambek in 1999 [Lam1999]_ based on the notion of a *pregroup*. Pregroup grammars are closely related to categorial grammars (such as :term:`CCG <Combinatory Categorial Grammar (CCG)>`). In category-theoretic terms, a pregroup grammar forms a :term:`rigid category`, sometimes also referred to as a non-symmetric :term:`compact closed category`.
+        A grammar formalism developed by Joachim Lambek in 1999 :cite:p:`lambek_1999` based on the notion of a *pregroup*. Pregroup grammars are closely related to categorial grammars (such as :term:`CCG <Combinatory Categorial Grammar (CCG)>`). In category-theoretic terms, a pregroup grammar forms a :term:`rigid category`, sometimes also referred to as a non-symmetric :term:`compact closed category`.
 
     pytket
         A Python interface for the :term:`tket` compiler.
@@ -147,7 +147,7 @@ Glossary
         A :term:`monoidal category` equipped with :term:`swaps <swap>`, such that, for any two objects :math:`A` and :math:`B`, we have :math:`A\otimes B \cong B\otimes A`. ``lambeq``'s string diagrams are expressed in a symmetric monoidal category.
 
     swap
-        A crossing of wires in a :term:`symmetric monoidal category`. ``lambeq`` uses swaps in order to translate *crossed composition* rules in :term:`CCG <Combinatory Categorial Grammar (CCG)>` derivations into a :term:`string diagram` form [YK2021]_.
+        A crossing of wires in a :term:`symmetric monoidal category`. ``lambeq`` uses swaps in order to translate *crossed composition* rules in :term:`CCG <Combinatory Categorial Grammar (CCG)>` derivations into a :term:`string diagram` form :cite:p:`yeung_2021`.
 
     tensor network
         A directed acyclic graph expressing a (multi-)linear computation between tensors. The vertices of the graph are multi-linear tensor maps, and the edges correspond to vector spaces. Tensor networks have found many applications in quantum mechanics. ``lambeq``'s :term:`string diagrams <string diagram>` can be seen as tensor networks with additional properties.

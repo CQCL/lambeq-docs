@@ -25,7 +25,7 @@ From a more practical point of view, a :term:`string diagram` can be seen as an 
 Pregroup grammars
 -----------------
 
-``lambeq``'s string diagrams are equipped with types, which show the interactions between the words in a sentence according to the :term:`pregroup grammar` formalism [Lam1999]_. In a pregroup grammar, each type :math:`p` has a left (:math:`p^l`) and a right (:math:`p^r`) :term:`adjoint`, for which the following hold:
+``lambeq``'s string diagrams are equipped with types, which show the interactions between the words in a sentence according to the :term:`pregroup grammar` formalism :cite:p:`lambek_1999`. In a pregroup grammar, each type :math:`p` has a left (:math:`p^l`) and a right (:math:`p^r`) :term:`adjoint`, for which the following hold:
 
 .. math::
 

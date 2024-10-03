@@ -49,7 +49,7 @@ Removed:
 Added:
 
 - Support for Python 3.12.
-- A new :py:class:`~lambeq.Sim4Ansatz` based on the Sim `et al.` paper [SJA2019]_.
+- A new :py:class:`~lambeq.Sim4Ansatz` based on the Sim `et al.` paper :cite:p:`sim_2019`.
 - A new argument in :py:meth:`.Trainer.fit` for specifying an :py:attr:`early_stopping_criterion` other than validation loss.
 - A new argument :py:attr:`collapse_noun_phrases` in methods of :py:class:`.CCGParser` and :py:class:`.CCGTree` classes (for example, see :py:meth:`.CCGParser.sentence2diagram`) that allows the user to maintain noun phrases in the derivation or collapse them into nouns as desired.
 - Raised meaningful exception when users try to convert to/from DisCoPy 1.1.0
@@ -273,7 +273,7 @@ Removed:
 `0.2.6 <https://github.com/CQCL/lambeq/releases/tag/0.2.6>`_
 ------------------------------------------------------------
 
-- Added a strict pregroups mode to the CLI. With this mode enabled, all swaps are removed from the output string diagrams by changing the ordering of the atomic types, converting them into a valid :term:`pregroup <pregroup grammar>` form as given in [Lam1999]_.
+- Added a strict pregroups mode to the CLI. With this mode enabled, all swaps are removed from the output string diagrams by changing the ordering of the atomic types, converting them into a valid :term:`pregroup <pregroup grammar>` form as given in :cite:p:`lambek_1999`.
 - Adjusted the behaviour of output normalisation in quantum models. Now, :py:class:`.NumpyModel` always returns probabilities instead of amplitudes.
 - Removed the prediction from the output of the :py:class:`.SPSAOptimizer`, which now returns just the loss.
 
@@ -339,14 +339,14 @@ Removed:
 `0.2.0 <https://github.com/CQCL/lambeq/releases/tag/0.2.0>`_
 ------------------------------------------------------------
 
-- A new state-of-the-art CCG parser based on [SC2021]_, fully integrated with ``lambeq``, which replaces depccg as the default parser of the toolkit. The new :term:`Bobcat` parser has better performance, simplifies installation, and provides compatibility with Windows (which was not supported due to a depccg conflict). depccg is still supported as an alternative external dependency.
+- A new state-of-the-art CCG parser based on :cite:p:`clark_2021`, fully integrated with ``lambeq``, which replaces depccg as the default parser of the toolkit. The new :term:`Bobcat` parser has better performance, simplifies installation, and provides compatibility with Windows (which was not supported due to a depccg conflict). depccg is still supported as an alternative external dependency.
 - A :py:mod:`.training` package, providing a selection of trainers, models, and optimizers that greatly simplify supervised training for most of ``lambeq``'s use cases, classical and quantum. The new package adds several new features to ``lambeq``, such as the ability to save to and restore models from checkpoints.
 - Furthermore, the :py:mod:`.training` package uses :term:`DisCoPy`'s tensor network capability to contract tensor diagrams efficiently. In particular, :term:`DisCoPy 0.4.1 <DisCoPy>`'s new unitary and density matrix simulators result in substantially faster training speeds compared to the previous version.
 - A command-line interface, which provides most of ``lambeq``'s functionality from the command line. For example, ``lambeq`` can now be used as a standard command-line pregroup parser.
 - A web parser class that can send parsing queries to an online API, so that local installation of a parser is not strictly necessary anymore. The web parser is particularly helpful for testing purposes, interactive usage or when a local parser is unavailable, but should not be used for serious experiments.
 - A new :py:mod:`~lambeq.pregroups` package that provides methods for easy creation of pregroup diagrams, removal of cups, and printing of diagrams in text form (i.e. in a terminal).
 - A new :py:class:`.TreeReader` class that exploits the biclosed structure of CCG grammatical derivations.
-- Three new rewrite rules for relative pronouns [SCC2014a]_ [SCC2014b]_ and coordination [Kar2016]_.
+- Three new rewrite rules for relative pronouns :cite:p:`sadrzadeh_2013,sadrzadeh_2014` and coordination :cite:p:`kartsaklis_2016a`.
 - Tokenisation features have been added in all parsers and readers.
 - Additional generator methods and minor improvements for the :py:class:`.CCGBankParser` class.
 - Improved and more detailed package structure.
