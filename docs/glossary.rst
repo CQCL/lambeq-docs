@@ -30,7 +30,7 @@ Glossary
         The :term:`CCG <Combinatory Categorial Grammar (CCG)>` version of *Penn Treebank*, a corpus of over 49,000 human-annotated syntactic trees created by Julia Hockenmaier and Mark Steedman :cite:p:`hockenmaier_2007`.
 
     Combinatory Categorial Grammar (CCG)
-        A grammar formalism inspired by combinatory logic and developed by Mark Steedman [Ste2000]_. It defines a number of combinators (application, composition, and type-raising being the most common) that operate on syntactically-typed lexical items, by means of natural deduction style proofs. CCG is categorised as a *mildly context-sensitive* grammar, standing in between context-free and context-sensitive in Chomsky hierarchy and providing a nice trade-off between expressive power and computational complexity.
+        A grammar formalism inspired by combinatory logic and developed by Mark Steedman :cite:p:`steedman_2000`. It defines a number of combinators (application, composition, and type-raising being the most common) that operate on syntactically-typed lexical items, by means of natural deduction style proofs. CCG is categorised as a *mildly context-sensitive* grammar, standing in between context-free and context-sensitive in Chomsky hierarchy and providing a nice trade-off between expressive power and computational complexity.
 
     compact closed category
         A symmetric :term:`rigid category`. The symmetry of the category causes the left and right duals of an object to coincide: :math:`A^l=A^r=A^*`. A :term:`pregroup grammar` is often referred to as a non-symmetric compact closed category.
@@ -42,7 +42,7 @@ Glossary
         A special morphism in a :term:`rigid category`, which, together with a :term:`cap` morphism, obey certain conditions called :term:`snake equations`. In diagrammatic form, a cup is depicted as a wire with upward concavity (:math:`\cup`). In the context of :term:`DisCoCat`, a cup usually represents a tensor contraction between two-word representations.
 
     depccg
-        A statistical :term:`CCG <Combinatory Categorial Grammar (CCG)>` :term:`parser` for English and Japanese [YNM2017]_.
+        A statistical :term:`CCG <Combinatory Categorial Grammar (CCG)>` :term:`parser` for English and Japanese :cite:p:`yoshikawa_2017`.
 
     DisCoCat
         The DIStributional COmpositional CATegorical model of natural language meaning developed by Bob Coecke, Mehrnoosh Sadrzadeh and Steve Clark :cite:p:`coecke_2021`.  The model applies a :term:`functor` :math:`F: \textrm{Grammar} \to \textrm{Meaning}` whose left-hand side is a free pregroup over a partially ordered set of basic grammar types, and the right-hand side is the category whose morphisms describe a sequence of operations that can be evaluated on a classical or quantum computer.
