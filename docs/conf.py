@@ -43,11 +43,7 @@ extensions = [
     'sphinxarg.ext',
     'sphinx_copybutton',
     'sphinxcontrib.jquery',
-<<<<<<< HEAD
     'sphinxcontrib.bibtex',
-=======
-    "sphinxcontrib.bibtex",
->>>>>>> 3c4a0b5 (introduce bibtex with entries cited in tutorials notebook)
     'myst_nb'
 ]
 
