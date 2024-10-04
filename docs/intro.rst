@@ -25,7 +25,7 @@ Note that the best way to get in touch with the QNLP community and learn about `
 
 How to cite
 -----------
-If you use ``lambeq`` for your research, please cite the accompanying paper [Kea2021]_:
+If you use ``lambeq`` for your research, please cite the accompanying paper :cite:p:`kartsaklis_2021`:
 
 .. code-block:: bash
 

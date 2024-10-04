@@ -37,7 +37,7 @@ Basic usage
 The most straightforward use of the command-line interface of ``lambeq`` is to use it as a :term:`pregroup <pregroup grammar>` or :term:`CCG <Combinatory Categorial Grammar (CCG)>` :term:`parser`. The output formalism is controlled by the ``--mode`` option, which can be set to ``string-diagram``, ``pregroups``, or ``ccg``.
 
 - The ``string-diagram`` mode is the default, producing a string diagram that faithfully follows the CCG derivation returned by the parser; this may include :term:`swaps <swap>` introduced by certain CCG features such as cross-composition and "unary" type-changing rules.
-- The ``pregroups`` mode removes any swaps from the string diagram by changing the ordering of the atomic types, converting it into a valid pregroup form as given in [Lam1999]_. (The ``pregroups`` mode is further described later in Section :ref:`Strict Pregroups Mode <sec-pregroups_mode>`.)
+- The ``pregroups`` mode removes any swaps from the string diagram by changing the ordering of the atomic types, converting it into a valid pregroup form as given in :cite:p:`lambek_1999`. (The ``pregroups`` mode is further described later in Section :ref:`Strict Pregroups Mode <sec-pregroups_mode>`.)
 - The ``ccg`` mode returns the original CCG tree, instead of a string or pregroup diagram.
 
 For example, to get the default string diagram output for a sentence, use the following command:

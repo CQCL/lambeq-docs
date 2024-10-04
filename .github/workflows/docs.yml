@@ -65,9 +65,6 @@ jobs:
         uv run pytest --nbmake ${{ env.DOCS_DIR }}/tutorials/
         --nbmake-timeout=60
         --ignore ${{ env.DOCS_DIR }}/tutorials/code
-    - name: Clean notebooks
-      run: |
-        uv run scripts/clean_notebooks.py -p ${{ env.DOCS_DIR }} -s
     - name: Draw diagrams from PlantUML files
       uses: Timmy/plantuml-action@v1
       with:

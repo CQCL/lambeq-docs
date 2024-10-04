@@ -43,7 +43,7 @@ extensions = [
     'sphinxarg.ext',
     'sphinx_copybutton',
     'sphinxcontrib.jquery',
-    "sphinxcontrib.bibtex",
+    'sphinxcontrib.bibtex',
     'myst_nb'
 ]
 
@@ -117,7 +117,7 @@ numfig = True
 
 
 autosectionlabel_prefix_document = True
-myst_enable_extensions = ["dollarmath", "html_image", "attrs_inline"]
+myst_enable_extensions = ["dollarmath", "html_image", "attrs_inline", "colon_fence"]
 nb_execution_mode = "off"
 myst_heading_anchors = 4
 
