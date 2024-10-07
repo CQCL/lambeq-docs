@@ -1,71 +1,11 @@
-import {DocsFooter, DocsNavBar, DocsTripleCard, DocsHeaderWrapper, DocsHeaderLeft, DocsHeaderRight, DocsHeaderSubtitle, Button, DocsPageLayout, CodeCopy, Card, CardHeader, CardTitle, CardDescription } from '@cqcl/quantinuum-ui'
+import {DocsFooter, DocsNavBar, DocsTripleCard, DocsHeaderWrapper, DocsHeaderLeft, DocsHeaderRight, DocsHeaderSubtitle, Button, DocsPageLayout, CodeCopy, Card, CardHeader, CardTitle, CardDescription, DocsHelpCard } from '@cqcl/quantinuum-ui'
+
 import { FaGithub, FaDiscord } from 'react-icons/fa'
 import { LifeBuoyIcon, BookIcon } from "lucide-react";
 
 import Image from 'next/image'
 import Link from 'next/link'
 import { LambeqLogo } from './LambeqLogo';
-
-const navConfig = {
-  navTextLinks: [
-    {
-      title: 'Getting Started',
-      href: 'intro.html',
-    },
-    {
-      title: 'User Guide',
-      href: 'pipeline.html',
-    },
-    {
-      title: 'Tutorials',
-      href: 'tutorials/sentence-input.html',
-    },
-    {
-      title: 'Code Examples',
-      href: 'notebooks.html',
-    },
-    {
-      title: 'API Reference',
-      href: 'root-api.html',
-    },
-  ],
-  navProductName: '\u03BBambeq',
-  navIconLinks: [
-  ],
-}
-
-const footerConfig = {
-  columns: [
-    {
-      title: "Solutions",
-      items: [
-        { name: "Nexus", href: "https://docs.quantinuum.com/nexus" },
-        { name: "TKET", href: "https://docs.quantinuum.com/tket" },
-        { name: "InQuanto", href: "https://docs.quantinuum.com/inquanto" },
-        { name: "\u03BBambeq", href: "https://docs.quantinuum.com/lambeq" },
-      ],
-    },
-    {
-      title: "Hardware",
-      items: [
-        { name: "H-Series", href: "https://docs.quantinuum.com/h-series" },
-        {
-          name: "Get Access",
-          href: "https://www.quantinuum.com/hardware#access",
-        },
-      ],
-    },
-    {
-      title: "Quantinuum",
-      items: [
-        { name: "About", href: " https://www.quantinuum.com/about" },
-        { name: "Research", href: "https://www.quantinuum.com/publications" },
-        { name: "Events", href: "https://www.quantinuum.com/events" },
-      ],
-    },
-  ],
-  subtitle: "",
-};
 
 const cardConfig = [
   {
@@ -128,10 +68,10 @@ const cardConfig = [
 ]
 
 
-const helpSectionConfig = [
-  {
+const helpSectionConfig = {
+  columns: [{
     title: "Get in touch for support",
-    image_description: "Support Icon",
+    icon_description: "Support Icon",
     icon: LifeBuoyIcon,
     link: "mailto:lambeq-support@quantinuum.com",
     description: "Need help? Contact our support team here",
@@ -139,18 +79,18 @@ const helpSectionConfig = [
   },
   {
     title: "Publications",
-    image_description: "Publications Icon",
+    icon_description: "Publications Icon",
     icon: BookIcon,
-    description: "Find our latest research publications here",
     link: "https://www.quantinuum.com/compositional-intelligence",
-  },
-];
+    description: "Find our latest research publications here",
+  }],
+};
 
 export default function Home() {
 
 
   return <>
-  <DocsNavBar activePath="/"  {...navConfig}  />
+  <DocsNavBar activePath="/"  />
   <DocsPageLayout>
     <DocsHeaderWrapper>
       <DocsHeaderLeft>
@@ -201,24 +141,8 @@ export default function Home() {
       </DocsHeaderRight>
     </DocsHeaderWrapper>
     <DocsTripleCard cards={cardConfig}  imageComponent={Image}/>
-    <div className="my-24 grid grid-cols-1 flex-grow gap-8 md:grid-cols-2">
-      {helpSectionConfig.map((item) => {
-        return (
-      <a href={item.link} key={item.title}>
-      <Card
-      className="hover:bg-muted transition"
-      >
-      <CardHeader>
-        <item.icon className="w-6 h-6 mb-3 inline" aria-label={item.image_description}></item.icon>
-        <CardTitle className="text-[1rem] font-semibold inline-block">       {item.title}</CardTitle>
-        <CardDescription>{item.description}</CardDescription>
-      </CardHeader>
-      </Card>
-      </a>
-      );
-    })}
-    </div>
-    <DocsFooter {...footerConfig}/>
+    <DocsHelpCard {...helpSectionConfig} />
+    <DocsFooter/>
   </DocsPageLayout>
 </>
   
