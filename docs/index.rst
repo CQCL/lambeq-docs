@@ -4,8 +4,7 @@
 
    intro
    installation
-   troubleshooting
-   CONTRIBUTING
+   
 
 .. toctree::
    :caption: User guide
@@ -15,24 +14,14 @@
    string-diagrams
    parsing
    use-cases
+   cli
 
 .. toctree::
-   :caption: NLP-101
+   :caption: Training
    :maxdepth: 2
 
-   nlp-intro
-   nlp-data
-   nlp-class
-   nlp-ml
-   nlp-refs
-
-.. toctree::
-   :caption: Tutorials
-   :maxdepth: 2
-
-   ../tutorials/sentence-input.ipynb
-   ../tutorials/rewrite.ipynb
-   ../tutorials/parameterise.ipynb
+   nlp-101
+   sent2circ
    training
    models
    manual-training
@@ -47,7 +36,17 @@
    root-api
    package-api
    uml-diagrams
-   cli
+
+.. toctree::
+   :caption: Support
+   :maxdepth: 1
+
+   support
+   troubleshooting
+   CONTRIBUTING
+   cite
+   licence
+   release-notes
 
 .. toctree::
    :caption: Reference
@@ -56,8 +55,7 @@
    glossary
    bibliography
    genindex
-   release-notes
-
+   
 .. toctree::
    :caption: External links
    :maxdepth: 1
