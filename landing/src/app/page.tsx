@@ -4,7 +4,7 @@ import { FaGithub, FaDiscord } from 'react-icons/fa'
 import { LifeBuoyIcon, BookIcon } from "lucide-react";
 
 import Image from 'next/image'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import { LambeqLogo } from './LambeqLogo';
 
 const cardConfig = [
@@ -73,7 +73,7 @@ const helpSectionConfig = {
     title: "Get in touch for support",
     icon_description: "Support Icon",
     icon: LifeBuoyIcon,
-    link: "mailto:lambeq-support@quantinuum.com",
+    link: "https://www.quantinuum.com/contact/docs",
     description: "Need help? Contact our support team here",
 
   },
@@ -109,20 +109,20 @@ export default function Home() {
               className="-mt-px flex-grow py-[1.38rem] border-border border bg-background"
               asChild
             >
-              <Link href="https://github.com/CQCL/lambeq/">
+              <NextLink href="https://github.com/CQCL/lambeq/">
                 <FaGithub className="mr-2 h-6 w-6"></FaGithub>
                 GitHub
-              </Link>
+              </NextLink>
             </Button>
             <Button 
               variant="secondary"
               className="-mt-px flex-grow py-[1.38rem] border-border border bg-background"
               asChild
             >
-              <Link href="https://discord.gg/TA63zghMrC">
+              <NextLink href="https://discord.gg/TA63zghMrC">
                 <FaDiscord className="mr-2 h-6 w-6"></FaDiscord>
                 Discord
-              </Link>
+              </NextLink>
             </Button>
           </div>
         </div>
@@ -140,7 +140,7 @@ export default function Home() {
         </div>
       </DocsHeaderRight>
     </DocsHeaderWrapper>
-    <DocsTripleCard cards={cardConfig}  imageComponent={Image}/>
+    <DocsTripleCard cards={cardConfig}  imageComponent={Image} linkComponent={NextLink}/>
     <DocsHelpCard {...helpSectionConfig} />
     <DocsFooter/>
   </DocsPageLayout>
