@@ -16,7 +16,7 @@
 
 
 # -- Project information -----------------------------------------------------
-
+import os
 from lambeq import __version__ as version, __version_info__ as v
 trim_version = f'{v[0]}.{v[1]}.{v[2]}'
 if version.startswith(f'{trim_version}.'):
@@ -91,8 +91,9 @@ html_context = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['quantinuum-sphinx/_static', '_static']
-html_favicon = 'quantinuum-sphinx/_static/assets/quantinuum_favicon.svg'
+quantinuum_sphinx_path = username = os.getenv("QUANTINUUM_SPHINX_PATH", "quantinuum-sphinx")
+html_static_path = [f'{quantinuum_sphinx_path}/_static', '_static']
+html_favicon = f'{quantinuum_sphinx_path}/_static/assets/quantinuum_favicon.svg'
 html_title = f'λambeq {release}'
 
 # CSS for allowing text wrapping within table cells
