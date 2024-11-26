@@ -30,4 +30,4 @@ The first part of this tutorial provides a short introduction to :term:`symbols 
 
 .. rubric:: See also:
 
-- `"Training package" tutorial <training.rst>`_
+- :ref:`Training tutorial <sec-training>`
