@@ -96,6 +96,6 @@ When using :ref:`word tokenisation <wordtok>` (like in ``lambeq``), a common tec
 
 .. rubric:: See also:
 
-- :ref:`Pre-processing and tokenisation tutorial </tutorials/sentence-input.ipynb#Pre-processing-and-tokenisation>`
-- :ref:`Tokenisation example notebook </examples/tokenisation.ipynb>`
-- :ref:`Handling unknown words example notebook </examples/unk-words.ipynb>`
+- :ref:`Pre-processing and tokenisation tutorial <sec-preproc>`
+- :ref:`Tokenisation example notebook <sec-tok_example>`
+- :ref:`Handling unknown words example notebook <sec-unk>`

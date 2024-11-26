@@ -9,7 +9,7 @@ What is lambeq?
 
    pip install lambeq
 
-or refer to :ref:`sec-installation` for more information. To start the tutorial, go to `Step 1: Sentence Input <tutorials/sentence-input.ipynb>`_. To see the example notebooks, go to :ref:`sec-examples`. To use the command-line interface, read :ref:`sec-cli`. To make your own contributions to ``lambeq``, see :ref:`sec-contributing`.
+or refer to :ref:`sec-installation` for more information. To start the tutorial, go to :ref:`sec-sent_input`. To see the example notebooks, go to :ref:`sec-examples`. To use the command-line interface, read :ref:`sec-cli`. To make your own contributions to ``lambeq``, see :ref:`sec-contributing`.
 
 Licence
 -------
