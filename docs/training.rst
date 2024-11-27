@@ -33,4 +33,4 @@ The following examples demonstrate the usage of the :py:mod:`.training` package 
 .. rubric:: See also:
 
 - :ref:`lambeq.training package <api_training>`
-- `Advanced: Manual training <manual-training.rst>`_
+- :ref:`Advanced: Manual training <sec-manual-training>`
