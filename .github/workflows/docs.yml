@@ -51,7 +51,10 @@ jobs:
       uses: actions/cache@v4
       with:
         path: ${{ steps.loc-bobcat-cache.outputs.dir }}
-        key: bobcat-bert-v1
+        key: ${{ runner.os }}-bobcat-bert-v1
+        restore-keys: |
+            ${{ runner.os }}-bobcat-bert-v1
+            ${{ runner.os }}-
     - name: Test example notebooks
       env:
         TEST_NOTEBOOKS: 1
