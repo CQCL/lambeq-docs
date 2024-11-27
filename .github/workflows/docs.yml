@@ -59,7 +59,7 @@ jobs:
       id: download-bobcat-model
       if: ${{ steps.bobcat-cache.outputs.cache-hit != 'true' }}
       continue-on-error: true
-      run: 'from lambeq.text2diagram.model_downloader import ModelDownloader; md = ModelDownloader("bert"); md.download_model(verbose="suppress");' | uv run -
+      run: echo "dir=$(echo 'from lambeq.text2diagram.model_downloader import ModelDownloader; md = ModelDownloader("bert"); md.download_model(verbose="suppress");' | uv run - )"
     - name: Test example notebooks
       env:
         TEST_NOTEBOOKS: 1
