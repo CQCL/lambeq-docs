@@ -4,3 +4,7 @@ From text to circuit
 ====================
 
 ** DisCoCirc tutorial here
+
+.. toctree::
+
+   ../tutorials/discocirc-mc-task.ipynb

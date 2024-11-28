@@ -4,7 +4,6 @@
 
    intro
    installation
-   
 
 .. toctree::
    :caption: User guide
@@ -13,7 +12,7 @@
    pipeline
    string-diagrams
    parsing
-   use-cases
+   ml_lambeq
    cli
 
 .. toctree::
