@@ -9,6 +9,7 @@
    :caption: User guide
    :maxdepth: 1
 
+   lambeq-basic
    pipeline
    string-diagrams
    parsing
