@@ -123,3 +123,5 @@ myst_heading_anchors = 4
 
 
 bibtex_bibfiles = ['references.bib']
+
+googleanalytics_id = "G-YPQ1FTGDL3"
