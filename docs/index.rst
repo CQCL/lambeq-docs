@@ -24,7 +24,7 @@
    text2circ
    training
    models
-   advanced
+   low-level
    ../tutorials/extend-lambeq.ipynb
    notebooks
    nlp-101
