@@ -44,7 +44,8 @@ extensions = [
     'sphinx_copybutton',
     'sphinxcontrib.jquery',
     'sphinxcontrib.bibtex',
-    'myst_nb'
+    'myst_nb',
+    "sphinxcontrib.googleanalytics",
 ]
 
 intersphinx_mapping = {
