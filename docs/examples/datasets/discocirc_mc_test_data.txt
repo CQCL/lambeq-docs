@@ -1,0 +1,60 @@
+1 person cooks tasty sauce . man cooks sauce . skillful woman bakes dinner .
+1 skillful man prepares dinner . he bakes sauce . man cooks meal .
+1 skillful woman cooks sauce . person cooks tasty sauce . person bakes meal .
+1 man prepares sauce . woman bakes meal . skillful woman cooks dinner .
+1 skillful man prepares dinner . skillful woman bakes dinner . man cooks meal .
+1 skillful man prepares dinner . woman bakes meal . woman bakes sauce .
+1 woman cooks tasty sauce . man cooks sauce . woman bakes sauce .
+1 woman cooks tasty sauce . skillful woman cooks sauce . skillful woman cooks dinner .
+1 man cooks sauce . person bakes meal . he cooks meal .
+1 skillful woman cooks sauce . woman bakes meal . skillful man bakes sauce .
+1 woman prepares tasty dinner . man cooks sauce . skillful woman bakes dinner .
+1 skillful man prepares dinner . skillful woman cooks sauce . skillful woman cooks dinner .
+1 skillful man prepares dinner . person bakes meal . skillful woman bakes dinner .
+1 woman prepares tasty dinner . man cooks sauce . skillful man bakes sauce .
+1 woman cooks tasty sauce . woman bakes meal . man cooks meal .
+1 person cooks tasty sauce . woman bakes meal . man cooks meal .
+1 man prepares sauce . he cooks sauce . skillful woman cooks dinner .
+1 skillful woman cooks sauce . person cooks tasty sauce . woman bakes dinner .
+1 skillful woman cooks sauce . skillful man bakes sauce . person bakes meal .
+1 person cooks tasty sauce . man cooks sauce . woman bakes sauce .
+1 woman cooks tasty sauce . person bakes meal . she bakes sauce .
+1 woman prepares tasty dinner . skillful man prepares dinner . woman bakes sauce .
+1 woman cooks tasty sauce . skillful woman cooks sauce . she bakes sauce .
+1 skillful man prepares dinner . man cooks sauce . skillful woman bakes dinner .
+1 man prepares sauce . man cooks sauce . woman prepares meal .
+1 woman prepares tasty dinner . skillful woman cooks sauce . woman bakes meal .
+1 woman prepares tasty dinner . woman cooks tasty sauce . person cooks tasty sauce .
+1 woman cooks tasty sauce . skillful woman cooks sauce . person cooks tasty sauce .
+1 woman cooks tasty sauce . person bakes meal . skillful woman bakes dinner .
+1 woman cooks tasty sauce . skillful woman cooks sauce . person bakes meal .
+0 woman runs useful program . skillful woman runs application . man fixes software .
+0 skillful woman prepares software . man prepares useful software . woman fixes application .
+0 skillful person runs software . woman fixes program . skillful woman runs application .
+0 skillful woman prepares software . woman runs useful program . woman runs useful software .
+0 woman runs useful program . she runs useful software . person fixes program .
+0 skillful woman prepares software . person fixes software . she fixes software .
+0 woman fixes program . skillful woman fixes application . person fixes software .
+0 man prepares program . skillful woman runs application . person fixes software .
+0 skillful person prepares program . man prepares program . person prepares software .
+0 skillful woman runs application . she fixes application . person fixes software .
+0 skillful person prepares software . skillful woman runs application . woman runs useful software .
+0 skillful person runs software . man prepares program . skillful woman fixes application .
+0 skillful woman prepares software . man prepares program . woman fixes software .
+0 skillful person runs software . man fixes software . person fixes program .
+0 skillful woman runs application . woman runs useful software . person fixes program .
+0 skillful woman prepares software . skillful person prepares software . skillful woman fixes software .
+0 woman runs useful program . skillful person prepares software . man prepares useful software .
+0 man prepares program . he prepares useful software . man fixes software .
+0 skillful person runs software . man prepares useful software . person fixes program .
+0 skillful person prepares program . woman fixes program . skillful woman fixes software .
+0 skillful woman prepares software . man prepares program . man fixes software .
+0 skillful person runs software . man prepares useful software . skillful woman fixes application .
+0 skillful woman fixes application . person fixes software . woman runs useful software .
+0 woman runs useful program . man fixes software . skillful woman fixes software .
+0 man prepares useful software . skillful woman runs application . woman runs useful software .
+0 skillful person runs software . he prepares program . skillful woman runs application .
+0 woman runs useful program . skillful person prepares program . skillful woman fixes software .
+0 skillful person runs software . person prepares program . person prepares software .
+0 man prepares useful software . person fixes program . skillful woman fixes software .
+0 skillful woman prepares software . person fixes software . person fixes program .
