@@ -33,7 +33,7 @@
    :caption: Toolkit
    :maxdepth: 4
 
-   root-api
+   api
    package-api
    uml-diagrams
 

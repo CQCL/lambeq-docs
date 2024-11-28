@@ -8,4 +8,4 @@ lambeq.experimental.discocirc
    :members:
    :undoc-members:
    :show-inheritance:
-   :exclude-members: SMOOTHING
+   :exclude-members:
