@@ -1,7 +1,7 @@
 .. _sec-examples:
 
-Examples
-========
+Code examples
+=============
 
 .. toctree::
 

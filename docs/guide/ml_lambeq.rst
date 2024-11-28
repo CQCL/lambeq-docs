@@ -5,6 +5,6 @@ Machine learning with lambeq
 
 .. toctree::
 
-   ../ml/ml_basic
-   ../ml/ml_use-cases
-   ../ml/ml_models
+   ./ml_basic
+   ./ml_use-cases
+   ./ml_models

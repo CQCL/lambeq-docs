@@ -9,12 +9,12 @@
    :caption: User guide
    :maxdepth: 1
 
-   lambeq-basic
-   pipeline
-   string-diagrams
-   parsing
-   ml_lambeq
-   cli
+   guide/lambeq-basic
+   guide/pipeline
+   guide/string-diagrams
+   guide/parsing
+   guide/ml_lambeq
+   guide/cli
 
 .. toctree::
    :caption: Training
