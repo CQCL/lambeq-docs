@@ -6,7 +6,7 @@ Pipeline
 In ``lambeq``, the conversion of a sentence into a :term:`quantum circuit` goes through the steps shown in :numref:`fig-pipeline`.
 
 .. _fig-pipeline:
-.. figure:: ./_static/images/pipeline.png
+.. figure:: ../_static/images/pipeline.png
 
    The general pipeline.
 

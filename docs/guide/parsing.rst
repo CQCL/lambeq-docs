@@ -17,7 +17,7 @@ Reading CCGBank
 The :term:`CCG <Combinatory Categorial Grammar (CCG)>` compatibility makes immediately available to ``lambeq`` a wide range of language-related resources. For example, ``lambeq`` features a :py:class:`.CCGBankParser` class, which allows conversion of the entire :term:`CCGBank` corpus [#f2]_ :cite:p:`hockenmaier_2007` into :term:`string diagrams <string diagram>`. :term:`CCGBank` consists of 49,000 human-annotated :term:`CCG <Combinatory Categorial Grammar (CCG)>` syntax trees, converted from the original Penn Treebank into :term:`CCG <Combinatory Categorial Grammar (CCG)>` form. Having a gold standard corpus of :term:`string diagrams <string diagram>` allows various supervised learning scenarios involving automatic diagram generation. :numref:`fig-ccgbank` below shows the first tree of :term:`CCGBank`\ 's Section 00 converted into a :term:`string diagram`.
 
 .. _fig-ccgbank:
-.. figure:: _static/images/ccgbank.png
+.. figure:: ../_static/images/ccgbank.png
 
    The first derivation of CCGBank as a string diagram.
 
