@@ -33,7 +33,10 @@
    :caption: Toolkit
    :maxdepth: 4
 
-   api
+   api/root-api
+   api/lambeq.backend
+   api/lambeq.experimental
+
    package-api
    uml-diagrams
 
