@@ -12,8 +12,13 @@ What is lambeq?
 or refer to :ref:`sec-installation` for more information. Some other useful starting points are listed below.
 
 - To read more about lambeq's pipeline, go to :ref:`sec-pipeline`.
-- To start the tutorials, go to `Step 1: Sentence Input <tutorials/sentence-input.ipynb>`_. 
+- To start the tutorials, go to :ref:`sec-sent_input`. 
 - To learn more about NLP and QNLP, read our :ref:`sec-nlp101` guide.
 - To study the example notebooks, go to :ref:`sec-examples`. 
 - To use the command-line interface, read :ref:`sec-cli`. 
 - To make your own contributions to ``lambeq``, see :ref:`sec-contributing`.
+
+.. rubric:: See also:
+
+- :ref:`How to cite <sec-cite>`
+- :ref:`Lincence <sec-licence>`

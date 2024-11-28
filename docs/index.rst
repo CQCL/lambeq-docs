@@ -20,14 +20,14 @@
    :caption: Training
    :maxdepth: 2
 
-   nlp-101
    sent2circ
+   text2circ
    training
    models
-   manual-training
    advanced
    ../tutorials/extend-lambeq.ipynb
    notebooks
+   nlp-101
 
 .. toctree::
    :caption: Toolkit

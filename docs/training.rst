@@ -1,9 +1,9 @@
 .. _sec-training:
 
-Step 4: Training
-================
+Machine learning with lambeq
+============================
 
-In ``lambeq``, all low-level processing that takes place in training is hidden in the :py:mod:`.training` package, which provides convenient high-level abstractions for all important supervised learning scenarios with the toolkit, classical and quantum. More specifically, the :py:mod:`.training` package contains the following high-level/abstract classes and several concrete implementations for them:
+In ``lambeq``, all low-level processing that takes place in machine learning training is hidden in the :py:mod:`.training` package, which provides convenient high-level abstractions for all important supervised learning scenarios with the toolkit, classical and quantum. More specifically, the :py:mod:`.training` package contains the following high-level/abstract classes and several concrete implementations for them:
 
 - :py:class:`.Dataset`: A class that provides functionality for easy management and manipulation of datasets, including batching, shuffling, and preparation based on the selected backend (tket, NumPy, PyTorch).
 - :py:class:`.Model`: The abstract interface for ``lambeq`` :term:`models <model>`. A :term:`model` bundles the basic attributes and methods used for training, given a specific backend. It stores the :term:`symbols <symbol>` and the corresponding weights, and implements the forward pass of the model. Concrete implementations are the :py:class:`.PytorchModel`, :py:class:`.TketModel`, :py:class:`.NumpyModel`, and :py:class:`.PennyLaneModel` classes (for more details see Section :ref:`sec-models` below).
@@ -29,8 +29,8 @@ The following examples demonstrate the usage of the :py:mod:`.training` package 
    ../tutorials/trainer-classical.ipynb
    ../tutorials/trainer-quantum.ipynb
    ../tutorials/trainer-hybrid.ipynb
+   manual-training
 
 .. rubric:: See also:
 
 - :ref:`lambeq.training package <api_training>`
-- :ref:`Advanced: Manual training <sec-manual-training>`
