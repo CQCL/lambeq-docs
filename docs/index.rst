@@ -4,6 +4,7 @@
 
    intro
    installation
+   ../tutorials/quickstart.ipynb
 
 .. toctree::
    :caption: User guide
@@ -30,15 +31,17 @@
    nlp-101
 
 .. toctree::
-   :caption: Toolkit
-   :maxdepth: 4
+   :caption: API
+   :maxdepth: 1
 
-   api/root-api
+   api/lambeq.ansatz
    api/lambeq.backend
+   api/lambeq.bobcat
    api/lambeq.experimental
-
-   package-api
-   uml-diagrams
+   api/lambeq.rewrite
+   api/lambeq.text2diagram
+   api/lambeq.tokeniser
+   api/lambeq.training
 
 .. toctree::
    :caption: Support
