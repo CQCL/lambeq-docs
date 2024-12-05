@@ -22,7 +22,7 @@
    :maxdepth: 2
 
    sent2circ
-   text2circ
+   ../tutorials/discocirc-basics.ipynb
    training
    models
    low-level
