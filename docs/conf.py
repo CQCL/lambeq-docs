@@ -44,7 +44,8 @@ extensions = [
     'sphinx_copybutton',
     'sphinxcontrib.jquery',
     'sphinxcontrib.bibtex',
-    'myst_nb'
+    'myst_nb',
+    "sphinxcontrib.googleanalytics",
 ]
 
 intersphinx_mapping = {
@@ -123,3 +124,5 @@ myst_heading_anchors = 4
 
 
 bibtex_bibfiles = ['references.bib']
+
+googleanalytics_id = "G-YPQ1FTGDL3"
