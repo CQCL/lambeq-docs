@@ -1,60 +1,60 @@
-1 person cooks tasty dinner . woman bakes tasty dinner . woman cooks sauce .
-1 person prepares dinner . man bakes sauce . woman bakes tasty sauce .
-1 man prepares tasty meal . he bakes sauce . woman bakes tasty sauce .
-1 man prepares tasty meal . man bakes sauce . woman cooks sauce .
-1 man bakes sauce . skillful person prepares sauce . woman cooks sauce .
-1 man prepares tasty sauce . person prepares dinner . woman bakes tasty sauce .
-1 skillful person prepares sauce . woman bakes tasty dinner . woman cooks sauce .
-1 person prepares dinner . she cooks tasty dinner . woman bakes tasty sauce .
-1 man prepares tasty sauce . person prepares dinner . woman bakes tasty dinner .
-1 person bakes tasty meal . skillful person prepares sauce . woman cooks sauce .
-1 person bakes tasty meal . person prepares dinner . woman bakes tasty dinner .
-1 person prepares dinner . she cooks tasty dinner . skillful person prepares sauce .
-1 person bakes tasty meal . woman bakes tasty sauce . woman cooks sauce .
-1 person bakes tasty meal . person prepares tasty dinner . woman bakes tasty dinner .
-1 man prepares tasty meal . he bakes sauce . person cooks tasty dinner .
-1 man prepares tasty sauce . woman bakes tasty dinner . woman cooks sauce .
-1 person prepares dinner . man bakes sauce . she cooks tasty dinner .
-1 person cooks tasty dinner . skillful person prepares sauce . person prepares tasty dinner .
-1 man prepares tasty sauce . man bakes sauce . woman cooks sauce .
-1 person bakes tasty meal . she cooks tasty dinner . skillful person prepares sauce .
-1 man prepares tasty meal . skillful person prepares sauce . person prepares tasty dinner .
-1 person prepares dinner . woman bakes tasty sauce . he prepares tasty dinner .
-1 man prepares tasty meal . person prepares dinner . he bakes sauce .
-1 man prepares tasty meal . person prepares dinner . woman cooks sauce .
-1 man prepares tasty meal . person prepares dinner . person prepares tasty dinner .
-1 woman bakes tasty sauce . she bakes tasty dinner . woman cooks sauce .
-1 woman bakes tasty sauce . person prepares tasty dinner . she bakes tasty dinner .
-1 person cooks tasty dinner . skillful person prepares sauce . woman bakes tasty dinner .
-1 person cooks tasty dinner . woman bakes tasty sauce . skillful person prepares sauce .
-1 man prepares tasty meal . person cooks tasty dinner . woman bakes tasty dinner .
-0 person fixes useful program . man runs useful application . man fixes application .
-0 skillful person prepares application . person fixes useful program . man runs useful application .
-0 man runs program . skillful woman runs software . person prepares program .
-0 person fixes useful program . man runs useful application . woman fixes useful application .
-0 person prepares useful software . man runs application . woman fixes useful software .
-0 man runs program . man runs application . woman fixes useful application .
-0 skillful person prepares application . man runs application . woman fixes useful software .
-0 skillful person fixes software . woman fixes useful software . man fixes application .
-0 man prepares useful program . skillful woman prepares application . man fixes useful program .
-0 person prepares useful software . man runs useful application . man fixes application .
-0 man prepares useful program . skillful person fixes software . he fixes application .
-0 skillful woman runs software . woman fixes useful software . woman prepares useful application .
-0 woman prepares software . person fixes application . man runs application .
-0 person prepares useful software . man runs application . man fixes application .
-0 skillful person fixes software . man runs useful application . skillful woman prepares application .
-0 skillful woman runs software . person prepares program . man fixes useful program .
-0 skillful person fixes program . skillful woman runs software . woman prepares useful application .
-0 skillful person fixes program . skillful woman runs software . person fixes useful program .
-0 person fixes application . skillful person fixes software . man fixes application .
-0 skillful person fixes program . woman fixes useful software . skillful woman prepares application .
-0 person prepares useful software . man runs application . man runs useful application .
-0 skillful person prepares application . man runs program . man runs useful application .
-0 skillful person fixes program . person fixes software . woman fixes useful application .
-0 person prepares program . woman fixes useful application . woman prepares useful application .
-0 skillful person fixes program . woman fixes useful application . skillful woman prepares application .
-0 person fixes useful program . man runs application . woman fixes useful software .
-0 person fixes application . he fixes useful program . man fixes application .
-0 man prepares useful program . he runs useful application . he fixes useful program .
-0 skillful person prepares application . man runs program . skillful woman prepares application .
-0 man prepares useful program . person prepares useful software . skillful person fixes program .
+0 woman writes fast application . she had been a talented coder . she enjoys trying novel algorithms
+1 girl cooks tasty dinner . she has been a talented professional . she likes trying exotic dishes
+1 girl cooks fast lunch . she had been a great baker . she enjoys trying new recipes
+0 man prepares efficient program . he has been a good engineer . he thrives in trying novel algorithms
+0 girl runs program . she was a modest engineer . she likes trying complex problems
+0 person creates fast program . he used to be a great engineer . he thrives in mastering novel algorithms
+1 person bakes lunch . he is a modest professional . he enjoys testing new recipes
+0 man prepares useful software . he had been a good engineer . he enjoys trying new techniques
+0 person prepares nice program . he is a talented coder . he thrives in trying complex problems
+0 man runs efficient software . he is a modest engineer . he thrives in mastering novel algorithms
+1 woman prepares fast meal . she is a modest cook . she likes mastering new recipes
+1 person prepares fast dinner . he has been a modest professional . he thrives in trying exotic dishes
+1 woman creates fast lunch . she has been a good cook . she likes testing exotic dishes
+0 woman creates useful software . she is a good coder . she enjoys testing new techniques
+1 person prepares fast dinner . she is a good cook . she likes trying new techniques
+0 man writes nice program . he is a talented programmer . he enjoys testing new approaches
+1 woman creates nice lunch . she was a great professional . she likes trying new techniques
+1 man creates dinner . he was a great cook . he thrives in trying exotic dishes
+0 woman creates efficient application . she has been a good engineer . she enjoys mastering novel algorithms
+0 girl runs program . she had been a great professional . she enjoys trying complex problems
+0 man prepares fast program . he used to be a good programmer . he likes testing new approaches
+1 person creates lunch . she is a good professional . she enjoys trying exotic dishes
+0 man writes efficient application . he was a talented coder . he likes testing novel algorithms
+1 man creates dinner . he was a good cook . he thrives in mastering exotic dishes
+1 man cooks delicious dinner . he was a talented shef . he enjoys trying new approaces
+0 person writes useful software . she is a good professional . she thrives in mastering new approaches
+0 person prepares fast program . she had been a modest programmer . she likes trying new approaches
+0 woman writes useful application . she used to be a talented professional . she thrives in testing novel algorithms
+0 girl creates efficient program . she used to be a modest programmer . she likes trying novel algorithms
+0 person prepares nice software . he is a good coder . he enjoys testing complex problems
+0 person creates program . she used to be a talented engineer . she thrives in trying novel algorithms
+1 girl creates fast dinner . she was a good baker . she likes mastering new approaces
+1 girl prepares delicious meal . she had been a modest cook . she thrives in testing new recipes
+1 person creates fast meal . he was a good baker . he likes testing exotic dishes
+1 man bakes tasty lunch . he was a great cook . he enjoys mastering new recipes
+0 woman writes fast program . she used to be a great engineer . she likes mastering new approaches
+1 girl prepares fast meal . she used to be a great shef . she enjoys mastering new approaces
+0 girl creates efficient application . she used to be a good professional . she thrives in trying new approaches
+1 man prepares nice dinner . he was a talented shef . he likes mastering new approaces
+1 man prepares tasty lunch . he had been a modest cook . he thrives in trying new techniques
+0 person creates nice application . she used to be a good coder . she enjoys testing new techniques
+0 girl creates software . she is a talented professional . she likes trying novel algorithms
+1 woman creates lunch . she used to be a modest baker . she thrives in mastering new recipes
+1 man cooks delicious lunch . he was a good shef . he thrives in trying new techniques
+0 woman creates nice application . she has been a good professional . she thrives in testing complex problems
+1 woman creates nice dinner . she has been a good cook . she enjoys mastering exotic dishes
+1 girl bakes delicious meal . she had been a talented baker . she likes testing new recipes
+1 woman cooks delicious dinner . she used to be a talented baker . she likes testing new recipes
+0 person prepares useful application . he used to be a modest programmer . he enjoys testing complex problems
+1 person bakes delicious meal . she is a talented professional . she thrives in mastering new recipes
+1 girl prepares delicious dinner . she had been a talented cook . she thrives in mastering new recipes
+1 woman creates delicious lunch . she has been a great baker . she enjoys trying new recipes
+0 person prepares useful software . he was a talented engineer . he thrives in trying novel algorithms
+1 person creates lunch . she had been a modest professional . she likes testing new techniques
+0 person prepares application . she has been a good programmer . she thrives in trying complex problems
+0 girl runs nice software . she was a good professional . she enjoys mastering novel algorithms
+0 person prepares program . she was a talented coder . she thrives in trying new approaches
+0 man runs efficient software . he used to be a talented engineer . he enjoys mastering new approaches
+1 woman creates dinner . she used to be a modest cook . she thrives in mastering new techniques
+1 woman prepares delicious lunch . she is a good cook . she enjoys testing new techniques
