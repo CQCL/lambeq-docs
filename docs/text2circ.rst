@@ -7,4 +7,5 @@ From text to circuit
 
 .. toctree::
 
+   ../tutorials/discocirc-basics.ipynb
    ../tutorials/discocirc-mc-task.ipynb
