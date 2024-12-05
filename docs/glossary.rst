@@ -47,8 +47,15 @@ Glossary
     DisCoCat
         The DIStributional COmpositional CATegorical model of natural language meaning developed by Bob Coecke, Mehrnoosh Sadrzadeh and Steve Clark :cite:p:`coecke_2010`.  The model applies a :term:`functor` :math:`F: \textrm{Grammar} \to \textrm{Meaning}` whose left-hand side is a free pregroup over a partially ordered set of basic grammar types, and the right-hand side is the category whose morphisms describe a sequence of operations that can be evaluated on a classical or quantum computer.
 
+    DisCoCirc
+        :cite:p:`coecke_2021a`
+        ***TBD***
+
     DisCoPy
         DIStributional COmpositional PYthon. A Python library for working with :term:`monoidal categories <monoidal category>` :cite:p:`de_felice_2021`. It includes abstractions for creating all standard :term:`quantum gates <quantum gate>` and building :term:`quantum circuits <quantum circuit>`. Additionally, it is equipped with many language-related features, such as support for :term:`pregroup grammars <pregroup grammar>` and :term:`functors <functor>` for implementing :term:`compositional models <compositional model>`.
+    
+    frame
+        ***TBD***
 
     Frobenius algebra
         In the context of a :term:`symmetric monoidal category`, a Frobenius algebra provides morphisms :math:`\Delta: A \to A\otimes A` and :math:`\mu: A\otimes A \to A` for any object :math:`A`, satisfying certain conditions (the so-called Frobenius equations) and implementing the notion of a :term:`spider`. In ``lambeq`` and :term:`DisCoCat`, spiders can be used to implement :term:`rewrite rules <rewrite rule>` :cite:p:`kartsaklis_2016a,kartsaklis_2016b,sadrzadeh_2013,sadrzadeh_2014`.
@@ -92,6 +99,9 @@ Glossary
     pregroup grammar
         A grammar formalism developed by Joachim Lambek in 1999 :cite:p:`lambek_1999` based on the notion of a *pregroup*. Pregroup grammars are closely related to categorial grammars (such as :term:`CCG <Combinatory Categorial Grammar (CCG)>`). In category-theoretic terms, a pregroup grammar forms a :term:`rigid category`, sometimes also referred to as a non-symmetric :term:`compact closed category`.
 
+    pregroup tree
+        ***TBD***
+
     pytket
         A Python interface for the :term:`tket` compiler.
 
@@ -124,6 +134,9 @@ Glossary
 
     rigid category
         A :term:`monoidal category` where every object :math:`A` has a left dual :math:`A^l` and a right dual :math:`A^r`, both equipped with :term:`cup` and :term:`cap` morphisms obeying the so-called :term:`snake equations`. A :term:`pregroup grammar` is an example of a rigid category.
+
+    sandwich functor
+        ***TBD***
 
     shots
         A collection of measurement outcomes from a particular :term:`quantum circuit`.
