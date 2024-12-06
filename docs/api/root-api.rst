@@ -1,4 +1,4 @@
-lambeq package
+High-level API
 ==============
 
 .. automodule:: lambeq

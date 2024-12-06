@@ -1,7 +1,7 @@
 .. _sec-manual-training:
 
-Advanced: Manual training
-=========================
+Manual training
+===============
 
 While the :py:mod:`.training` package is the recommended way of performing supervised learning with ``lambeq``, there might be use cases where more flexibility is needed, for example when someone wants to use an unsupported ML backend. In this tutorial, we show how training can be performed with ``lambeq`` at a lower level.
 
@@ -27,7 +27,3 @@ The first part of this tutorial provides a short introduction to :term:`symbols 
 
     ../tutorials/training-symbols.ipynb
     ../tutorials/training-usecase.ipynb
-
-.. rubric:: See also:
-
-- :ref:`Training tutorial <sec-training>`

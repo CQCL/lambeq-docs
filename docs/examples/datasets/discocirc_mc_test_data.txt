@@ -1,0 +1,60 @@
+0 woman runs efficient program . she used to be a great programmer . she likes trying new approaches
+1 person bakes tasty dinner . he had been a great professional . he likes mastering new techniques
+1 woman bakes dinner . she had been a great cook . she enjoys trying new recipes
+0 woman writes fast program . she is a modest coder . she thrives in trying new techniques
+0 woman runs fast software . she has been a good coder . she thrives in mastering new approaches
+0 girl writes useful software . she used to be a talented engineer . she thrives in trying complex problems
+1 man prepares fast dinner . he has been a great baker . he likes trying new techniques
+0 woman prepares efficient application . she had been a modest engineer . she enjoys testing new approaches
+1 man cooks delicious dinner . he used to be a good cook . he thrives in testing new approaces
+0 girl creates program . she is a great professional . she likes testing new techniques
+0 girl prepares useful software . she is a good programmer . she thrives in trying complex problems
+1 girl creates nice meal . she has been a modest baker . she enjoys testing new recipes
+0 woman creates fast application . she was a great professional . she enjoys testing novel algorithms
+0 man runs fast program . he had been a talented programmer . he thrives in testing new techniques
+1 woman cooks tasty lunch . she was a talented shef . she thrives in mastering new techniques
+1 man cooks delicious meal . he had been a good shef . he likes trying new approaces
+0 girl creates nice application . she has been a modest engineer . she likes mastering new techniques
+0 person prepares fast program . she was a good programmer . she enjoys testing complex problems
+1 girl creates lunch . she has been a great professional . she enjoys testing new techniques
+1 girl cooks dinner . she has been a modest cook . she enjoys testing new approaces
+0 person creates nice application . she has been a good professional . she likes trying new techniques
+1 man cooks tasty meal . he used to be a great professional . he thrives in trying exotic dishes
+0 person prepares program . he has been a talented programmer . he enjoys trying new approaches
+1 woman prepares delicious lunch . she had been a modest baker . she thrives in mastering new approaces
+1 girl prepares delicious meal . she has been a great professional . she enjoys mastering new recipes
+0 man writes efficient program . he had been a talented programmer . he likes testing new techniques
+0 girl prepares application . she used to be a great coder . she thrives in mastering complex problems
+1 girl prepares fast lunch . she was a good shef . she thrives in testing new approaces
+0 man runs fast program . he was a talented programmer . he thrives in trying complex problems
+0 person prepares application . he is a modest engineer . he thrives in mastering new techniques
+0 person prepares useful software . she has been a great professional . she enjoys trying complex problems
+1 man cooks fast meal . he used to be a great cook . he enjoys trying new approaces
+1 person bakes delicious dinner . he had been a great professional . he enjoys mastering new recipes
+1 girl cooks tasty dinner . she was a great baker . she likes trying new techniques
+0 girl creates useful software . she was a good coder . she likes mastering new techniques
+0 woman runs useful program . she has been a good programmer . she thrives in trying new approaches
+1 girl bakes delicious lunch . she had been a good shef . she thrives in testing new techniques
+0 person creates useful program . he has been a great engineer . he enjoys mastering complex problems
+1 man bakes fast dinner . he has been a great baker . he thrives in testing new approaces
+1 man bakes fast meal . he had been a great professional . he likes trying new techniques
+1 woman cooks meal . she is a great shef . she thrives in testing new approaces
+0 man runs fast software . he has been a modest coder . he likes testing new techniques
+0 woman writes useful application . she has been a talented coder . she enjoys trying novel algorithms
+1 woman cooks meal . she has been a modest cook . she thrives in testing new approaces
+1 person cooks lunch . she had been a good professional . she thrives in mastering new recipes
+1 man prepares delicious lunch . he is a talented baker . he enjoys mastering new approaces
+0 man writes software . he used to be a good professional . he enjoys trying complex problems
+0 girl runs efficient program . she is a modest professional . she likes trying new techniques
+1 woman creates meal . she is a talented cook . she thrives in testing new approaces
+1 woman cooks tasty dinner . she has been a talented cook . she enjoys trying exotic dishes
+0 girl runs application . she used to be a modest engineer . she likes mastering new techniques
+0 man writes efficient application . he had been a talented professional . he thrives in trying new approaches
+1 girl creates delicious meal . she was a good professional . she likes trying new techniques
+1 woman prepares delicious lunch . she had been a talented professional . she thrives in mastering new approaces
+1 man prepares nice lunch . he used to be a good professional . he enjoys mastering new techniques
+0 person creates nice software . she was a talented coder . she enjoys trying new approaches
+1 person prepares fast dinner . he was a modest cook . he thrives in mastering new recipes
+0 man writes fast application . he has been a great coder . he likes trying new approaches
+1 person cooks tasty meal . she is a good cook . she enjoys mastering exotic dishes
+0 person prepares efficient software . he has been a modest engineer . he thrives in testing new techniques
