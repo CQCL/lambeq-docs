@@ -38,6 +38,9 @@ Glossary
     compositional model
         A model that produces semantic representations of sentences by composing together the semantic representations of the words within them. An example of a compositional model is :term:`DisCoCat`.
 
+    coreference resolution
+        A task whose goal is to identify which linguistic expressions in a text refer to the same real-world entity. In ``lambeq``, coreference resolution is mainly used in the context of :term:`DisCoCirc` models, and utilises the :term:`spaCy` NLP toolkit.
+
     cup
         A special morphism in a :term:`rigid category`, which, together with a :term:`cap` morphism, obey certain conditions called :term:`snake equations`. In diagrammatic form, a cup is depicted as a wire with upward concavity (:math:`\cup`). In the context of :term:`DisCoCat`, a cup usually represents a tensor contraction between two-word representations.
 
@@ -144,6 +147,9 @@ Glossary
     snake equations
         Identities that hold between the dual objects of a :term:`monoidal category` and allow the "yanking" of wires and the rewriting and simplification of diagrams. In ``lambeq``, the :py:meth:`.grammar.Diagram.normal_form() <lambeq.backend.grammar.Diagram.normal_form>` method uses the snake equations in order to "stretch" the wires of a diagram and provide a normal form for it.
 
+    spaCy
+        A powerful NLP toolkit developed by Explosion. ``lambeq`` utilises spaCy models for tasks such as :term:`tokenisation` and :term:`coreference resolution`.
+
     spider
         Another name for a :term:`Frobenius algebra`.
 
@@ -170,6 +176,9 @@ Glossary
 
     tket
         Stylised :math:`\textrm{t}|\textrm{ket}\rangle`. A quantum software development platform produced by Cambridge Quantum. The heart of ``tket`` is a language-agnostic optimising compiler designed to generate code for a variety of NISQ devices, which has several features designed to minimise the influence of device error.
+
+    tokenisation
+        ***TBD***
 
     trainer
         In ``lambeq``, a trainer is a class related to a given backend (for example PyTorch, NumPy, :term:`tket` and so on) that is used for supervised learning. A trainer is always paired with a matching :term:`model`, a structure that contains the trainable weights and other parameters of the model.
