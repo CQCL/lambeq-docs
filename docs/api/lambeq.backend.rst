@@ -25,6 +25,14 @@ lambeq.backend.quantum
    :undoc-members:
    :show-inheritance:
 
+lambeq.backend.pregroup_tree
+----------------------------
+
+.. automodule:: lambeq.backend.pregroup_tree
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 lambeq.backend.numerical_backend
 --------------------------------
 

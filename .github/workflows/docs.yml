@@ -117,10 +117,6 @@ jobs:
     - name: Clean notebooks
       run: |
         uv run scripts/clean_notebooks.py -p ${{ env.DOCS_DIR }} -s
-    - name: Draw diagrams from PlantUML files
-      uses: Timmy/plantuml-action@v1
-      with:
-        args: '-v -DPLANTUML_LIMIT_SIZE=8192 -tpng ${{ env.DOCS_DIR }}/puml/*.puml -o img'
     - name: Build documentation
       env:
         BASE_PATH: '/lambeq-docs'
