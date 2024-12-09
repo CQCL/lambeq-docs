@@ -1,3 +1,5 @@
+.. _sec-sent2circ:
+
 From sentence to circuit
 ========================
 
