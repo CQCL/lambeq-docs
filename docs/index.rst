@@ -37,6 +37,7 @@
    api/lambeq.ansatz
    api/lambeq.backend
    api/lambeq.bobcat
+   api/lambeq.core
    api/lambeq.experimental
    api/lambeq.rewrite
    api/lambeq.text2diagram
