@@ -51,14 +51,13 @@ Glossary
         The DIStributional COmpositional CATegorical model of natural language meaning developed by Bob Coecke, Mehrnoosh Sadrzadeh and Steve Clark :cite:p:`coecke_2010`.  The model applies a :term:`functor` :math:`F: \textrm{Grammar} \to \textrm{Meaning}` whose left-hand side is a free pregroup over a partially ordered set of basic grammar types, and the right-hand side is the category whose morphisms describe a sequence of operations that can be evaluated on a classical or quantum computer.
 
     DisCoCirc
-        :cite:p:`coecke_2021a`
-        ***TBD***
+        DIStributional COmpositional CIRCuit. A framework of compositional models (still at the experimental stage) with the ability to encode entire paragraphs or even documents into a quantum circuit, based on :cite:p:`coecke_2021a`. The generated quantum circuits capture the core semantic information of the provided text, and can be trained as a regular machine learning model.
 
     DisCoPy
         DIStributional COmpositional PYthon. A Python library for working with :term:`monoidal categories <monoidal category>` :cite:p:`de_felice_2021`. It includes abstractions for creating all standard :term:`quantum gates <quantum gate>` and building :term:`quantum circuits <quantum circuit>`. Additionally, it is equipped with many language-related features, such as support for :term:`pregroup grammars <pregroup grammar>` and :term:`functors <functor>` for implementing :term:`compositional models <compositional model>`.
     
     frame
-        ***TBD***
+        In ``lambeq``'s :term:`string diagrams <string diagram>`, a special type of box that can contain other boxes or frames. Frames are mainly used in the context of :term:`DisCoCirc` models, representing higher-level linguistic expressions. 
 
     Frobenius algebra
         In the context of a :term:`symmetric monoidal category`, a Frobenius algebra provides morphisms :math:`\Delta: A \to A\otimes A` and :math:`\mu: A\otimes A \to A` for any object :math:`A`, satisfying certain conditions (the so-called Frobenius equations) and implementing the notion of a :term:`spider`. In ``lambeq`` and :term:`DisCoCat`, spiders can be used to implement :term:`rewrite rules <rewrite rule>` :cite:p:`kartsaklis_2016a,kartsaklis_2016b,sadrzadeh_2013,sadrzadeh_2014`.
@@ -103,7 +102,7 @@ Glossary
         A grammar formalism developed by Joachim Lambek in 1999 :cite:p:`lambek_1999` based on the notion of a *pregroup*. Pregroup grammars are closely related to categorial grammars (such as :term:`CCG <Combinatory Categorial Grammar (CCG)>`). In category-theoretic terms, a pregroup grammar forms a :term:`rigid category`, sometimes also referred to as a non-symmetric :term:`compact closed category`.
 
     pregroup tree
-        ***TBD***
+        A compact tree-like representation of a :term:`pregroup <pregroup grammar>` diagram. Each node in the tree represents a token in the sentence, the root of the tree is the head word in the sentence (i.e a word with free wires), and the branches of the tree represent :term:`cups <cups>` identifying input wires to the parent node.
 
     pytket
         A Python interface for the :term:`tket` compiler.
@@ -139,7 +138,7 @@ Glossary
         A :term:`monoidal category` where every object :math:`A` has a left dual :math:`A^l` and a right dual :math:`A^r`, both equipped with :term:`cup` and :term:`cap` morphisms obeying the so-called :term:`snake equations`. A :term:`pregroup grammar` is an example of a rigid category.
 
     sandwich functor
-        ***TBD***
+        A :term:`functor` that converts :term:`frames <frame>` in a :term:`DisCoCirc` string diagram into a sequence of unitary boxes that can be trained using ``lambeq``'s machine learning features. The functor works by placing trainable unitaries in the beginning and the end of the frame, as well as between each argument in it.
 
     shots
         A collection of measurement outcomes from a particular :term:`quantum circuit`.
@@ -178,7 +177,7 @@ Glossary
         Stylised :math:`\textrm{t}|\textrm{ket}\rangle`. A quantum software development platform produced by Cambridge Quantum. The heart of ``tket`` is a language-agnostic optimising compiler designed to generate code for a variety of NISQ devices, which has several features designed to minimise the influence of device error.
 
     tokenisation
-        ***TBD***
+        The process of breaking down a text or sentence into smaller units called tokens. In ``lambeq`` these tokens correspond to words.
 
     trainer
         In ``lambeq``, a trainer is a class related to a given backend (for example PyTorch, NumPy, :term:`tket` and so on) that is used for supervised learning. A trainer is always paired with a matching :term:`model`, a structure that contains the trainable weights and other parameters of the model.
