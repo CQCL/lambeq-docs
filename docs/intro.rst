@@ -11,6 +11,7 @@ What is lambeq?
 
 or refer to :ref:`sec-installation` for more information. Some other useful starting points are listed below.
 
+- For a more complete introduction to ``lambeq`` and what you can do with it, please see :ref:`sec-lambeq_comp`.
 - To read more about lambeq's pipeline, go to :ref:`sec-pipeline`.
 - To start the tutorials, go to :ref:`sec-sent_input`. 
 - To learn more about NLP and QNLP, read our :ref:`sec-nlp101` guide.

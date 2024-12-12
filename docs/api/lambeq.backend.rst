@@ -1,3 +1,5 @@
+.. _backend-api:
+
 lambeq.backend
 ==============
 
