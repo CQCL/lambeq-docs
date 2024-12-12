@@ -25,5 +25,6 @@ Related research
 ----------------
 
 - The idea of using category theory to represent language was first introduced in :cite:p:`coecke_2010`, which detailed a framework that later became known as :term:`DisCoCat`. DisCoCat is supported in ``lambeq`` along with many other compositional schemes.
-- A first, yet-unreleased version of ``lambeq`` was used in :cite:p:`lorenz_2023`, a paper that described one of the first small-scale NLP experiments on a real quantum computer. The 40-pages paper provides a detailed introduction to the theoretical framework and the principles on which ``lambeq`` is now based, and it's an excellent starting point for anyone who wants to learn more.
+- An extension of DisCoCat that allows the compositional encoding of full paragraphs or documents into quantum circuits is described in :cite:p:`coecke_2021a`. ``lambeq`` provides experimental support for :term:`DisCoCirc` models through the :py:mod:`lambeq.experimental.discocirc` package.
+- An early, yet-unreleased version of ``lambeq`` was used in :cite:p:`lorenz_2023`, a paper that described one of the first small-scale NLP experiments on a real quantum computer. The 40-pages paper provides a detailed introduction to the theoretical framework and the principles on which ``lambeq`` is now based, and it's an excellent starting point for the interested readers.
 
