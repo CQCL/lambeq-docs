@@ -73,10 +73,6 @@ jobs:
         uv run pytest --nbmake ${{ env.DOCS_DIR }}/tutorials/
         --nbmake-timeout=60
         --ignore ${{ env.DOCS_DIR }}/tutorials/code
-    - name: Draw diagrams from PlantUML files
-      uses: Timmy/plantuml-action@v1
-      with:
-        args: '-v -DPLANTUML_LIMIT_SIZE=8192 -tpng ${{ env.DOCS_DIR }}/puml/*.puml -o img'
     - name: Build documentation
       env:
         BASE_PATH: '/lambeq'

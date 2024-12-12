@@ -21,3 +21,9 @@ lambeq and compositionality
 4. **Theoretical depth for linguistic analysis:** The compositional nature of ``lambeq``'s models allows for deeper theoretical insights into linguistic phenomena, bridging gaps between computational linguistics and formal linguistics.
 5. **Interdisciplinary applications:** Since compositionality is a fundamental aspect in many other fields (e.g. systems theory, programming languages, bioinformatics, or even human cognition), ``lambeq`` can facilitate interdisciplinary research.
 
+Related research
+----------------
+
+- The idea of using category theory to represent language was first introduced in :cite:p:`coecke_2010`, which detailed a framework that later became known as :term:`DisCoCat`. DisCoCat is supported in ``lambeq`` along with many other compositional schemes.
+- A first, yet-unreleased version of ``lambeq`` was used in :cite:p:`lorenz_2023`, a paper that described one of the first small-scale NLP experiments on a real quantum computer. The 40-pages paper provides a detailed introduction to the theoretical framework and the principles on which ``lambeq`` is now based, and it's an excellent starting point for anyone who wants to learn more.
+
