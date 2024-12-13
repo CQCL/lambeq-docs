@@ -75,7 +75,7 @@ Glossary
         A factorization of a large tensor into a chain-like product of smaller tensors. ``lambeq`` is equipped with :term:`ansätze <ansatz (plural: ansätze)>` that implement various forms of matrix product states, allowing the execution of large :term:`tensor networks <tensor network>` on classical hardware.
 
     model
-        A ``lambeq`` model is a class holding the trainable weights and other model-specific information, used in supervised learning. A model is always associated with a specific backend, such as PyTorch, NumPy, or :term:`tket`, and is paired with a matching :term:`trainer`.
+        A ``lambeq`` model is a class holding the trainable weights and other model-specific information, used in supervised learning. A model is always associated with a specific backend, such as :term:`PyTorch`, NumPy, or :term:`tket`, and is paired with a matching :term:`trainer`.
 
     monoidal category
         A :term:`category` equipped with the monoidal product :math:`\otimes` and monoidal unit :math:`I`, providing an abstraction suitable for quantum computation.  :term:`Categorical quantum mechanics (CQM) <categorical quantum mechanics (CQM)>` and :term:`DisCoCat` are both based on the mathematical framework of monoidal categories.

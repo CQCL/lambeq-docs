@@ -22,4 +22,4 @@ In more detail:
 
 5. Now the output of the pipeline (:term:`quantum circuit` or :term:`tensor network`) is ready to be used for :ref:`training <sec-training>`. Since Release :ref:`rel-0.2.0`, ``lambeq`` provides a detailed hierarchy of model and trainer classes that cover all the important use-cases of supervised learning.
 
-In the case of a fully quantum pipeline, the trainer will first process the :term:`quantum circuit` by calling a quantum compiler, and then it will upload the result onto a quantum computer, while in the classical case the :term:`tensor network` will be passed to an ML or optimisation library, such as PyTorch or JAX.
+In the case of a fully quantum pipeline, the trainer will first process the :term:`quantum circuit` by calling a quantum compiler, and then it will upload the result onto a quantum computer, while in the classical case the :term:`tensor network` will be passed to an ML or optimisation library, such as :term:`PyTorch` or JAX.
