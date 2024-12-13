@@ -10,7 +10,7 @@ lambeq use cases
 - evaluation of tensor networks on classical hardware.
 
 .. _fig-usecases:
-.. figure:: _static/images/use_cases.png
+.. figure:: ../_static/images/use_cases.png
    :scale: 45%
    :align: center
 

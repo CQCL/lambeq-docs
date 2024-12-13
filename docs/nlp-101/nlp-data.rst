@@ -76,7 +76,7 @@ Tokenization comes in many different forms. Some examples are the following:
 
 .. note::
 
-  ``lambeq`` supports word and sentence tokenization through the :py:class:`.Tokeniser` class hierarchy and specifically the :py:class:`.SpacyTokeniser` class, based on the SpaCy package. For more information see :ref:`this detailed tutorial </tutorials/sentence-input.ipynb#Pre-processing-and-tokenisation>`.
+  ``lambeq`` supports word and sentence tokenization through the :py:class:`.Tokeniser` class hierarchy and specifically the :py:class:`.SpacyTokeniser` class, based on the :term:`spaCy` package. For more information see :ref:`this detailed tutorial </tutorials/sentence-input.ipynb#Pre-processing-and-tokenisation>`.
 
 Handling unknown words
 ----------------------

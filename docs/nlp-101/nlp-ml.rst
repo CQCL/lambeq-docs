@@ -1,4 +1,4 @@
-.. _sec-ml:
+.. _sec-nlp-ml:
 
 Machine learning best practices
 ===============================

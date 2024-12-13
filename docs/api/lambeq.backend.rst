@@ -1,3 +1,5 @@
+.. _backend-api:
+
 lambeq.backend
 ==============
 
@@ -21,6 +23,14 @@ lambeq.backend.quantum
 ----------------------
 
 .. automodule:: lambeq.backend.quantum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lambeq.backend.pregroup_tree
+----------------------------
+
+.. automodule:: lambeq.backend.pregroup_tree
    :members:
    :undoc-members:
    :show-inheritance:
