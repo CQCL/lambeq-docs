@@ -12,7 +12,7 @@ resolution-markers = [
 [manifest.dependency-groups]
 dev = [
     { name = "furo", specifier = "~=2024.7.18" },
-    { name = "lambeq", extras = ["extras", "test"], specifier = ">=0.4.3" },
+    { name = "lambeq", extras = ["extras", "test"], specifier = ">=0.4.2" },
     { name = "myst-nb", specifier = "==1.1.*" },
     { name = "nbformat", specifier = "~=5.7.3" },
     { name = "nbmake", specifier = ">=1.5.4" },
