@@ -22,4 +22,4 @@ or refer to :ref:`sec-installation` for more information. Some other useful star
 .. rubric:: See also:
 
 - :ref:`How to cite <sec-cite>`
-- :ref:`Lincence <sec-licence>`
+- :ref:`Licence <sec-licence>`
