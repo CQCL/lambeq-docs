@@ -1,4 +1,4 @@
-lambeq[extras,test]>=0.4.2
+git+https://github.com/cqcl/lambeq#egg=lambeq[extras,test,experimental]
 nbformat~=5.7.3
 myst_nb==1.1.*
 numpydoc~=1.5.0
@@ -12,6 +12,9 @@ sphinxcontrib-bibtex~=2.6.3
 nbmake>=1.5.4
 pip>=24.2
 qiskit<1
+# Don't add `pytket` to pyproject.toml as uv can resolve the correct version.
+# This explicit version is for other environment managers (e.g. pip, conda)
+pytket~=1.31.0
 pytket-qiskit>=0.48.0
 qiskit-ibm-runtime>=0.17.0
-sphinxcontrib-googleanalytics
+sphinxcontrib-googleanalytics==0.4
