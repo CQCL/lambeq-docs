@@ -36,13 +36,13 @@ jobs:
         fetch-depth: 0  # fetches tags, required for version info
     - name: Set up uv
       # Install a specific uv version using the installer
-      run: curl -LsSf https://astral.sh/uv/0.4.0/install.sh | sh
+      run: curl -LsSf https://astral.sh/uv/0.5.16/install.sh | sh
     - name: Set up Python
       run: uv python install 3.10
     - name: Install documentation dependencies
       run: |
         sudo apt-get install graphviz pandoc
-        uv add --dev -r requirements.txt
+        uv sync --dev
     - name: Locate bobcat pre-trained model cache
       id: loc-bobcat-cache
       run: echo "dir=$(echo 'from lambeq.text2diagram.model_downloader import ModelDownloader; print(ModelDownloader("bert").model_dir)' | uv run - )" >> $GITHUB_OUTPUT
@@ -103,13 +103,13 @@ jobs:
         fetch-depth: 0  # fetches tags, required for version info
     - name: Set up uv
       # Install a specific uv version using the installer
-      run: curl -LsSf https://astral.sh/uv/0.4.0/install.sh | sh
+      run: curl -LsSf https://astral.sh/uv/0.5.16/install.sh | sh
     - name: Set up Python
       run: uv python install 3.12
     - name: Install documentation dependencies
       run: |
         sudo apt-get install graphviz pandoc
-        uv add --dev -r requirements.txt
+        uv sync --dev
     - name: Clean notebooks
       run: |
         uv run scripts/clean_notebooks.py -p ${{ env.DOCS_DIR }} -s
