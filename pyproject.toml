@@ -21,3 +21,6 @@ dev-dependencies = [
 
 [tool.uv.workspace]
 members = []
+
+[tool.uv.sources]
+lambeq = { git = "https://github.com/cqcl/lambeq" }

@@ -42,8 +42,7 @@ jobs:
     - name: Install documentation dependencies
       run: |
         sudo apt-get install graphviz pandoc
-        uv sync --dev
-        uv add git+https://github.com/cqcl/lambeq --dev --extra=extras --extra=test --extra=experimental
+        uv sync --dev --no-cache
     - name: Locate bobcat pre-trained model cache
       id: loc-bobcat-cache
       run: echo "dir=$(echo 'from lambeq.text2diagram.model_downloader import ModelDownloader; print(ModelDownloader("bert").model_dir)' | uv run - )" >> $GITHUB_OUTPUT
