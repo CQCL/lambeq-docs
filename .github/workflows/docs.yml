@@ -38,7 +38,7 @@ jobs:
       # Install a specific uv version using the installer
       run: curl -LsSf https://astral.sh/uv/0.4.0/install.sh | sh
     - name: Set up Python
-      run: uv python install 3.12
+      run: uv python install 3.10
     - name: Install documentation dependencies
       run: |
         sudo apt-get install graphviz pandoc
