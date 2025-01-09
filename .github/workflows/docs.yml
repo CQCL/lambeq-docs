@@ -42,7 +42,7 @@ jobs:
     - name: Install documentation dependencies
       run: |
         sudo apt-get install graphviz pandoc
-        uv sync --dev --no-cache
+        uv add --dev -r requirements.txt
     - name: Locate bobcat pre-trained model cache
       id: loc-bobcat-cache
       run: echo "dir=$(echo 'from lambeq.text2diagram.model_downloader import ModelDownloader; print(ModelDownloader("bert").model_dir)' | uv run - )" >> $GITHUB_OUTPUT
@@ -109,7 +109,7 @@ jobs:
     - name: Install documentation dependencies
       run: |
         sudo apt-get install graphviz pandoc
-        uv sync --dev
+        uv add --dev -r requirements.txt
     - name: Clean notebooks
       run: |
         uv run scripts/clean_notebooks.py -p ${{ env.DOCS_DIR }} -s

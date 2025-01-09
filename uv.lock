@@ -18,6 +18,7 @@ dev = [
     { name = "nbmake", specifier = ">=1.5.4" },
     { name = "numpydoc", specifier = "~=1.5.0" },
     { name = "pip", specifier = ">=24.2" },
+    { name = "pytket", specifier = "~=1.31.0" },
     { name = "pytket-qiskit", specifier = ">=0.48.0" },
     { name = "qiskit", specifier = "<1" },
     { name = "qiskit-ibm-runtime", specifier = ">=0.17.0" },

@@ -2,11 +2,11 @@
 dev-dependencies = [
     "lambeq[experimental,extras,test]>=0.4.2",
     "nbformat~=5.7.3",
-    "myst_nb==1.1.*",
+    "myst-nb==1.1.*",
     "numpydoc~=1.5.0",
     "sphinx==7.4.*",
     "sphinx-argparse~=0.4.0",
-    "sphinx_mdinclude~=0.5.3",
+    "sphinx-mdinclude~=0.5.3",
     "furo~=2024.7.18",
     "sphinx-copybutton==0.5.2",
     "sphinxcontrib-jquery~=4.1",
@@ -17,6 +17,7 @@ dev-dependencies = [
     "pytket-qiskit>=0.48.0",
     "qiskit-ibm-runtime>=0.17.0",
     "sphinxcontrib-googleanalytics==0.4",
+    "pytket~=1.31.0",
 ]
 
 [tool.uv.workspace]
