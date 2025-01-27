@@ -13,7 +13,7 @@ In order to simplify :term:`NLP <natural language processing (NLP)>` design on q
 From a more practical point of view, a :term:`string diagram` can be seen as an enriched :term:`tensor network`, a mathematical structure with many applications in quantum physics. Compared to tensor networks, string diagrams have some additional convenient properties, for example, they respect the order of words, and allow easy rewriting/modification of their structure.
 
 .. _fig-stringdiagram:
-.. figure:: ./_static/images/string_diagram.png
+.. figure:: ../_static/images/string_diagram.png
    :align: center
 
    String diagram (a) and corresponding tensor network (b).
@@ -37,7 +37,7 @@ Pregroup grammars
 
 When annotated with pregroup types, the diagram in :numref:`fig-stringdiagram` takes the following form:
 
-.. image:: ./_static/images/pregroups.png
+.. image:: ../_static/images/pregroups.png
    :scale: 32 %
    :align: center
 

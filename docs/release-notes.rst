@@ -10,7 +10,7 @@ Release notes
 
 Changed:
 
-- Documentation has now been moved to a [dedicated repository](https://github.com/CQCL/lambeq-docs) and got a new URL (https://cqcl.github.io/lambeq-docs/).
+- Documentation has now been moved to a `dedicated repository <https://github.com/CQCL/lambeq-docs>`_ and got a new URL (https://docs.quantinuum.com/lambeq).
 - Changed the landing page and some visuals in the online documentation.
 - Updated README to reflect the new docs structure.
 

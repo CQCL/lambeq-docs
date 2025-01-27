@@ -18,12 +18,12 @@ const cardConfig = [
         {
             "title": "\u03BBambeq pipeline",
             "description": "Understand how a sentence is converted into a quantum circuit.",
-            "link": "pipeline.html"
+            "link": "guide/pipeline.html"
         },
         {
             "title": "\u03BBambeq use cases",
             "description": "Read about the various use cases on which \u03BBambeq can help you advance your research.",
-            "link": "use-cases.html"
+            "link": "guide/ml_use-cases.html"
         }
     ]
   },
@@ -56,7 +56,7 @@ const cardConfig = [
         {
             "title": "Low-level \u03BBambeq",
             "description": "Delve into the mathematics and see how string diagrams fit to monoidal categories theory.",
-            "link": "advanced.html"
+            "link": "low-level.html"
         },
         {
             "title": "Extending \u03BBambeq",

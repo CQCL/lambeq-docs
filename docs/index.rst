@@ -4,50 +4,56 @@
 
    intro
    installation
-   troubleshooting
-   CONTRIBUTING
+   ../tutorials/quickstart.ipynb
 
 .. toctree::
    :caption: User guide
    :maxdepth: 1
 
-   pipeline
-   string-diagrams
-   parsing
-   use-cases
+   guide/lambeq-basic
+   guide/pipeline
+   guide/string-diagrams
+   guide/parsing
+   guide/ml_lambeq
+   guide/cli
 
 .. toctree::
-   :caption: NLP-101
+   :caption: Training
    :maxdepth: 2
 
-   nlp-intro
-   nlp-data
-   nlp-class
-   nlp-ml
-   nlp-refs
-
-.. toctree::
-   :caption: Tutorials
-   :maxdepth: 2
-
-   ../tutorials/sentence-input.ipynb
-   ../tutorials/rewrite.ipynb
-   ../tutorials/parameterise.ipynb
+   sent2circ
+   ../tutorials/discocirc-basics.ipynb
    training
    models
-   manual-training
-   advanced
+   low-level
    ../tutorials/extend-lambeq.ipynb
    notebooks
+   nlp-101
 
 .. toctree::
-   :caption: Toolkit
-   :maxdepth: 4
+   :caption: API
+   :maxdepth: 1
 
-   root-api
-   package-api
-   uml-diagrams
-   cli
+   api/lambeq.ansatz
+   api/lambeq.backend
+   api/lambeq.bobcat
+   api/lambeq.core
+   api/lambeq.experimental
+   api/lambeq.rewrite
+   api/lambeq.text2diagram
+   api/lambeq.tokeniser
+   api/lambeq.training
+
+.. toctree::
+   :caption: Support
+   :maxdepth: 1
+
+   support
+   troubleshooting
+   CONTRIBUTING
+   cite
+   licence
+   release-notes
 
 .. toctree::
    :caption: Reference
@@ -56,8 +62,7 @@
    glossary
    bibliography
    genindex
-   release-notes
-
+   
 .. toctree::
    :caption: External links
    :maxdepth: 1

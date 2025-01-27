@@ -15,6 +15,10 @@ To install ``lambeq`` with optional dependencies for extra features, run::
 
    pip install lambeq[extras]
 
+To install ``lambeq`` with optional dependencies for experimental features::
+
+   pip install lambeq[experimental]
+
 DepCCG support
 --------------
 
