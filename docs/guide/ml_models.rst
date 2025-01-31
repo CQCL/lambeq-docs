@@ -39,7 +39,7 @@ To use the :py:class:`.NumpyModel` with ``jit`` mode, you need to install ``lamb
 
 .. note::
 
-   To enable GPU support for ``jax``, follow the installation instructions on the `JAX GitHub repository <https://github.com/google/jax#installation>`_.
+   To enable GPU support for ``jax``, follow the installation instructions are on the `JAX GitHub repository <https://github.com/google/jax#installation>`_.
 
 :py:class:`.NumpyModel` should be used with the :py:class:`.QuantumTrainer`.
 
