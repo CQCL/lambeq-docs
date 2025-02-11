@@ -108,9 +108,9 @@ All of these backends are compatible with hybrid quantum-classical models. Note 
 PytorchModel
 ------------
 
-:py:class:`.PytorchModel` is the right choice for classical experiments. Here, string diagrams are treated as tensor networks, where boxes represent tensors and edges define the specific tensor contractions. Tensor contractions are optimised by the python package ``opt_einsum``.
+:py:class:`.PytorchModel` is the right choice for classical experiments. Here, string diagrams are treated as tensor networks, where boxes represent tensors and edges define the specific tensor contractions. Tensor contractions are optimised by the Python package ``opt_einsum``.
 
-To prepare the diagrams for the computation, we use a :py:class:`.TensorAnsatz` that converts a pregroup diagram into a tensor diagram. Subclasses of :py:class:`.TensorAnsatz` include the :py:class:`.SpiderAnsatz` and the :py:class:`.MPSAnsatz`, which reduce the size of large tensors by spliting them into chains of many smaller boxes. To prepare a tensor diagram for a sentence, for example:
+To prepare the diagrams for the computation, we use a :py:class:`.TensorAnsatz` that converts a pregroup diagram into a tensor diagram. Subclasses of :py:class:`.TensorAnsatz` include the :py:class:`.SpiderAnsatz` and the :py:class:`.MPSAnsatz`, which reduce the size of large tensors by splitting them into chains of many smaller boxes. To prepare a tensor diagram for a sentence, for example:
 
 .. code-block:: python
 
