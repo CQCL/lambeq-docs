@@ -12,19 +12,26 @@ This release introduces ``lambeq`` Gen II, marking a significant milestone in th
 
 Added:
 
-- TBD
+- A new experimental :py:mod:`~lambeq.experimental.discocirc` package that contains an efficient :py:class:`~lambeq.experimental.DisCoCircReader` and all the required functionality for converting long texts and entire multi-paged documents into quantum circuits, based on the DisCoCirc framework.
+- A new tree representation of a pregroup diagram, termed `pregroup tree`, which is implemented through the :py:class:`~lambeq.backend.PregroupTreeNode` class. This lays the groundwork for improving drastically parsing and internal processing of diagrams in a follow-up release, and minimizing or even eliminating exposure of the user to CCG representations and functionality.
+- A new :py:class:`~lambeq.backend.Frame` structure that allows the recursive grouping of ``lambeq`` boxes and diagrams and can be seen as a `quantum supermap` acting on the enclosed arguments.
+- A new :py:class:`~lambeq.training.PytorchQuantumModel` that allows Pytorch autograd to be used on quantum circuits, while so far it was possible to use it only on tensor networks (credit: `Kin Ian Lo <https://github.com/kinianlo>`)
+- A new integrated :py:class:`~lambeq.backend.Symbol` class that eliminates any dependencies with Sympy and improves efficiency.
+- Support for evaluating mixed-scalar PennyLane circuits i.e. circuits where all qubits are either discarded or post-selected.
 
 Changed:
 
-- TBD
+- Significantly improved the efficiency of the :py:class:`PennyLaneModel`.
+- Refactored all models so that do not anymore depend on ``tket`` as an intermediate for their conversions. 
+- :py:class:`CircuitAnsatz` now acts as a dagger functor (credit: `Kin Ian Lo <https://github.com/kinianlo>`)
+- Significantly extended and restructured the documentation pages, fixed various issues, and added more material and tutorials.
+- Changed ``tket`` to be an optional dependency.
 
 Fixed:
 
-- TBD
-
-Removed:
-
-- TBD
+- Fixed an enum incompatibility with Python > 3.10.
+- Fixed the behaviour of tensoring a type with a diagram when the diagram is the identity.
+- Fixed a :py:meth:`~lambeq.backend.Diagram.lambdify` method error when used with a daggered tensor box (credit: `Kin Ian Lo <https://github.com/kinianlo>`)
 
 .. _rel-0.4.3:
 
