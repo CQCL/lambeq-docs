@@ -3,6 +3,29 @@
 Release notes
 =============
 
+.. _rel-0.5.0:
+
+`0.5.0 <https://github.com/CQCL/lambeq/releases/tag/0.5.0>`_
+------------------------------------------------------------
+
+This release introduces ``lambeq`` Gen II, marking a significant milestone in the evolution of the package.
+
+Added:
+
+- TBD
+
+Changed:
+
+- TBD
+
+Fixed:
+
+- TBD
+
+Removed:
+
+- TBD
+
 .. _rel-0.4.3:
 
 `0.4.3 <https://github.com/CQCL/lambeq/releases/tag/0.4.3>`_
