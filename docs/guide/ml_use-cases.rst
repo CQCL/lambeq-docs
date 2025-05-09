@@ -26,16 +26,15 @@ The above figure introduces a couple of concepts that might need further explana
 .. _tbl-usecases:
 .. csv-table:: Common training use cases.
    :header: "Use case", "Configurations", ""
-   :widths: 40, 40, 10
+   :widths: 40, 42, 8
 
-   "Exact non-shot based simulation of quantum circuits on classical hardware", "| :py:class:`.NumpyModel` with :py:class:`.QuantumTrainer`
-   | :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc1>`"
-   "Noiseless shot-based simulation of quantum circuits on classical hardware", "| :py:class:`.TketModel` with :py:class:`.QuantumTrainer`,
-   | :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc2>`"
-   "Noisy shot-based simulation of quantum circuits on classical hardware", "| :py:class:`.TketModel` with :py:class:`.QuantumTrainer`
-   | :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc2>`"
-   "Evaluation of quantum circuits on a quantum computer", "| :py:class:`.TketModel` with :py:class:`.QuantumTrainer`
-   | :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc3>`"
+   "Exact non-shot based simulation of quantum circuits on classical hardware", ":py:class:`.PytorchQuantumModel` with :py:class:`.PytorchTrainer`, :py:class:`.NumpyModel` with :py:class:`.QuantumTrainer`, :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc1>`"
+   "Noiseless shot-based simulation of quantum circuits on classical hardware", ":py:class:`.TketModel` with :py:class:`.QuantumTrainer`,
+   :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc2>`"
+   "Noisy shot-based simulation of quantum circuits on classical hardware", ":py:class:`.TketModel` with :py:class:`.QuantumTrainer`,
+   :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc2>`"
+   "Evaluation of quantum circuits on a quantum computer", ":py:class:`.TketModel` with :py:class:`.QuantumTrainer`,
+   :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc3>`"
    "Evaluation of classical, tensor-based models", ":py:class:`.PytorchModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc4>`"
    "Hybrid classical/quantum simulation of quantum circuits on classical hardware", ":py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`", ":ref:`details <uc5>`"
 
@@ -46,6 +45,7 @@ Exact (non :term:`shot-based <shots>`) simulation of quantum circuits on classic
 :Description:
    Perform a simple, noiseless, non-shot-based simulation of a quantum run on classical hardware.
 :Configuration:
+   - :py:class:`.PytorchQuantumModel` with :py:class:`.PytorchTrainer`.
    - :py:class:`.NumpyModel` with :py:class:`.QuantumTrainer`.
    - :py:class:`.PennyLaneModel` with :py:class:`.PytorchTrainer`.
 :When to use:
@@ -53,10 +53,11 @@ Exact (non :term:`shot-based <shots>`) simulation of quantum circuits on classic
    - As a simple baseline for comparing with quantum runs
    - When fast training speeds are required
 
-Computation with :term:`NISQ` devices is slow, noisy and limited, so it is still not practical to do extensive training and comparative analyses on them. For this reason, and especially at the early stages of modelling, proofs-of-concept are usually obtained by running simulations on classical hardware. The simplest possible way to simulate a quantum computation on a classical computer is by using linear algebra; since quantum gates correspond to complex-valued tensors, each circuit can be represented as a tensor network where computation takes the form of tensor contraction. The output of the tensor network gives the ideal probability distribution of the measurement outcomes on a noise-free quantum computer and is only a rough approximation of the sampled probability distribution obtained from a :term:`NISQ` device. An "exact simulation" of this form usually serves as a simple baseline or the first proof of concept for testing a quantum configuration, and in ``lambeq`` is implemented by the :py:class:`.NumpyModel` class, and by the :py:class:`.PennyLaneModel` with the attribute ``backend_config={'backend'='default.qubit', 'shots'=None}``.
+Computation with :term:`NISQ` devices is slow, noisy and limited, so it is still not practical to do extensive training and comparative analyses on them. For this reason, and especially at the early stages of modelling, proofs-of-concept are usually obtained by running simulations on classical hardware. The simplest possible way to simulate a quantum computation on a classical computer is by using linear algebra; since quantum gates correspond to complex-valued tensors, each circuit can be represented as a tensor network where computation takes the form of tensor contraction. The output of the tensor network gives the ideal probability distribution of the measurement outcomes on a noise-free quantum computer and is only a rough approximation of the sampled probability distribution obtained from a :term:`NISQ` device. An "exact simulation" of this form usually serves as a simple baseline or the first proof of concept for testing a quantum configuration, and in ``lambeq`` is implemented by the :py:class:`.PytorchQuantumModel` class which provides fast PyTorch training with autograd, by the  :py:class:`.NumpyModel` class, and by the :py:class:`.PennyLaneModel` with the attribute ``backend_config={'backend'='default.qubit', 'shots'=None}``.
 
 .. rubric:: See also:
 
+- :ref:`sec-pytorchquantummodel`
 - :ref:`sec-numpymodel`
 - :ref:`sec-pennylanemodel`
 

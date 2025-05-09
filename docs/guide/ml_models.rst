@@ -158,6 +158,21 @@ To simplify training, the :py:class:`.PytorchModel` can be used with the :py:cla
 
 - :ref:`uc4`
 
+.. _sec-pytorchquantummodel:
+
+PytorchQuantumModel
+-------------------
+
+The PyTorch backend in ``lambeq`` can be also used with quantum circuits for exact simulations. In this case, the quantum circuit is converted into a tensor network similar to how the :ref:`sec-numpymodel` works, which is tensor-contracted to return the result. Compared to :py:class:`.NumpyModel`, the :py:class:`.PytorchQuantumModel` has the advantage of using Pytorch's advanced autograd features and efficient optimisers such as Adam, allowing for fast and reliable training of quantum circuits.
+
+.. note::
+
+   Note that the :py:class:`PytorchQuantumModel` makes use of the standard PyTorch library, and is not based in any quantum-specific PyTorch variation, such as `TorchQuantum <https://github.com/mit-han-lab/torchquantum>`_.
+
+.. rubric:: See also the following use cases:
+
+- :ref:`uc1`
+
 .. _sec-tketmodel:
 
 TketModel
