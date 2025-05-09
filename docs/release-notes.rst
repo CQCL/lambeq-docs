@@ -12,17 +12,20 @@ This release introduces ``lambeq`` Gen II, marking a significant milestone in th
 
 Added:
 
-- A new experimental :py:mod:`~lambeq.experimental.discocirc` package that contains an efficient :py:class:`~lambeq.experimental.DisCoCircReader` and all the required functionality for converting long texts and entire multi-paged documents into quantum circuits, based on the DisCoCirc framework.
-- A new tree representation of a pregroup diagram, termed `pregroup tree`, which is implemented through the :py:class:`~lambeq.backend.PregroupTreeNode` class. This lays the groundwork for improving drastically parsing and internal processing of diagrams in a follow-up release, and minimizing or even eliminating exposure of the user to CCG representations and functionality.
-- A new :py:class:`~lambeq.backend.Frame` structure that allows the recursive grouping of ``lambeq`` boxes and diagrams and can be seen as a `quantum supermap` acting on the enclosed arguments.
-- A new :py:class:`~lambeq.training.PytorchQuantumModel` that allows Pytorch autograd to be used on quantum circuits, while so far it was possible to use it only on tensor networks (credit: `Kin Ian Lo <https://github.com/kinianlo>`)
-- A new integrated :py:class:`~lambeq.backend.Symbol` class that eliminates any dependencies with Sympy and improves efficiency.
+- A new experimental :py:mod:`~lambeq.experimental.discocirc` package that contains an efficient :py:class:`~lambeq.experimental.discocirc.DisCoCircReader` and all the required functionality for converting long texts and entire multi-paged documents into quantum circuits, based on the DisCoCirc framework.
+- A new tree representation of a pregroup diagram, termed `pregroup tree`, which is implemented through the :py:class:`~lambeq.text2diagram.pregroup_tree.PregroupTreeNode` class. This lays the groundwork for improving drastically parsing and internal processing of diagrams in a follow-up release, and minimizing or even eliminating exposure of the user to CCG representations and functionality.
+- A new :py:class:`~lambeq.backend.grammar.Frame` data structure that allows the recursive grouping of ``lambeq`` boxes and diagrams and can be seen as a `quantum supermap` acting on the enclosed arguments.
+- A new :py:class:`~lambeq.training.PytorchQuantumModel` that allows Pytorch autograd to be used on quantum circuits, while so far it was possible to use it only on tensor networks (credit: `Kin Ian Lo <https://github.com/kinianlo>`_)
+- A new integrated :py:class:`~lambeq.backend.symbol.Symbol` class that eliminates any dependencies with Sympy and improves efficiency.
+- Caching options for fast access to already computed tensor contraction paths in models that use tensor networks, specifically :py:class:`.PytorchModel` and :py:class:`.PytorchQuantumModel`. The constructor of these models now takes a :py:attr:`tn_path_optimizer` argument, which can be a :py:class:`.TnPathOptimizer` object, replicating the old un-cached behaviour, or a :py:class:`.CachedTnPathOptimizer` which allows caching of the computed tensor contraction paths for quick lookup.
 - Support for evaluating mixed-scalar PennyLane circuits i.e. circuits where all qubits are either discarded or post-selected.
+- Two new ansätze from the Sim `et al.` :cite:p:`sim_2019` paper, :py:class:`.Sim9Ansatz` and :py:class:`.Sim9CxAnsatz`.
+- Support for ancilla qubits in ``lambeq``'s ansätze.
 
 Changed:
 
 - Significantly improved the efficiency of the :py:class:`PennyLaneModel`.
-- Refactored all models so that do not anymore depend on ``tket`` as an intermediate for their conversions. 
+- Refactored all models so that do not anymore depend on ``tket`` as an intermediate for their conversions.
 - :py:class:`CircuitAnsatz` now acts as a dagger functor (credit: `Kin Ian Lo <https://github.com/kinianlo>`)
 - Significantly extended and restructured the documentation pages, fixed various issues, and added more material and tutorials.
 - Changed ``tket`` to be an optional dependency.
