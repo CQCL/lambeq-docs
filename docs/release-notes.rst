@@ -12,7 +12,7 @@ This release introduces ``lambeq`` Gen II, marking a significant milestone in th
 
 Added:
 
-- A new experimental :py:mod:`~lambeq.experimental.discocirc` package that contains an efficient :py:class:`~lambeq.experimental.discocirc.DisCoCircReader` and all the required functionality for converting long texts and entire multi-paged documents into quantum circuits, based on the DisCoCirc framework.
+- A new experimental :py:mod:`~lambeq.experimental.discocirc` module that contains an efficient :py:class:`~lambeq.experimental.discocirc.DisCoCircReader` and all the required functionality for converting long texts and entire multi-paged documents into quantum circuits, based on the DisCoCirc framework.
 - A new tree representation of a pregroup diagram, termed :term:`pregroup tree`, which is implemented through the :py:class:`~lambeq.text2diagram.pregroup_tree.PregroupTreeNode` class. This lays the groundwork for drastically improving parsing and internal processing of diagrams.
 - A new experimental end-to-end parser class, :py:class:`~lambeq.text2diagram.OncillaParser`, that simplifies the process of generating diagrams from text, minimizing or even eliminating exposure of the user to CCG representations and functionality. This depends on the :term:`pregroup tree` representation of diagrams.
 - A new :py:class:`~lambeq.backend.grammar.Frame` data structure that allows the recursive grouping of ``lambeq`` boxes and diagrams and can be seen as a `quantum supermap` acting on the enclosed arguments.
