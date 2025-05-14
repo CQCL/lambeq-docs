@@ -28,7 +28,7 @@ Added:
 Changed:
 
 - Significantly improved the efficiency of the :py:class:`PennyLaneModel`.
-- Refactored all models so that they do not depend on ``tket`` as an intermediate for their conversions.
+- Refactored all models so that they do not depend on ``tket`` as an intermediate step for their conversions.
 - :py:class:`CircuitAnsatz` now acts as a dagger functor (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
 - Refactored :py:class:`QuantumModel` to be less numpy-specific and easier to extend with other backends.
 - Make split tensor ansätze, i.e. :py:class:`.SpiderAnsatz` and :py:class:`.MPSAnsatz`, work on boxes with domains. This utilises the newly-implemented :py:class:`.CollapseDomainRewriteRule` (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
