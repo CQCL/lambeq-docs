@@ -19,7 +19,7 @@ Added:
 - A new :py:class:`~lambeq.training.PytorchQuantumModel` class that allows Pytorch autograd to be used on quantum circuits, while so far it was possible to use it only on tensor networks (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
 - A new native :py:class:`~lambeq.backend.symbol.Symbol` class that eliminates any dependencies with `SymPy <https://www.sympy.org/>`_ and improves efficiency.
 - A new rewrite rule class, :py:class:`~lambeq.rewrite.CollapseDomainRewriteRule`, that convert boxes into domain-less boxes by uncurrying (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
-- New :py:meth:`~lambeq.backend.Diagram.remove_snakes` and :py:meth:`~lambeq.backend.Diagram.rigid_normal_form` methods that isolates the desired rewrites from the original :py:meth:`~lambeq.backend.Diagram.normal_form` method (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
+- New :py:meth:`~lambeq.backend.Diagram.remove_snakes` and :py:meth:`~lambeq.backend.Diagram.rigid_normal_form` methods that isolate the desired rewrites from the original :py:meth:`~lambeq.backend.Diagram.normal_form` method (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
 - Caching options for fast access to already computed tensor contraction paths for tensor network models, specifically :py:class:`.PytorchModel` and :py:class:`.PytorchQuantumModel`. The constructor of these models now takes a :py:attr:`tn_path_optimizer` argument, which can be a :py:class:`.TnPathOptimizer` object, replicating the old un-cached behaviour, or a :py:class:`.CachedTnPathOptimizer` which allows caching of the computed tensor contraction paths for quick lookup.
 - Support for evaluating mixed-scalar PennyLane circuits i.e. circuits where all qubits are either discarded or post-selected.
 - Two new ansätze from the Sim `et al.` :cite:p:`sim_2019` paper, :py:class:`.Sim9Ansatz` and :py:class:`.Sim9CxAnsatz`.
@@ -27,11 +27,12 @@ Added:
 
 Changed:
 
-- Significantly improved the efficiency of the :py:class:`PennyLaneModel`.
+- Significantly improved the efficiency of the :py:class:`.PennyLaneModel`.
 - Refactored all models so that they do not depend on ``tket`` as an intermediate step for their conversions.
-- :py:class:`CircuitAnsatz` now acts as a dagger functor (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
-- Refactored :py:class:`QuantumModel` to be less numpy-specific and easier to extend with other backends.
+- :py:class:`.CircuitAnsatz` now acts as a dagger functor (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
+- Refactored :py:class:`.QuantumModel` to be less numpy-specific and easier to extend with other backends.
 - Make split tensor ansätze, i.e. :py:class:`.SpiderAnsatz` and :py:class:`.MPSAnsatz`, work on boxes with domains. This utilises the newly-implemented :py:class:`.CollapseDomainRewriteRule` (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
+- Make the `device` keyword argument for model-based parsers, e.g. :py:class:`.BobcatParser`, follow PyTorch convention and support multiple types.
 - Added the new :py:class:`~lambeq.text2diagram.OncillaParser` as a parser option to the CLI via the `-p oncilla` argument.
 - Removed the deprecated :py:class:`~lambeq.text2diagram.DepCCGParser` as a parser option from the CLI.
 - Significantly extended and restructured the documentation pages, fixed various issues, and added more material and tutorials.
