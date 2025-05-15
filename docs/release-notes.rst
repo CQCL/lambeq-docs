@@ -29,8 +29,8 @@ Changed:
 - Refactored all models so that they do not depend on ``tket`` as an intermediate step for their conversions.
 - :py:class:`.CircuitAnsatz` now acts as a dagger functor (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
 - Refactored :py:class:`.QuantumModel` to be less numpy-specific and easier to extend with other backends.
-- Make split tensor ansätze, i.e. :py:class:`.SpiderAnsatz` and :py:class:`.MPSAnsatz`, work on boxes with domains. This utilises the newly-implemented :py:class:`.CollapseDomainRewriteRule` (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
-- Changed the :py:attr:`device` keyword argument for model-based parsers (e.g. :py:class:`.BobcatParser`) so that follow PyTorch convention and support multiple types.
+- Made the split tensor ansätze, i.e. :py:class:`.SpiderAnsatz` and :py:class:`.MPSAnsatz`, work on boxes with domains. This utilises the newly-implemented :py:class:`.CollapseDomainRewriteRule` (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
+- Changed the :py:attr:`device` keyword argument for model-based parsers (e.g. :py:class:`.BobcatParser`) so that it follows PyTorch convention and support multiple types.
 - Added the new :py:class:`~lambeq.text2diagram.OncillaParser` as a parser option to the CLI via the ``-p oncilla`` argument.
 - Removed the deprecated :py:class:`~lambeq.text2diagram.DepCCGParser` as a parser option from the CLI.
 - Significantly extended and restructured the documentation pages, fixed various issues, and added more material and tutorials.
