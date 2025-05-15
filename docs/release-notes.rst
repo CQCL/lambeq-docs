@@ -8,8 +8,6 @@ Release notes
 `0.5.0 <https://github.com/CQCL/lambeq/releases/tag/0.5.0>`_
 ------------------------------------------------------------
 
-This release introduces ``lambeq`` Gen II, marking a significant milestone in the evolution of the package.
-
 Added:
 
 - A new experimental :py:mod:`~lambeq.experimental.discocirc` module that contains an efficient :py:class:`~lambeq.experimental.discocirc.DisCoCircReader` and all the required functionality for converting long texts and entire multi-paged documents into quantum circuits, based on the :py:term:`DisCoCirc` framework.
