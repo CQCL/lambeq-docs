@@ -12,14 +12,14 @@ This release introduces ``lambeq`` Gen II, marking a significant milestone in th
 
 Added:
 
-- A new experimental :py:mod:`~lambeq.experimental.discocirc` module that contains an efficient :py:class:`~lambeq.experimental.discocirc.DisCoCircReader` and all the required functionality for converting long texts and entire multi-paged documents into quantum circuits, based on the DisCoCirc framework.
+- A new experimental :py:mod:`~lambeq.experimental.discocirc` module that contains an efficient :py:class:`~lambeq.experimental.discocirc.DisCoCircReader` and all the required functionality for converting long texts and entire multi-paged documents into quantum circuits, based on the :py:term:`DisCoCirc` framework.
 - A new tree representation of a pregroup diagram, termed :term:`pregroup tree`, which is implemented through the :py:class:`~lambeq.text2diagram.pregroup_tree.PregroupTreeNode` class. This lays the groundwork for drastically improving parsing and internal processing of diagrams.
-- A new experimental end-to-end parser class, :py:class:`~lambeq.text2diagram.OncillaParser`, that simplifies the process of generating diagrams from text, minimizing or even eliminating exposure of the user to CCG representations and functionality. This depends on the :term:`pregroup tree` representation of diagrams.
-- A new :py:class:`~lambeq.backend.grammar.Frame` data structure that allows the recursive grouping of ``lambeq`` boxes and diagrams and can be seen as a `quantum supermap` acting on the enclosed arguments.
+- A new experimental end-to-end parser class, :py:class:`~lambeq.text2diagram.OncillaParser`, that simplifies the process of generating diagrams from text, minimizing or even eliminating exposure of the user to CCG representations and functionality. This parser utilises the :term:`pregroup tree` representation of diagrams.
+- A new :py:class:`~lambeq.backend.grammar.Frame` data structure that allows the recursive grouping of ``lambeq`` boxes and diagrams and can be seen as a `quantum supermap` acting on the enclosed arguments. Frames are used in :py:term:`DisCoCirc` diagrams.
 - A new :py:class:`~lambeq.training.PytorchQuantumModel` class that allows Pytorch autograd to be used on quantum circuits, while so far it was possible to use it only on tensor networks (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
 - A new native :py:class:`~lambeq.backend.symbol.Symbol` class that eliminates any dependencies with `SymPy <https://www.sympy.org/>`_ and improves efficiency.
 - A new rewrite rule class, :py:class:`~lambeq.rewrite.CollapseDomainRewriteRule`, that convert boxes into domain-less boxes by uncurrying (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
-- New :py:meth:`~lambeq.backend.Diagram.remove_snakes` and :py:meth:`~lambeq.backend.Diagram.rigid_normal_form` methods that isolate the desired rewrites from the original :py:meth:`~lambeq.backend.Diagram.normal_form` method (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
+- New :py:meth:`~lambeq.backend.Diagram.remove_snakes` and :py:meth:`~lambeq.backend.Diagram.rigid_normal_form` methods that separate the specific rewrites from the original :py:meth:`~lambeq.backend.Diagram.normal_form` method (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
 - Caching options for fast access to already computed tensor contraction paths for tensor network models, specifically :py:class:`.PytorchModel` and :py:class:`.PytorchQuantumModel`. The constructor of these models now takes a :py:attr:`tn_path_optimizer` argument, which can be a :py:class:`.TnPathOptimizer` object, replicating the old un-cached behaviour, or a :py:class:`.CachedTnPathOptimizer` which allows caching of the computed tensor contraction paths for quick lookup.
 - Support for evaluating mixed-scalar PennyLane circuits i.e. circuits where all qubits are either discarded or post-selected.
 - Two new ansätze from the Sim `et al.` :cite:p:`sim_2019` paper, :py:class:`.Sim9Ansatz` and :py:class:`.Sim9CxAnsatz`.
@@ -32,8 +32,8 @@ Changed:
 - :py:class:`.CircuitAnsatz` now acts as a dagger functor (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
 - Refactored :py:class:`.QuantumModel` to be less numpy-specific and easier to extend with other backends.
 - Make split tensor ansätze, i.e. :py:class:`.SpiderAnsatz` and :py:class:`.MPSAnsatz`, work on boxes with domains. This utilises the newly-implemented :py:class:`.CollapseDomainRewriteRule` (credit: `Kin Ian Lo <https://github.com/kinianlo>`_).
-- Make the `device` keyword argument for model-based parsers, e.g. :py:class:`.BobcatParser`, follow PyTorch convention and support multiple types.
-- Added the new :py:class:`~lambeq.text2diagram.OncillaParser` as a parser option to the CLI via the `-p oncilla` argument.
+- Changed the :py:attr:`device` keyword argument for model-based parsers (e.g. :py:class:`.BobcatParser`) so that follow PyTorch convention and support multiple types.
+- Added the new :py:class:`~lambeq.text2diagram.OncillaParser` as a parser option to the CLI via the ``-p oncilla`` argument.
 - Removed the deprecated :py:class:`~lambeq.text2diagram.DepCCGParser` as a parser option from the CLI.
 - Significantly extended and restructured the documentation pages, fixed various issues, and added more material and tutorials.
 - Made ``tket`` an optional dependency.
