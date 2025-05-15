@@ -3,7 +3,7 @@
 lambeq and compositionality
 ===========================
 
-``lambeq`` is a state-of-the-art software toolkit designed for implementing compositional :term:`natural language processing (NLP)` models using :term:`string diagrams <string diagram>` on a quantum computer. Language is `compositional` in nature; this is expressed through the `principle of compositionality` which states that the meaning of a complex expression is determined by the meanings of its parts and the rules used to combine them. This concept, rooted in formal linguistics and philosophy, aligns with how humans intuitively process language. 
+``lambeq`` is a state-of-the-art software toolkit designed for implementing compositional :term:`natural language processing (NLP)` models using :term:`string diagrams <string diagram>` on a quantum computer. Language is `compositional` in nature :cite:p:`tull_2024`; this is expressed through the `principle of compositionality` which states that the meaning of a complex expression is determined by the meanings of its parts and the rules used to combine them. This concept, rooted in formal linguistics and philosophy, aligns with how humans intuitively process language.
 
 ``lambeq`` is particularly well-suited for tasks involving natural language processing on quantum computers, although it is also applicable to classical computational environments. It provides tools for:
 
