@@ -1,6 +1,6 @@
 [tool.uv]
 dev-dependencies = [
-    "lambeq[experimental,extras,test]>=0.4.2",
+    "lambeq[extras,test,experimental]>=0.4.2",
     "nbformat~=5.7.3",
     "myst-nb==1.1.*",
     "numpydoc~=1.5.0",
@@ -22,6 +22,3 @@ dev-dependencies = [
 
 [tool.uv.workspace]
 members = []
-
-[tool.uv.sources]
-lambeq = { git = "https://github.com/cqcl/lambeq" }
