@@ -109,7 +109,6 @@ jobs:
   
   deploy-gh:
     name: Deploy documentation to Github pages
-    if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
