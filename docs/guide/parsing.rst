@@ -13,7 +13,7 @@ Finally, for users who prefer to keep the installation of the toolkit light, ``l
 
 Oncilla parser
 --------------
-Since Release :ref:`rel-0.5.0`, ``lambeq`` provides a new end-to-end parser class, :py:class:`~lambeq.text2diagram.OncillaParser`, that simplifies the process of generating diagrams from text, minimizing or even eliminating exposure of the user to CCG representations and functionality. This parser utilises the :term:`pregroup tree` representation of diagrams, offering accuracy and coverage similar to Bobcat in much faster speeds (x3). :term:`Oncilla` parser is currently available as an experimental feature.
+Since Release :ref:`rel-0.5.0`, ``lambeq`` provides a new end-to-end parser class, :py:class:`~lambeq.text2diagram.OncillaParser`, that simplifies the process of generating diagrams from text, minimizing or even eliminating exposure of the user to CCG representations and functionality. This parser utilises the :term:`pregroup tree` representation of diagrams, offering accuracy and coverage similar to Bobcat in much faster speeds -- up to three times faster. :term:`Oncilla` parser is currently available as an experimental feature.
 
 Reading CCGBank
 ---------------
