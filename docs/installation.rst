@@ -20,7 +20,7 @@ To install ``lambeq`` with optional dependencies for experimental features::
    pip install lambeq[experimental]
 
 .. note::
-   For best results in experimental installation, use Python 3.11.
+   For best results with the experimental features, use Python 3.11.
 
 DepCCG support
 --------------
