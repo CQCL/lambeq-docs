@@ -39,7 +39,7 @@ Glossary
         A model that produces semantic representations of sentences by composing together the semantic representations of the words within them. An example of a compositional model is :term:`DisCoCat`.
 
     coreference resolution
-        A task whose goal is to identify which linguistic expressions in a text refer to the same real-world entity. In ``lambeq``, coreference resolution is mainly used in the context of :term:`DisCoCirc` models, and utilises the :term:`spaCy` NLP toolkit.
+        A task whose goal is to identify which linguistic expressions in a text refer to the same real-world entity. In ``lambeq``, coreference resolution is mainly used in the context of :term:`DisCoCirc` models, and utilises the :term:`spaCy` NLP toolkit and the `Maverick <https://github.com/SapienzaNLP/maverick-coref>`_ package.
 
     cup
         A special morphism in a :term:`rigid category`, which, together with a :term:`cap` morphism, obey certain conditions called :term:`snake equations`. In diagrammatic form, a cup is depicted as a wire with upward concavity (:math:`\cup`). In the context of :term:`DisCoCat`, a cup usually represents a tensor contraction between two-word representations.
@@ -55,9 +55,9 @@ Glossary
 
     DisCoPy
         DIStributional COmpositional PYthon. A Python library for working with :term:`monoidal categories <monoidal category>` :cite:p:`de_felice_2021`. It includes abstractions for creating all standard :term:`quantum gates <quantum gate>` and building :term:`quantum circuits <quantum circuit>`. Additionally, it is equipped with many language-related features, such as support for :term:`pregroup grammars <pregroup grammar>` and :term:`functors <functor>` for implementing :term:`compositional models <compositional model>`.
-    
+
     frame
-        In ``lambeq``'s :term:`string diagrams <string diagram>`, a special type of box that can contain other boxes or frames. Frames are mainly used in the context of :term:`DisCoCirc` models, representing higher-level linguistic expressions. 
+        In ``lambeq``'s :term:`string diagrams <string diagram>`, a special type of box that can contain other boxes or frames. Frames are mainly used in the context of :term:`DisCoCirc` models, representing higher-level linguistic expressions.
 
     Frobenius algebra
         In the context of a :term:`symmetric monoidal category`, a Frobenius algebra provides morphisms :math:`\Delta: A \to A\otimes A` and :math:`\mu: A\otimes A \to A` for any object :math:`A`, satisfying certain conditions (the so-called Frobenius equations) and implementing the notion of a :term:`spider`. In ``lambeq`` and :term:`DisCoCat`, spiders can be used to implement :term:`rewrite rules <rewrite rule>` :cite:p:`kartsaklis_2016a,kartsaklis_2016b,sadrzadeh_2013,sadrzadeh_2014`.
@@ -88,6 +88,9 @@ Glossary
 
     noise
         Undesired artefacts that cause the measurement outcome of a :term:`quantum circuit` to deviate from the ideal distribution.
+
+    Oncilla
+        A new experimental end-to-end parser that simplifies the process of generating diagrams from text, minimizing or even eliminating exposure of the user to CCG representations and functionality. This parser utilises the :term:`pregroup tree` representation of diagrams.
 
     parser
         A statistical tool that converts a sentence into a hierarchical representation that reflects the syntactic relationships between the words (a :term:`syntax tree`) based on a specific grammar formalism.
