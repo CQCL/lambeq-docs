@@ -39,7 +39,7 @@ Glossary
         A model that produces semantic representations of sentences by composing together the semantic representations of the words within them. An example of a compositional model is :term:`DisCoCat`.
 
     coreference resolution
-        A task whose goal is to identify which linguistic expressions in a text refer to the same real-world entity. In ``lambeq``, coreference resolution is mainly used in the context of :term:`DisCoCirc` models, and utilises the :term:`spaCy` NLP toolkit.
+        A task whose goal is to identify which linguistic expressions in a text refer to the same real-world entity. In ``lambeq``, coreference resolution is mainly used in the context of :term:`DisCoCirc` models, and utilises the :term:`spaCy` NLP toolkit and the `Maverick <https://github.com/SapienzaNLP/maverick-coref>`_ package.
 
     cup
         A special morphism in a :term:`rigid category`, which, together with a :term:`cap` morphism, obey certain conditions called :term:`snake equations`. In diagrammatic form, a cup is depicted as a wire with upward concavity (:math:`\cup`). In the context of :term:`DisCoCat`, a cup usually represents a tensor contraction between two-word representations.
