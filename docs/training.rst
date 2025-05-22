@@ -13,6 +13,7 @@ The following examples demonstrate the usage of the :py:mod:`.training` package 
    ../tutorials/trainer-quantum.ipynb
    ../tutorials/trainer-hybrid.ipynb
    ../tutorials/discocirc-mc-task.ipynb
+   discocirc-babi
    manual-training
 
 - :ref:`Classical case <sec-train-tn>`
@@ -27,9 +28,13 @@ The following examples demonstrate the usage of the :py:mod:`.training` package 
 
   See how to utilise the powerful :term:`PennyLane` backend to train pure and hybrid quantum models.
 
-- :ref:`DisCoCirc training <sec-discocirc_training>`
+- :ref:`DisCoCirc - classification <sec-discocirc_training>`
    
   Convert entire paragraphs or documents into :term:`DisCoCirc` circuits and train them with ``lambeq``'s :py:class:`~lambeq.training.PennyLaneModel`.
+
+- :ref:`DisCoCirc - babi6 <sec-discocirc_babi>`  
+
+  Create a DisCoCirc model for solving the `babi6` inference task.
 
 - :ref:`Manual pipeline <sec-manual-training>`
 
