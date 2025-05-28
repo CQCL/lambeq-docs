@@ -1,3 +1,5 @@
+.. _api-text2diagram:
+
 lambeq.text2diagram
 ===================
 

@@ -3,7 +3,7 @@
 lambeq and compositionality
 ===========================
 
-``lambeq`` is a state-of-the-art software toolkit designed for implementing compositional :term:`natural language processing (NLP)` models using :term:`string diagrams <string diagram>` on a quantum computer. Language is `compositional` in nature; this is expressed through the `principle of compositionality` which states that the meaning of a complex expression is determined by the meanings of its parts and the rules used to combine them. This concept, rooted in formal linguistics and philosophy, aligns with how humans intuitively process language. 
+``lambeq`` is a state-of-the-art software toolkit designed for implementing compositional :term:`natural language processing (NLP)` models using :term:`string diagrams <string diagram>` on a quantum computer. Language is `compositional` in nature :cite:p:`tull_2024`; this is expressed through the `principle of compositionality` which states that the meaning of a complex expression is determined by the meanings of its parts and the rules used to combine them. This concept, rooted in formal linguistics and philosophy, aligns with how humans intuitively process language.
 
 ``lambeq`` is particularly well-suited for tasks involving natural language processing on quantum computers, although it is also applicable to classical computational environments. It provides tools for:
 
@@ -25,6 +25,6 @@ Related research
 ----------------
 
 - The idea of using category theory to represent language was first introduced in :cite:p:`coecke_2010`, which detailed a framework that later became known as :term:`DisCoCat`. DisCoCat is supported in ``lambeq`` along with many other compositional schemes.
-- An extension of DisCoCat that allows the compositional encoding of full paragraphs or documents into quantum circuits is described in :cite:p:`coecke_2021a`. ``lambeq`` provides experimental support for :term:`DisCoCirc` models through the :py:mod:`lambeq.experimental.discocirc` package.
+- An extension of DisCoCat that allows the compositional encoding of full paragraphs or documents into quantum circuits is described in :cite:p:`coecke_2021a`. ``lambeq`` provides experimental support for :term:`DisCoCirc` models through the :py:mod:`lambeq.experimental.discocirc` package :cite:p:`krawchuk_2025`.
 - An early, yet-unreleased version of ``lambeq`` was used in :cite:p:`lorenz_2023`, a paper that described one of the first small-scale NLP experiments on a real quantum computer. The 40-pages paper provides a detailed introduction to the theoretical framework and the principles on which ``lambeq`` is now based, and it's an excellent starting point for the interested readers.
 

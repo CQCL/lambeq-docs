@@ -15,7 +15,7 @@ A summary of the available options is given below.
            [-f {json,pickle,text-unicode,text-ascii,image}]
            [-g {png,pdf,jpeg,jpg,eps,pgf,ps,raw,rgba,svg,svgz,tif,tiff}]
            [-u [KEY=VAR ...]] [-o OUTPUT_FILE | -d OUTPUT_DIR]
-           [-p {bobcat,depccg}] [-t] [-s] [-r {spiders,stairs,cups,tree}]
+           [-p {bobcat,oncilla}] [-t] [-s] [-r {spiders,stairs,cups,tree}]
            [-c [ROOT_CAT ...]] [-w [REWRITE_RULE ...]]
            [-a {iqp,tensor,spider,mps}] [-n [KEY=VAR ...]] [-y STORE_ARGS]
            [-l LOAD_ARGS]
