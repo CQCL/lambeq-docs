@@ -3,7 +3,7 @@
 Training: DisCoCirc for babi6
 =============================
 
-**TBD
+The following is a two parts tutorial on using the DisCoCirc model for bAbI6 tasks. The first part tackles the creation of the quantum circuits representing the texts and the task, and the second part handles the training.
 
 .. toctree::
    :maxdepth: 1
