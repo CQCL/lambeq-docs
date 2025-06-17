@@ -244,3 +244,5 @@ docs/puml/img
 # ignore runs and related artifacts
 **/runs/
 **/*.lt
+**/*.pkl
+**/*.pickle
