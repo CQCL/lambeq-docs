@@ -171,6 +171,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+tutorials_env/
 
 # Spyder project settings
 .spyderproject
@@ -243,3 +244,5 @@ docs/puml/img
 # ignore runs and related artifacts
 **/runs/
 **/*.lt
+**/*.pkl
+**/*.pickle
